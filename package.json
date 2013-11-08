@@ -1,11 +1,11 @@
 {
-	"id" : "Mod-1",
-	"name" : "Game Dev Tycoon Mod-1",
+	"id" : "Mod",
+	"name" : "Game Dev Tycoon Mod",
 	"version: "0.1.0",
 	"author":"Josh Zimmer(Turntablelover) <darthcoolness@gmail.com>",
 	"description" : "Mod for Game Dev Tycoon",
-	"url" : "example@example.com",
-	"main" : "./myScript",
+	"url" : "https://github.com/Turntablelover/Game-Dev-Tycoon-Mod",
+	"main" : "./Game-Dev-Tycoon-Mod",
 	"dependencies" : {
 		"gdt-modAPI":"0.1.x"
 	}
