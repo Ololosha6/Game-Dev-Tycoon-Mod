@@ -1,4 +1,4 @@
-
+//Events
 var eventId = "F413351E-2108-4967-A989-A7E98D4DEED5";//any string, but needs to be globally unique
 
 var myRandomEvent = {
@@ -148,6 +148,81 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
+var eventId = "F413453F-2119-4969-A991-A8E99D6DEED7";//any string, but needs to be globally unique
+
+var myRandomEvent = {
+	id: eventId,
+	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
+	maxTriggers: 1,
+	trigger: function (company) {
+		//only in second office and only while a game is in development.
+		//most events that fire during game-dev work better if they don't fire right at the start or right at the end, that's why we use isGameProgressBetween
+		return company.currentLevel == 2 && company.isGameProgressBetween(0.5, 0.9);
+	},
+	//because we dynamically create the notification every time the event triggers, we use getNotification
+	getNotification: function (company) {
+		var game = company.currentGame;
+
+		var msg = "Today is your birthday. Everyone decided to take a break from the game to celebrate your birthday. {n} One of the testers brought out a magical cake that had sparkly pixie dust all over it. The rest of your employees start eating the cake.\nDo you want to eat the cake?\n\nYou could eat the cake, not eat the cake, and continue working on the game, or not eat the cake, and tell your employees that the cake is a lie."
+			.localize().format(game.title);
+		//notice how we break up the story in two screens by using {n}. This creates a better flow than having one longer block of text.
+		//Also, since this is a story with multiple options and the buttons can only hold a small amount of text, we explain the options beforehand.
+
+		//the cake, lowered a bit of hype on your game.
+		//since the event isn't delayed we can do this directly on the company, otherwise we could call adjustHype() on the notification object to schedule the effect with the notification.
+		company.adjustHype(5 - 5 * company.getRandom());//lower hype between 5 and 0.
+
+		return new Notification({
+			sourceId: eventId,//this is important, otherwise nothing will happen when the player selects an option.
+			header: "Magical Cake".localize(),
+			text: msg,
+			options: ["Eat Cake", "Don't Eat Cake", "Cake is a Lie"]//maximum of three choices
+		});
+	},
+	complete: function (decision) {
+		//decision is a number and will correspond to the index of the option that was chosen.
+		//0=eat cake, 1=don't eat cake, 2=cake is a lie
+		//it's best if every decision has a different outcome
+
+		var company = GameManager.company;//we fetch the company object for use later.
+
+		if (decision === 0) {//eat cake
+			//we create a new, simple notification to tell the outcome. no sourceId or options are necessary this time.
+			var n = new Notification({
+				header: "Magical Cake".localize(),//keep the header consistent with the prior part of the story
+				text: "You ate the cake, and the magical pixie dust turned you into a fairy."
+			});
+			n.adjustHype(5 - 25 * company.getRandom());//decrease hype between 5 and -30.
+			
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() is just good practice in case we use {n} inside the notification.
+			return;
+		}
+		if (decision === 1) {//don't eat cake
+			//nothing happens at first, but in a few weeks, your office is a total disaster
+			var n = new Notification({
+				header: "Magical Cake".localize(),
+				text: "You ignored the cake. You continued working on the game, while your employees turned into fairies.\n You got a extra bonus from your employee's pay-checks (+200 cr.) ",
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			n.adjustCash(+200, "get richer");
+			company.notifications.push(n);//this notification isn't shown immediately so we add it to the normal company.notifications array.
+			return;
+		}
+		if (decision === 2) {//redo design
+			var n = new Notification({
+				header: "Magical Cake".localize(),//keep the header consistent with the prior part of the story
+				text: "You knock the cake out of your employee's hands. You tell your employees that the cake is a lie, and there's no such thing as magical cake."
+			});
+			n.adjustHype(5 + 20 * company.getRandom());//increase hype between 5 and 25
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
+			return;
+		}
+	}
+};
+
+GDT.addEvent(myRandomEvent);
+
+//Platforms
 var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperBox.png';
 GDT.addPlatform({
 	id : 'SuperBox',
@@ -160,7 +235,7 @@ GDT.addPlatform({
 	platformRetireDate : '5/6/4',
 	developmentCosts : 10000,
 	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.7],
-	audienceWeightings : [0.9, 1, 0.8],
+	audienceWeightings : [0.9, 1.0, 0.8],
 	techLevel : 1,
 	iconUri : icon,
 	events : [{
@@ -177,6 +252,36 @@ GDT.addPlatform({
 	]
 });
 
+var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperStar.png';
+GDT.addPlatform({
+	id : 'SuperStar',
+	name : 'SuperStar',
+	company : 'Supersonic Games',
+	startAmount : 0.20,
+	unitsSold : 0.400,
+	licencePrize : 9000,
+	published : '6/1/1',
+	platformRetireDate : '10/2/4',
+	developmentCosts : 20000,
+	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.8],
+	audienceWeightings : [1.0, 1.0, 0.6],
+	techLevel : 2,
+	iconUri : icon,
+	events : [{
+			id : '10538DA2-59F2-4F24-8855-F1E2621934BF',
+			date : '5/2/1',
+			getNotification : function (company) {
+				return new Notification({
+					header : "Industry News".localize(),
+					text : "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperStar {0}. It has a cool new feature where it has 2 CD Drives. You can now play your favourite games and listen to music at the same time.".localize().format(General.getETADescription('1/2/1', '1/3/4')),
+					image : icon
+				});
+			}
+		}
+	]
+});
+
+//Topics
 GDT.addTopics([
 	{ 
 		id: "Trivia", 
@@ -184,5 +289,15 @@ GDT.addTopics([
 		genreWeightings: [0.6, 0.6, 0.6, 1.0, 0.9, 1.0], 
 		audienceWeightings: [1.0, 1.0, 0.6] 
 
-	}
+	} , {
+		id: "Platformer", 
+		name: "Platformer".localize("game topic"), 
+		genreWeightings: [1.0, 1.0, 0.6, 0.6, 0.8, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Chess", 
+		name: "Chess".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
 ]);
