@@ -376,7 +376,7 @@ GDT.addPlatform({
 			getNotification : function (company) {
 				return new Notification({
 					header : "Industry News".localize(),
-					text : "Ninvento has announced that they are publishing a skinnier version of their popular hand-held console, The Ninvento 3DS {0}. The Ninvento 2DS is basically the 3DS with no 3D mode.".localize().format(General.getETADescription('21/2/3', '21/4/4')),
+					text : "Ninvento has announced that they are publishing a skinnier version of their popular hand-held console, The Ninvento 3GS {0}. The Ninvento 2GS is basically the 3GS with no 3D mode.".localize().format(General.getETADescription('21/2/3', '21/4/4')),
 					image : icon
 				});
 			}
