@@ -148,7 +148,7 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
-var icon = 'Mods/Game-Dev-Tycoon-Mod/images/SuperBox.png';
+var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperBox.png';
 GDT.addPlatform({
 	id : 'SuperBox',
 	name : 'SuperBox',
