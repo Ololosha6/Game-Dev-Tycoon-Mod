@@ -15,5 +15,6 @@
 	'mods/gdt-modAPI/api/platforms.js',
 	'mods/gdt-modAPI/api/topics.js',
 	'mods/gdt-modAPI/examples/examples.js'
+	'mods/mod/examples/source.js'
 	], ready);
 })();
