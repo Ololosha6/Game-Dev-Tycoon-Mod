@@ -37,6 +37,11 @@ November 9, 2013:
 1. Did Maintenance on the code and added some enhancements
 2. New Topic
 
+0.7.0:
+1. 14 New Topics
+2. New Platform
+3. New Event
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

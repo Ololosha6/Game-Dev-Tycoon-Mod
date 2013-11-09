@@ -1,13 +1,14 @@
 (function () {
 	var ready = function () {
 	
-		ModPack.addTopic();
-		ModPack.addPlatform();
-		ModPack.addEventThunderstorm();
-		ModPack.addEventSuperhero();
-		ModPack.addEventCake();
-		ModPack.addEventNational();
-		ModPack.addEventGirlScouts();
+		Mod.addTopic();
+		Mod.addPlatform();
+		Mod.addEventThunderstorm();
+		Mod.addEventSuperhero();
+		Mod.addEventCake();
+		Mod.addEventNational();
+		Mod.addEventGirlScouts();
+		Mod.addEventHypeGame();
 	};
 
 	requireLoad(['mods/gdt-modAPI/helpers/checks.js',
@@ -16,6 +17,6 @@
 	'mods/gdt-modAPI/api/platforms.js',
 	'mods/gdt-modAPI/api/topics.js',
 	'mods/gdt-modAPI/examples/examples.js',
-	'mods/Game-Dev-Tycoon-Mod/game-dev-tycoon-mod.js'
+	'mods/Mod/mod.js'
 	], ready);
 })();

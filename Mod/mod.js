@@ -1,8 +1,8 @@
-var ModPack = {};
+var Mod = {};
 (function () {	
 
 //Topics
-ModPack.addTopic = function () {
+Mod.addTopic = function () {
 GDT.addTopics([
 	{ 
 		id: "Trivia", 
@@ -111,13 +111,83 @@ GDT.addTopics([
 		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
 		audienceWeightings: [0.8, 1.0, 1.0]
 	} , {
+		id: "Survival Horror", 
+		name: "Survival Horror".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 1.0, 1.0]
+	} , {
+		id: "Visual Novel", 
+		name: "Visual Novel".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.8, 1.0, 0.8], 
+		audienceWeightings: [0.9, 1.0, 1.0]
+	} , {
+		id: "Western RPG", 
+		name: "Western RPG".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 1.0]
+	} , {
+		id: "Sandbox RPG", 
+		name: "Sandbox RPG".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 1.0]
+	} , {
+		id: "Management", 
+		name: "Management".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
+		id: "Tycoon", 
+		name: "Tycoon".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
+		id: "Vehicle", 
+		name: "Vehicle".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.9, 1.0, 0.6]
+	} , {
+		id: "4X", 
+		name: "4X".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
+		id: "Turn-Based", 
+		name: "Turn-Based".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 0.8]
+	} , {
+		id: "Real-Time Strategy", 
+		name: "Real-Time Strategy".localize("game topic"), 
+		genreWeightings: [0.9, 0.9, 0.9, 0.8, 1.0, 0.8], 
+		audienceWeightings: [0.9, 1.0, 0.7]
+	} , {
+		id: "Tower Defense", 
+		name: "Tower Defense".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 0.7]
+	} , {
+		id: "Football", 
+		name: "Football".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
+		id: "Basketball", 
+		name: "Basketball".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
+		id: "Dodge-ball", 
+		name: "Dodge-ball".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [0.8, 1.0, 0.6]
+	} , {
 			}
 		}
 	}
 ]);
 
 //Events
-ModPack.addEventThunderstorm = function () {
+Mod.addEventThunderstorm = function () {
 
 var eventId = "F413351E-2108-4967-A989-A7E98D4DEED5";//any string, but needs to be globally unique
 
@@ -194,7 +264,7 @@ var Thunderstorm = {
 
 GDT.addEvent(Thunderstorm);
 
-ModPack.addEventSuperhero = function () {
+Mod.addEventSuperhero = function () {
 
 var eventId = "F413452E-2109-4968-A990-A7E99D5DEED6";//any string, but needs to be globally unique
 
@@ -271,7 +341,7 @@ var Superhero = {
 
 GDT.addEvent(Superhero);
 
-ModPack.addEventCake = function () {
+Mod.addEventCake = function () {
 
 var eventId = "F413453F-2119-4969-A991-A8E99D6DEED7";//any string, but needs to be globally unique
 
@@ -348,7 +418,7 @@ var Cake = {
 
 GDT.addEvent(Cake);
 
-ModPack.addEventNational = function () {
+Mod.addEventNational = function () {
 
 var eventId = "F514463G-2222-5000-B111-A9F11D7DEED7";//any string, but needs to be globally unique
 
@@ -425,7 +495,7 @@ var National = {
 
 GDT.addEvent(National);
 
-ModPack.addEventGirlScouts = function () {
+Mod.addEventGirlScouts = function () {
 
 var eventId = "F514464G-2223-5001-B112-A9F12D8DEEE8";//any string, but needs to be globally unique
 
@@ -502,9 +572,76 @@ var GirlScouts = {
 
 GDT.addEvent(GirlScouts);
 
+Mod.addEventHypeGame = function () {
+
+var eventId = "F514465G-2233-5002-B113-A9F12D8DEEE9";//any string, but needs to be globally unique
+
+var HypeGame = {
+	id: eventId,
+	isRandom: false, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
+	maxTriggers: 2,
+	trigger: function (company) {
+		//only in second office and only while a game is in development.
+		//most events that fire during game-dev work better if they don't fire right at the start or right at the end, that's why we use isGameProgressBetween
+		return company.currentLevel == 2 && company.isGameProgressBetween(0.3, 0.9);
+	},
+	//because we dynamically create the notification every time the event triggers, we use getNotification
+	getNotification: function (company) {
+		var game = company.currentGame;
+
+		var msg = "A TV news reporter knocked on your door. n} They want to know about your upcoming game, that is in development.\nDo you want to tell the reporter about your game? \n\nYou could tell the reporter, or you could not tell the reporter."
+			.localize().format(game.title);
+		//notice how we break up the story in two screens by using {n}. This creates a better flow than having one longer block of text.
+		//Also, since this is a story with multiple options and the buttons can only hold a small amount of text, we explain the options beforehand.
+
+		//the reporter, increased hype on your game.
+		//since the event isn't delayed we can do this directly on the company, otherwise we could call adjustHype() on the notification object to schedule the effect with the notification.
+		company.adjustHype(5 + 15 * company.getRandom());//lower hype between 5 and 20.
+
+		return new Notification({
+			sourceId: eventId,//this is important, otherwise nothing will happen when the player selects an option.
+			header: "TV Reporter!".localize(),
+			text: msg,
+			options: ["Tell the reporter", "Don't tell the reporter"]//maximum of two choices
+		});
+	},
+	complete: function (decision) {
+		//decision is a number and will correspond to the index of the option that was chosen.
+		//0=tell the reporter, 1=don't tell the reporter
+		//it's best if every decision has a different outcome
+
+		var company = GameManager.company;//we fetch the company object for use later.
+
+		if (decision === 0) {//tell the reporter
+			//we create a new, simple notification to tell the outcome. no sourceId or options are necessary this time.
+			var n = new Notification({
+				header: "TV Reporter!".localize(),//keep the header consistent with the prior part of the story
+				text: "You told the reporter about your upcoming game. Your game was featured in a special news report later that night."
+			});
+			n.adjustHype(5 + 30 * company.getRandom());//increase hype between 5 and 35.
+			
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() is just good practice in case we use {n} inside the notification.
+			return;
+		}
+		if (decision === 1) {//don't tell the reporter
+			var n = new Notification({
+				header: "TV Reporter!".localize(),//keep the header consistent with the prior part of the story
+				text: "You didn't tell the reporter anything about your game, and the reporter left your office in a bad mood."
+			});
+			n.adjustHype(5 - 30 * company.getRandom());//increase hype between 5 and -25
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
+			return;
+			}
+		}
+	}
+};
+
+GDT.addEvent(HypeGame);
+
 //Platforms
-ModPack.addPlatform = function () {
-var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperBox.png';
+Mod.addPlatform = function () {
+
+var icon = 'mods/Mod/images/SuperBox.png';
 GDT.addPlatform({
 	id : 'SuperBox',
 	name : 'SuperBox',
@@ -528,12 +665,13 @@ GDT.addPlatform({
 					text : "Coming out of nowhere a company called Supersonic Games has announced that they will publish a new game console called the SuperBox {0}.".localize().format(General.getETADescription('1/2/1', '1/3/4')),
 					image : icon
 				});
+				}
 			}
 		}
 	]
 });
 
-var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperStar.png';
+var icon = 'mods/Mod/images/SuperStar.png';
 GDT.addPlatform({
 	id : 'SuperStar',
 	name : 'SuperStar',
@@ -562,7 +700,7 @@ GDT.addPlatform({
 	]
 });
 
-var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperStar 2.0.png';
+var icon = 'mods/Mod/images/SuperStar 2.0.png';
 GDT.addPlatform({
 	id : 'SuperStar 2.0',
 	name : 'SuperStar 2.0',
@@ -591,7 +729,36 @@ GDT.addPlatform({
 	]
 });
 
-var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperRift.png';
+var icon = 'mods/Mod/images/SuperStation.png';
+GDT.addPlatform({
+	id : 'SuperStation',
+	name : 'SuperStation',
+	company : 'Supersonic Games',
+	startAmount : 2.000,
+	unitsSold : 1.222,
+	licencePrize : 18000,
+	published : '13/3/1',
+	platformRetireDate : '15/5/4',
+	developmentCosts : 20000,
+	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.8],
+	audienceWeightings : [1.0, 1.0, 0.7],
+	techLevel : 4,
+	iconUri : icon,
+	events : [{
+			id : '10539DA4-61F4-5F26-8856-F3E3732956BF',
+			date : '12/3/1',
+			getNotification : function (company) {
+				return new Notification({
+					header : "Industry News".localize(),
+					text : "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperStation {0}. It has everything the SuperStar 2.0 had. It has a better graphics engine than the SuperStar 2.0.".localize().format(General.getETADescription('12/3/1', '13/3/1')),
+					image : icon
+				});
+			}
+		}
+	]
+});
+
+var icon = 'mods/Mod/images/SuperRift.png';
 GDT.addPlatform({
 	id : 'SuperRift',
 	name : 'SuperRift',
@@ -620,7 +787,7 @@ GDT.addPlatform({
 	]
 });
 
-var icon = 'mods/Game-Dev-Tycoon-Mod/images/2GS.png';
+var icon = 'mods/Mod/images/2GS.png';
 GDT.addPlatform({
 	id : 'Ninvento 2GS',
 	name : 'Ninvento 2GS',
