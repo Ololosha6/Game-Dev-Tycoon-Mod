@@ -3,36 +3,35 @@ var venomous-modAPI = {};
 	
 	/* Platforms */
 	venomous-modAPI.addPlatform = function () {
-		var icon = './mods/jason-modAPI/examples/img/codeco.png';
-		GDT.addPlatform(
-			{
-				id: 'Codeovision',
-				name: 'Codecovision',
-				company: 'Codeco',
-				startAmount: 0.300,
-				unitsSold: 0.600,
-				licencePrize: 5000,
-				published: '1/1/1',
-				platformRetireDate: '2/6/2',
-				developmentCosts: 16500,
-				genreWeightings: [1, 0.8, 0.9, 1, 1, 0.7],
-				audienceWeightings: [0.8, 0.9, 1],
-				techLevel: 1,
-				iconUri: icon,
-				events: [
-					{
-						id: '12111996-00-00-001-JASONMODIF',
-						date: '3/6/2',
-						getNotification: function (company) {
-							return new Notification({
-								header: "Industry News".localize(),
-								text: "Today, Codeco announced that due to poor sales, the Codecovision will soon be pulled from the market.".localize().format(General.getETADescription('2/1/2', '3/1/3')),
-								image: icon
-							});
-						}
-					}
-				]
-			});
+		var icon = 'mods/venomous-modAPI/examples/img/SuperBox.png';
+		GDT.addPlatform({
+		id : 'SuperBox',
+		name : 'SuperBox',
+		company : 'Supersonic Games',
+		startAmount : 0.15,
+		unitsSold : 0.358,
+		licencePrize : 5000,
+		published : '1/3/4',
+		platformRetireDate : '5/6/4',
+		developmentCosts : 10000,
+		genreWeightings : [0.9, 1, 1, 0.9, 1, 0.7],
+		audienceWeightings : [0.9, 1.0, 0.8],
+		techLevel : 1,
+		iconUri : icon,
+		events : [{
+			id : '10537DA1-58F1-4F23-8854-F1E2621933BF',
+			date : '1/2/1',
+			getNotification : function (company) {
+				return new Notification({
+					header : "Industry News".localize(),
+					text : "Coming out of nowhere a company called Supersonic Games has announced that they will publish a new game console called the SuperBox {0}.".localize().format(General.getETADescription('1/2/1', '1/3/4')),
+					image : icon
+				});
+				}
+			}
+		}
+	]
+});
 			
 	};
 	/*  */
