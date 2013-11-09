@@ -1,4 +1,115 @@
+var ModPack = {};
+(function () {	
+
+//Topics
+ModPack.addTopic = function () {
+GDT.addTopics([
+	{ 
+		id: "Trivia", 
+		name: "Trivia".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 0.9, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6] 
+
+	} , {
+		id: "Platformer", 
+		name: "Platformer".localize("game topic"), 
+		genreWeightings: [1.0, 1.0, 0.6, 0.6, 0.8, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Chess", 
+		name: "Chess".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Alternate Reality", 
+		name: "Alternate Reality".localize("game topic"), 
+		genreWeightings: [0.7, 0.7, 0.7, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.8]
+	} , {
+		id: "Japanese", 
+		name: "Japanese".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 1.0, 0.9, 0.9, 0.8], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Drinking", 
+		name: "Drinking".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: "Math", 
+		name: "Math".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Party", 
+		name: "Party".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Ball and Paddle", 
+		name: "Ball and Paddle".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 8.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Beat 'em up", 
+		name: "Beat 'em up".localize("game topic"), 
+		genreWeightings: [0.7, 0.8, 0.7, 0.6, 1.0, 0.6], 
+		audienceWeightings: [1.0, 1.0, 1.0]
+	} , {
+		id: "Hack and Slash", 
+		name: "Hack and Slash".localize("game topic"), 
+		genreWeightings: [0.9, 0.9, 0.8, 0.6, 1.0, 0.6], 
+		audienceWeightings: [1.0, 1.0, 1.0]
+	} , {
+		id: "Fighting", 
+		name: "Fighting".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Pinball", 
+		name: "Pinball".localize("game topic"), 
+		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
+		audienceWeightings: [1.0, 1.0, 0.6]
+	} , {
+		id: "Shooter", 
+		name: "Shooter".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: "First Person Shooter", 
+		name: "First Person Shooter".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 1.0, 1.0]
+	} , {
+		id: "MMO FPS", 
+		name: "MMO FPS".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: "Shoot 'em Up", 
+		name: "Shoot 'em Up".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: " Tactical Shooter", 
+		name: "Tactical Shooter".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: "Rail Shooter", 
+		name: "Rail Shooter".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 0.6, 1.0]
+	} , {
+		id: "Third Person Shooter", 
+		name: "Third Person Shooter".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.6, 1.0, 1.0]
+	} , {
+]);
+
 //Events
+ModPack.addEventThunderstorm = function () {
 var eventId = "F413351E-2108-4967-A989-A7E98D4DEED5";//any string, but needs to be globally unique
 
 var myRandomEvent = {
@@ -73,7 +184,7 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
-
+ModPack.addEventSuperhero = function () {
 var eventId = "F413452E-2109-4968-A990-A7E99D5DEED6";//any string, but needs to be globally unique
 
 var myRandomEvent = {
@@ -148,6 +259,7 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
+ModPack.addEventCake = function () {
 var eventId = "F413453F-2119-4969-A991-A8E99D6DEED7";//any string, but needs to be globally unique
 
 var myRandomEvent = {
@@ -222,6 +334,7 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
+ModPack.addEventNational = function () {
 var eventId = "F514463G-2222-5000-B111-A9F11D7DEED7";//any string, but needs to be globally unique
 
 var myRandomEvent = {
@@ -296,7 +409,83 @@ var myRandomEvent = {
 
 GDT.addEvent(myRandomEvent);
 
+ModPack.addEventGirlScouts = function () {
+var eventId = "F514464G-2223-5001-B112-A9F12D8DEEE8";//any string, but needs to be globally unique
+
+var myRandomEvent = {
+	id: eventId,
+	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
+	maxTriggers: 1,
+	trigger: function (company) {
+		//only in second office and only while a game is in development.
+		//most events that fire during game-dev work better if they don't fire right at the start or right at the end, that's why we use isGameProgressBetween
+		return company.currentLevel == 3 && company.isGameProgressBetween(0.3, 0.9);
+	},
+	//because we dynamically create the notification every time the event triggers, we use getNotification
+	getNotification: function (company) {
+		var game = company.currentGame;
+
+		var msg = "Girl Scouts have knocked on the door.{n} They want to sell you cookies to save up money to save their school.\nDo you want to buy cookies from the Girl Scouts? \n\nYou could ignore them, buy cookies, or shut the door and continue working on your game."
+			.localize().format(game.title);
+		//notice how we break up the story in two screens by using {n}. This creates a better flow than having one longer block of text.
+		//Also, since this is a story with multiple options and the buttons can only hold a small amount of text, we explain the options beforehand.
+
+		//the cookies, lowered hype on your game.
+		//since the event isn't delayed we can do this directly on the company, otherwise we could call adjustHype() on the notification object to schedule the effect with the notification.
+		company.adjustHype(5 - 15 * company.getRandom());//lower hype between 5 and -10.
+
+		return new Notification({
+			sourceId: eventId,//this is important, otherwise nothing will happen when the player selects an option.
+			header: "Girl Scouts!".localize(),
+			text: msg,
+			options: ["Buy Cookies", "Ignore Them", "Don't buy cookies"]//maximum of three choices
+		});
+	},
+	complete: function (decision) {
+		//decision is a number and will correspond to the index of the option that was chosen.
+		//0=buy cookies, 1=ignore them, 2=don't buy cookies
+		//it's best if every decision has a different outcome
+
+		var company = GameManager.company;//we fetch the company object for use later.
+
+		if (decision === 0) {//buy cookies
+			//we create a new, simple notification to tell the outcome. no sourceId or options are necessary this time.
+			var n = new Notification({
+				header: "Girl Scouts!".localize(),//keep the header consistent with the prior part of the story
+				text: "You bought cookies and helped the girl scouts save their school."
+			});
+			n.adjustHype(5 + 25 * company.getRandom());//increase hype between 5 and 30.
+			
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() is just good practice in case we use {n} inside the notification.
+			return;
+		}
+		if (decision === 1) {//ignore them
+			//nothing happens at first, but in a few weeks, you ignored the girl scouts
+			var n = new Notification({
+				header: "Girl Scouts!".localize(),
+				text: "You ignored the girl scouts. \n You saved your money, but the girl scouts didn't save their school (+700 cr.) ",
+				weeksUntilFired: 1 + 2 * company.getRandom()
+			});
+			n.adjustCash(+700, "saved money");
+			company.notifications.push(n);//this notification isn't shown immediately so we add it to the normal company.notifications array.
+			return;
+		}
+		if (decision === 2) {//don't buy the cookies
+			var n = new Notification({
+				header: "Girl Scouts!".localize(),//keep the header consistent with the prior part of the story
+				text: "You didn't buy the cookies that the girl scouts were selling. The girl scouts didn't save their school, and you were happily working on your game."
+			});
+			n.adjustHype(5 + 20 * company.getRandom());//increase hype between 5 and 25
+			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
+			return;
+		}
+	}
+};
+
+GDT.addEvent(myRandomEvent);
+
 //Platforms
+ModPack.addPlatform = function () {
 var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperBox.png';
 GDT.addPlatform({
 	id : 'SuperBox',
@@ -336,7 +525,7 @@ GDT.addPlatform({
 	licencePrize : 9000,
 	published : '6/1/1',
 	platformRetireDate : '10/2/4',
-	developmentCosts : 20000,
+	developmentCosts : 12000,
 	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.8],
 	audienceWeightings : [1.0, 1.0, 0.6],
 	techLevel : 2,
@@ -348,6 +537,64 @@ GDT.addPlatform({
 				return new Notification({
 					header : "Industry News".localize(),
 					text : "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperStar {0}. It has a cool new feature where it has 2 CD Drives. You can now play your favourite games and listen to music at the same time.".localize().format(General.getETADescription('5/3/4', '6/1/1')),
+					image : icon
+				});
+			}
+		}
+	]
+});
+
+var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperStar 2.0.png';
+GDT.addPlatform({
+	id : 'SuperStar 2.0',
+	name : 'SuperStar 2.0',
+	company : 'Supersonic Games',
+	startAmount : 1.000,
+	unitsSold : 1.111,
+	licencePrize : 14000,
+	published : '10/3/1',
+	platformRetireDate : '13/2/4',
+	developmentCosts : 16000,
+	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.8],
+	audienceWeightings : [1.0, 1.0, 0.7],
+	techLevel : 3,
+	iconUri : icon,
+	events : [{
+			id : '10538DA3-59F3-4F25-8856-F2E2621945BF',
+			date : '9/3/1',
+			getNotification : function (company) {
+				return new Notification({
+					header : "Industry News".localize(),
+					text : "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperStar 2.0 {0}. It has a cool new feature where it has 2 CD Drives, a drink coaster in the special base under the CD Drives, and a advanced graphics engine. You can now play your favourite games, listen to music at the same time, and let your console hold your drink for you.".localize().format(General.getETADescription('9/3/1', '10/3/1')),
+					image : icon
+				});
+			}
+		}
+	]
+});
+
+var icon = 'mods/Game-Dev-Tycoon-Mod/images/SuperRift.png';
+GDT.addPlatform({
+	id : 'SuperRift',
+	name : 'SuperRift',
+	company : 'Supersonic Games',
+	startAmount : 0.40,
+	unitsSold : 0.600,
+	licencePrize : 150000,
+	published : '23/4/4',
+	platformRetireDate : '42/4/4',
+	developmentCosts : 250000,
+	genreWeightings : [0.9, 1, 1, 0.9, 1, 0.8],
+	audienceWeightings : [1.0, 1.0, 0.6],
+	techLevel : 7,
+	iconUri : icon,
+	events : [{
+			id : '10549DA3-59F24-4F26-8856-F2E2843956BF',
+			date : '22/4/4',
+			getNotification : function (company) {
+				return new Notification({
+					header : "Industry News".localize(),
+					text : "Supersonic Games has announced that they are publishing a gaming headset called the SuperRift {0}. The SuperRift is a virtual reality headset that takes you straight into your favorite gaming world.".localize().format(General.getETADescription('22/4/4', '23/4/4')),
 					image : icon
 				});
 			}
@@ -383,49 +630,3 @@ GDT.addPlatform({
 		}
 	]
 });
-
-//Topics
-GDT.addTopics([
-	{ 
-		id: "Trivia", 
-		name: "Trivia".localize("game topic"), 
-		genreWeightings: [0.6, 0.6, 0.6, 1.0, 0.9, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.6] 
-
-	} , {
-		id: "Platformer", 
-		name: "Platformer".localize("game topic"), 
-		genreWeightings: [1.0, 1.0, 0.6, 0.6, 0.8, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.6]
-	} , {
-		id: "Chess", 
-		name: "Chess".localize("game topic"), 
-		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.6]
-	} , {
-		id: "Alternate Reality", 
-		name: "Alternate Reality".localize("game topic"), 
-		genreWeightings: [0.7, 0.7, 0.7, 1.0, 1.0, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.8]
-	} , {
-		id: "Japanese", 
-		name: "Japanese".localize("game topic"), 
-		genreWeightings: [0.8, 0.8, 1.0, 0.9, 0.9, 0.8], 
-		audienceWeightings: [1.0, 1.0, 0.6]
-	} , {
-		id: "Drinking", 
-		name: "Drinking".localize("game topic"), 
-		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
-		audienceWeightings: [0.6, 0.6, 1.0]
-	} , {
-		id: "Math", 
-		name: "Math".localize("game topic"), 
-		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.6]
-	} , {
-		id: "Party", 
-		name: "Party".localize("game topic"), 
-		genreWeightings: [0.6, 0.6, 0.6, 1.0, 1.0, 1.0], 
-		audienceWeightings: [1.0, 1.0, 0.6]
-	} , {
-]);

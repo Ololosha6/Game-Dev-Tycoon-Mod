@@ -26,6 +26,13 @@ November 8, 2013:
 2. New Platform
 3. 5 New Topics
 
+November 9, 2013:
+
+0.6.0:
+1. 12 New Topics
+2. 2 New Platforms
+3. New Event
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
