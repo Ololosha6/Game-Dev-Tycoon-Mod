@@ -45,6 +45,9 @@ November 9, 2013:
 0.7.1:
 1. Maintenance on the code 
 
+0.7.2:
+1. Major reconstruction of the mod's code
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
