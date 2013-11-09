@@ -42,6 +42,9 @@ November 9, 2013:
 2. New Platform
 3. New Event
 
+0.7.1:
+1. Maintenance on the code 
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
