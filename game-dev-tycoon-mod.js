@@ -106,13 +106,22 @@ GDT.addTopics([
 		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
 		audienceWeightings: [0.6, 1.0, 1.0]
 	} , {
+		id: "Stealth", 
+		name: "Stealth".localize("game topic"), 
+		genreWeightings: [0.8, 0.8, 0.9, 0.7, 1.0, 0.6], 
+		audienceWeightings: [0.8, 1.0, 1.0]
+	} , {
+			}
+		}
+	}
 ]);
 
 //Events
 ModPack.addEventThunderstorm = function () {
+
 var eventId = "F413351E-2108-4967-A989-A7E98D4DEED5";//any string, but needs to be globally unique
 
-var myRandomEvent = {
+var Thunderstorm = {
 	id: eventId,
 	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
 	maxTriggers: 1,
@@ -178,16 +187,18 @@ var myRandomEvent = {
 			n.adjustHype(15 + 25 * company.getRandom());//increase hype between 15 and 40
 			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
 			return;
+			}
 		}
 	}
 };
 
-GDT.addEvent(myRandomEvent);
+GDT.addEvent(Thunderstorm);
 
 ModPack.addEventSuperhero = function () {
+
 var eventId = "F413452E-2109-4968-A990-A7E99D5DEED6";//any string, but needs to be globally unique
 
-var myRandomEvent = {
+var Superhero = {
 	id: eventId,
 	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
 	maxTriggers: 1,
@@ -253,16 +264,18 @@ var myRandomEvent = {
 			n.adjustHype(5 - 20 * company.getRandom());//decrease hype between 5 and -15
 			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
 			return;
+			}
 		}
 	}
 };
 
-GDT.addEvent(myRandomEvent);
+GDT.addEvent(Superhero);
 
 ModPack.addEventCake = function () {
+
 var eventId = "F413453F-2119-4969-A991-A8E99D6DEED7";//any string, but needs to be globally unique
 
-var myRandomEvent = {
+var Cake = {
 	id: eventId,
 	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
 	maxTriggers: 4,
@@ -328,16 +341,18 @@ var myRandomEvent = {
 			n.adjustHype(5 + 20 * company.getRandom());//increase hype between 5 and 25
 			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
 			return;
+			}
 		}
 	}
 };
 
-GDT.addEvent(myRandomEvent);
+GDT.addEvent(Cake);
 
 ModPack.addEventNational = function () {
+
 var eventId = "F514463G-2222-5000-B111-A9F11D7DEED7";//any string, but needs to be globally unique
 
-var myRandomEvent = {
+var National = {
 	id: eventId,
 	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
 	maxTriggers: 2,
@@ -403,16 +418,18 @@ var myRandomEvent = {
 			n.adjustHype(5 + 20 * company.getRandom());//increase hype between 5 and 25
 			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
 			return;
+			}
 		}
 	}
 };
 
-GDT.addEvent(myRandomEvent);
+GDT.addEvent(National);
 
 ModPack.addEventGirlScouts = function () {
+
 var eventId = "F514464G-2223-5001-B112-A9F12D8DEEE8";//any string, but needs to be globally unique
 
-var myRandomEvent = {
+var GirlScouts = {
 	id: eventId,
 	isRandom: true, //if you want to test this event, you can set this to false and it will trigger during dev. of the first game.
 	maxTriggers: 1,
@@ -478,11 +495,12 @@ var myRandomEvent = {
 			n.adjustHype(5 + 20 * company.getRandom());//increase hype between 5 and 25
 			company.activeNotifications.addRange(n.split()); //since this notification should be shown immediately (not one second later) we insert it into activeNotifications. calling .split() ist just good practice in case we use {n} inside the notification.
 			return;
+			}
 		}
 	}
 };
 
-GDT.addEvent(myRandomEvent);
+GDT.addEvent(GirlScouts);
 
 //Platforms
 ModPack.addPlatform = function () {
