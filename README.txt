@@ -48,6 +48,9 @@ November 9, 2013:
 0.7.2:
 1. Major reconstruction of the mod's code
 
+0.8.0:
+1. Implemented SuperBox, SuperStar, and SuperStar 2.0 during the reconstruction process
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

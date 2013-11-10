@@ -1,7 +1,7 @@
 (function () {
 	var ready = function () {
 	
-		//venomousmodAPI.addTopic();
+		venomousmodAPI.addTopic();
 		venomousmodAPI.addPlatform();
 		//venomousmodAPI.addEventCelebration();
 		//venomousmodAPI.addEventCuriosity();
