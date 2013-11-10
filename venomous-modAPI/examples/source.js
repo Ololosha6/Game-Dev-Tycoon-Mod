@@ -123,6 +123,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/SuperRift.png';
+		GDT.addPlatform(
+			{
+				id: 'SuperRift',
+				name: 'SuperRift',
+				company: 'Supersonic Games',
+				startAmount: 8.000,
+				unitsSold: 6.999,
+				licencePrize: 80000,
+				published: '20/7/4',
+				platformRetireDate: '40/7/4',
+				developmentCosts: 100000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
+				audienceWeightings: [1.0, 1.0, 0.6],
+				techLevel: 7,
+				iconUri: icon,
+				events: [
+					{
+						id: '22662DB6-71G5-5G37-10968-Z4Z3732044ZZ',
+						date: '20/7/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Supersonic Games has announced that they are publishing a gaming headset called the SuperRift {0}. The SuperRift is a virtual reality headset that takes you straight into your favourite gaming world.".localize().format(General.getETADescription('20/7/1', '20/7/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});	
 	};
 	/*  */
  

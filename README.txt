@@ -54,6 +54,11 @@ November 9, 2013:
 0.8.1:
 1. Implemented SuperStation
 
+November 10, 2013:
+
+0.8.2:
+1. Implemented SuperRift
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
