@@ -49,7 +49,9 @@ November 9, 2013:
 1. Major reconstruction of the mod's code
 
 0.8.0:
-1. Implemented SuperBox, SuperStar, and SuperStar 2.0 during the reconstruction process
+1. Implemented SuperBox
+2. Implemented SuperStar
+3. Implemented SuperStar 2.0 
 
 0.8.1:
 1. Implemented SuperStation
@@ -58,6 +60,11 @@ November 10, 2013:
 
 0.8.2:
 1. Implemented SuperRift
+
+0.8.3:
+1. Implemented SuperStation 2.0
+2. Implemented Matari 780
+3. Implemented Matari 5200
 
 How to install the mod:
 
