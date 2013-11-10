@@ -63,7 +63,7 @@ November 10, 2013:
 
 0.8.3:
 1. Implemented SuperStation 2.0
-2. Implemented Matari 780
+2. Implemented Matari 7800
 3. Implemented Matari 5200
 
 How to install the mod:
