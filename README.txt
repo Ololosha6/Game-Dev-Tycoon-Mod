@@ -71,6 +71,14 @@ November 10, 2013:
 2. Implemented Matari Panther
 3. Implemented Vindows 1.0
 
+0.8.5:
+1. Implemented Vindows 2.0
+2. Implemented Vindows 2.1
+3. Implemented Vindows 3.0
+4. Implemented Vindows 3.1
+5. Implemented Vindows 95
+6. Changed Images for all Matari Platforms
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

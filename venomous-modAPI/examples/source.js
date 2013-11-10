@@ -43,7 +43,7 @@ var venomousmodAPI = {};
 				unitsSold: 0.678,
 				licencePrize: 6000,
 				published: '1/2/2',
-				platformRetireDate: '6/7/4',
+				platformRetireDate: '3/2/2',
 				developmentCosts: 12000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -213,6 +213,96 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 2.0.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 2.0',
+				name: 'Vindows 2.0',
+				company: 'Mirconoft',
+				startAmount: 0.450,
+				unitsSold: 0.878,
+				licencePrize: 12000,
+				published: '3/2/2',
+				platformRetireDate: '4/2/2',
+				developmentCosts: 14000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 2,
+				iconUri: icon,
+				events: [
+					{
+						id: '31638DA3-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '3/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft announced that Vindows 2.0, the new version of the Vindows operating system for PC, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('3/1/1', '3/2/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 2.1.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 2.1',
+				name: 'Vindows 2.1',
+				company: 'Mirconoft',
+				startAmount: 0.480,
+				unitsSold: 0.880,
+				licencePrize: 13000,
+				published: '4/2/2',
+				platformRetireDate: '6/2/2',
+				developmentCosts: 14000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 2,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DA4-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '4/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft reacted and pounced on the bugs that Vindows 2.0 had in its coding. They released a patch for Vindows 2.0 called Vindows 2.1.  Vindows 2.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('4/1/1', '4/2/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 3.0.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 3.0',
+				name: 'Vindows 3.0',
+				company: 'Mirconoft',
+				startAmount: 1.110,
+				unitsSold: 1.310,
+				licencePrize: 15000,
+				published: '6/2/3',
+				platformRetireDate: '8/2/3',
+				developmentCosts: 17000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 3,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DA5-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '6/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released a new version of their popular Vindows operating system for the PC called Vindows 3.0. Vindows 3.0 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('6/1/1', '6/2/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/SuperStar 2.0.png';
 		GDT.addPlatform(
 			{
@@ -243,6 +333,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 3.1.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 3.1',
+				name: 'Vindows 3.1',
+				company: 'Mirconoft',
+				startAmount: 1.121,
+				unitsSold: 1.320,
+				licencePrize: 17000,
+				published: '8/2/3',
+				platformRetireDate: '10/2/3',
+				developmentCosts: 19000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 3,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DA6-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '8/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released a new patch for Vindows 3.0 called Vindows 3.1. Vindows 3.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('8/1/3', '8/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/SuperStation.png';
 		GDT.addPlatform(
 			{
@@ -273,6 +393,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 95.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 95',
+				name: 'Vindows 95',
+				company: 'Mirconoft',
+				startAmount: 1.221,
+				unitsSold: 1.420,
+				licencePrize: 19000,
+				published: '10/2/3',
+				platformRetireDate: '13/2/3',
+				developmentCosts: 21000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 4,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DA6-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '10/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has started a revolution in the PC operating system market, and released Vindows 95.  Vindows 95 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('10/1/3', '10/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/SuperStation 2.0.png';
 		GDT.addPlatform(
 			{
