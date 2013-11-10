@@ -14,6 +14,6 @@
 	'mods/gdt-modAPI/api/platforms.js',
 	'mods/gdt-modAPI/api/topics.js',
 	'mods/gdt-modAPI/examples/examples.js',
-	'mods/venomousmodAPI/examples/source.js',
+	'mods/venomous-modAPI/examples/source.js',
 		], ready);
 })();
