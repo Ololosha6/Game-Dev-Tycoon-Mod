@@ -351,7 +351,7 @@ var venomousmodAPI = {};
 				iconUri: icon,
 				events: [
 					{
-						id: '32638DA6-69G2-5G34-9965-Z1Z2621933ZZ',
+						id: '32638DA8-69G2-5G34-9965-Z1Z2621933ZZ',
 						date: '8/1/3',
 						getNotification: function (company) {
 							return new Notification({
@@ -411,7 +411,7 @@ var venomousmodAPI = {};
 				iconUri: icon,
 				events: [
 					{
-						id: '32638DA6-69G2-5G34-9965-Z1Z2621933ZZ',
+						id: '32638DA7-69G2-5G34-9965-Z1Z2621933ZZ',
 						date: '10/1/3',
 						getNotification: function (company) {
 							return new Notification({
