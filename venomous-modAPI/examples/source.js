@@ -33,6 +33,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 1.0.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 1.0',
+				name: 'Vindows 1.0',
+				company: 'Mirconoft',
+				startAmount: 0.150,
+				unitsSold: 0.678,
+				licencePrize: 6000,
+				published: '1/2/2',
+				platformRetireDate: '6/7/4',
+				developmentCosts: 12000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 1,
+				iconUri: icon,
+				events: [
+					{
+						id: '31638DA2-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '1/2/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has announced that Vindows 1.0, the new operating system for PC, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/2/1', '1/2/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/matari5200.png';
 		GDT.addPlatform(
 			{
@@ -86,7 +116,67 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Creators of the video game console flop the Matari 5200, Matari Inc., have today announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('2/4/2', '2/6/2')),
+								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('2/4/2', '2/6/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/matariSEGS.png';
+		GDT.addPlatform(
+			{
+				id: 'Matari SEGS',
+				name: 'Matari SEGS',
+				company: 'Matari Inc.',
+				startAmount: 0.450,
+				unitsSold: 0.320,
+				licencePrize: 120000,
+				published: '5/5/2',
+				platformRetireDate: '7/4/2',
+				developmentCosts: 40000,
+				genreWeightings: [1, 0.9, 0.7, 0.8, 0.8, 0.6],
+				audienceWeightings: [0.8, 0.9, 1],
+				techLevel: 3,
+				iconUri: icon,
+				events: [
+					{
+						id: '21648DA4-69G3-5G35-9966-Z1Z2621933ZZ',
+						date: '4/12/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "After a few years of low marketshare, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('4/12/2', '5/5/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/mataripanther.png';
+		GDT.addPlatform(
+			{
+				id: 'Matari Panther',
+				name: 'Matari Panther',
+				company: 'Matari Inc.',
+				startAmount: 0.550,
+				unitsSold: 0.420,
+				licencePrize: 130000,
+				published: '7/5/2',
+				platformRetireDate: '9/5/2',
+				developmentCosts: 50000,
+				genreWeightings: [1, 0.9, 0.7, 0.8, 0.8, 0.6],
+				audienceWeightings: [0.8, 0.9, 1],
+				techLevel: 4,
+				iconUri: icon,
+				events: [
+					{
+						id: '21648DA5-69G3-5G35-9966-Z1Z2621933ZZ',
+						date: '6/12/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "After 2 years, The marketshare is still low and Matari Inc. announced another solution! The Matari Panther is said to be more focused upon the PC side of graphical power with a 90KB RAM chip!{n}The Matari Panther will be released {0}.".localize().format(General.getETADescription('6/12/2', '7/5/2')),
 								image: icon
 							});
 						}
