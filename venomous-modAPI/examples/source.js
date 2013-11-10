@@ -21,7 +21,7 @@ var venomousmodAPI = {};
 				iconUri: icon,
 				events: [
 					{
-						id: '10537DA1-58F1-4F23-8854-F1E2621933BF',
+						id: '21638DA2-69G2-5G34-9965-Z1Z2621933ZZ',
 						date: '1/1/1',
 						getNotification: function (company) {
 							return new Notification({
