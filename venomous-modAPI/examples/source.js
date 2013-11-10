@@ -63,7 +63,6 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-	
 		var icon = './mods/venomous-modAPI/examples/img/SuperStar 2.0.png';
 		GDT.addPlatform(
 			{
