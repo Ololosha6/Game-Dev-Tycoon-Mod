@@ -51,6 +51,9 @@ November 9, 2013:
 0.8.0:
 1. Implemented SuperBox, SuperStar, and SuperStar 2.0 during the reconstruction process
 
+0.8.1:
+1. Implemented SuperStation
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

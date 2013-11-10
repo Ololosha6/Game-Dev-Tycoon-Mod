@@ -93,6 +93,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/SuperStation.png';
+		GDT.addPlatform(
+			{
+				id: 'SuperStation',
+				name: 'SuperStation',
+				company: 'Supersonic Games',
+				startAmount: 2.000,
+				unitsSold: 1.555,
+				licencePrize: 18000,
+				published: '10/7/4',
+				platformRetireDate: '15/7/4',
+				developmentCosts: 20000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
+				audienceWeightings: [1.0, 1.0, 0.8],
+				techLevel: 4,
+				iconUri: icon,
+				events: [
+					{
+						id: '21651DB5-70G4-5G37-10968-Z4Z3732044ZZ',
+						date: '10/7/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperStation {0}. It has everything the SuperStar 2.0 had. It has a better graphics engine than the SuperStar 2.0.".localize().format(General.getETADescription('10/7/1', '10/7/2')),
+								image: icon
+							});
+						}
+					}
+				]
+			});	
 	};
 	/*  */
  
