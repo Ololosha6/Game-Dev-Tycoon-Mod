@@ -10,5 +10,5 @@ How to install and enjoy the mod:
 8. Go into /steamapps/common/Game Dev Tycoon/mods
 9. Paste the mod files into the mods folder
 10.Open modConfig.js
-11. Add '{ script: "mod/modAPI.js" } (make sure the line above ends with a comma
+11. Add '{ script: "venomous-modAPI/source.js" } (make sure the line above ends with a comma
 12. Save the file and enjoy the mod!

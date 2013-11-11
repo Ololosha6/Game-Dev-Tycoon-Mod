@@ -3,7 +3,7 @@ var venomousmodAPI = {};
 	
 	/* Platforms */
 	venomousmodAPI.addPlatform = function () {
-		var icon = './mods/venomous-modAPI/examples/img/SuperBox.png';
+		var icon = './mods/venomous-modAPI/img/SuperBox.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperBox',
@@ -33,7 +33,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 1.0.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 1.0.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 1.0',
@@ -63,7 +63,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/matari5200.png';
+		var icon = './mods/venomous-modAPI/img/matari5200.png';
 		GDT.addPlatform(
 			{
 				id: 'Matari 5200',
@@ -93,7 +93,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/matari7800.png';
+		var icon = './mods/venomous-modAPI/img/matari7800.png';
 		GDT.addPlatform(
 			{
 				id: 'Matari 7800',
@@ -123,7 +123,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/matariSEGS.png';
+		var icon = './mods/venomous-modAPI/img/matariSEGS.png';
 		GDT.addPlatform(
 			{
 				id: 'Matari SEGS',
@@ -153,7 +153,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/mataripanther.png';
+		var icon = './mods/venomous-modAPI/img/mataripanther.png';
 		GDT.addPlatform(
 			{
 				id: 'Matari Panther',
@@ -183,7 +183,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/SuperStar.png';
+		var icon = './mods/venomous-modAPI/img/SuperStar.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperStar',
@@ -213,7 +213,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 2.0.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 2.0.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 2.0',
@@ -243,7 +243,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 2.1.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 2.1.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 2.1',
@@ -273,7 +273,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 3.0.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 3.0.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 3.0',
@@ -303,7 +303,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/SuperStar 2.0.png';
+		var icon = './mods/venomous-modAPI/img/SuperStar 2.0.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperStar 2.0',
@@ -333,7 +333,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 3.1.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 3.1.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 3.1',
@@ -363,7 +363,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/SuperStation.png';
+		var icon = './mods/venomous-modAPI/img/SuperStation.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperStation',
@@ -393,7 +393,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 95.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 95.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 95',
@@ -423,7 +423,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 98.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 98.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 98',
@@ -453,7 +453,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/SuperStation 2.0.png';
+		var icon = './mods/venomous-modAPI/img/SuperStation 2.0.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperStation 2.0',
@@ -483,7 +483,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-		var icon = './mods/venomous-modAPI/examples/img/Vindows Me.png';
+		var icon = './mods/venomous-modAPI/img/Vindows Me.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows Me',
@@ -513,7 +513,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/SuperRift.png';
+		var icon = './mods/venomous-modAPI/img/SuperRift.png';
 		GDT.addPlatform(
 			{
 				id: 'SuperRift',
@@ -543,7 +543,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
-		var icon = './mods/venomous-modAPI/examples/img/Vindows XP.png';
+		var icon = './mods/venomous-modAPI/img/Vindows XP.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows XP',
@@ -573,7 +573,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows Vista.png';
+		var icon = './mods/venomous-modAPI/img/Vindows Vista.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows Vista',
@@ -603,7 +603,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 7.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 7.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 7',
@@ -633,7 +633,67 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 8.png';
+		var icon = './mods/venomous-modAPI/img/Skindle Fire.png';
+		GDT.addPlatform(
+			{
+				id: 'Skindle Fire',
+				name: 'Skindle Fire',
+				company: 'Samazon Inc.',
+				startAmount: 2.044,
+				unitsSold: 2.140,
+				licencePrize: 50000,
+				published: '28/3/3',
+				platformRetireDate: '29/3/3',
+				developmentCosts: 80000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 9,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB6-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '28/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new gaming tablet called the Skindle Fire. The Skindle Fire will be in stores {0}.".localize().format(General.getETADescription('28/1/3', '28/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/img/Skindle Fire HD.png';
+		GDT.addPlatform(
+			{
+				id: 'Skindle Fire HD',
+				name: 'Skindle Fire HD',
+				company: 'Samazon Inc.',
+				startAmount: 2.124,
+				unitsSold: 2.140,
+				licencePrize: 60000,
+				published: '29/3/3',
+				platformRetireDate: '30/3/3',
+				developmentCosts: 90000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB7-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '29/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, Skindle Fire, called the Skindle Fire HD. The Skindle Fire HD will be in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/img/Vindows 8.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 8',
@@ -663,7 +723,7 @@ var venomousmodAPI = {};
 					}
 				]
 			});
-		var icon = './mods/venomous-modAPI/examples/img/Vindows 8.1.png';
+		var icon = './mods/venomous-modAPI/img/Vindows 8.1.png';
 		GDT.addPlatform(
 			{
 				id: 'Vindows 8.1',
@@ -687,6 +747,36 @@ var venomousmodAPI = {};
 							return new Notification({
 								header: "Industry News".localize(),
 								text: "OH NO, everybody hates Mirconoft's latest Vindows operating system, Vindows 8! Mirconoft has coded up a possible solution for those Vindows 8 haters. The solution is called Vindows 8.1. Vindows 8.1 includes fan-requested changes and features, such as the return of Start Button with a Metro design. Vindows 8.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/img/Skindle Fire HDX.png';
+		GDT.addPlatform(
+			{
+				id: 'Skindle Fire HDX',
+				name: 'Skindle Fire HDX',
+				company: 'Samazon Inc.',
+				startAmount: 2.124,
+				unitsSold: 2.140,
+				licencePrize: 60000,
+				published: '30/3/3',
+				platformRetireDate: '50/3/3',
+				developmentCosts: 90000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB7-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '30/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, Skindle Fire HD, called the Skindle Fire HDX. The Skindle Fire HDX has a brand new feature, where you can call Samazon's customer service any-time, 24/7. The Skindle Fire HDX will be in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
 								image: icon
 							});
 						}

@@ -88,6 +88,14 @@ November 10, 2013:
 6. Implemented Vindows 8
 7. Implemented Vindows 8.1
 
+November 11, 2013:
+
+0.9.1:
+1. Maintenance on the code
+2. Implemented Skindle Fire
+3. Implemented Skindle Fire HD
+4. Implemented Skindle Fire HDX
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
