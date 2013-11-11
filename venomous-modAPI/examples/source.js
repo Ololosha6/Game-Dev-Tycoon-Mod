@@ -423,6 +423,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 98.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 98',
+				name: 'Vindows 98',
+				company: 'Mirconoft',
+				startAmount: 1.422,
+				unitsSold: 1.620,
+				licencePrize: 21000,
+				published: '13/3/3',
+				platformRetireDate: '15/3/3',
+				developmentCosts: 24000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 5,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DA9-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '13/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows 98, a new version of their Vindows operating system.  Vindows 98 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('13/1/3', '13/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/SuperStation 2.0.png';
 		GDT.addPlatform(
 			{
@@ -453,6 +483,36 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/Vindows Me.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows Me',
+				name: 'Vindows Me',
+				company: 'Mirconoft',
+				startAmount: 1.522,
+				unitsSold: 1.720,
+				licencePrize: 24000,
+				published: '15/3/3',
+				platformRetireDate: '16/3/3',
+				developmentCosts: 25000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 6,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB1-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '15/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows Me, a new version of their Vindows operating system.  Vindows Me just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('15/1/3', '15/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 		var icon = './mods/venomous-modAPI/examples/img/SuperRift.png';
 		GDT.addPlatform(
 			{
@@ -483,6 +543,156 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon = './mods/venomous-modAPI/examples/img/Vindows XP.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows XP',
+				name: 'Vindows XP',
+				company: 'Mirconoft',
+				startAmount: 1.722,
+				unitsSold: 1.920,
+				licencePrize: 25000,
+				published: '16/3/3',
+				platformRetireDate: '22/3/3',
+				developmentCosts: 28000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 7,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB2-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '16/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows XP, a revolutionary new version of their Vindows operating system with a more-graphically enhanced operating system UI.  Vindows XP just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('16/1/3', '16/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows Vista.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows Vista',
+				name: 'Vindows Vista',
+				company: 'Mirconoft',
+				startAmount: 1.922,
+				unitsSold: 2.020,
+				licencePrize: 28000,
+				published: '22/3/3',
+				platformRetireDate: '24/3/3',
+				developmentCosts: 30000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 8,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB3-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '22/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows Vista, a revolutionary new version of their Vindows operating system with a more-graphically enhanced operating system UI.  Vindows Vista just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('22/1/3', '22/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 7.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 7',
+				name: 'Vindows 7',
+				company: 'Mirconoft',
+				startAmount: 2.022,
+				unitsSold: 2.120,
+				licencePrize: 30000,
+				published: '24/3/3',
+				platformRetireDate: '29/3/3',
+				developmentCosts: 50000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 9,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB4-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '24/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows 7, a revolutionary new version of their popular Vindows operating system with a more-graphically enhanced operating system UI.  Vindows 7 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('24/1/3', '24/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 8.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 8',
+				name: 'Vindows 8',
+				company: 'Mirconoft',
+				startAmount: 2.122,
+				unitsSold: 2.220,
+				licencePrize: 50000,
+				published: '29/3/3',
+				platformRetireDate: '30/3/3',
+				developmentCosts: 80000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB5-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '29/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft has released Vindows 8. Vindows 8 comes with a new Metro-UI, that is very confusing to use. Vindows 8 also comes with touch-screen compatibility, when you install it on a PC or Mirconoft tablet. Vindows 8 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
+		var icon = './mods/venomous-modAPI/examples/img/Vindows 8.1.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows 8.1',
+				name: 'Vindows 8.1',
+				company: 'Mirconoft',
+				startAmount: 2.222,
+				unitsSold: 2.320,
+				licencePrize: 80000,
+				published: '30/3/3',
+				platformRetireDate: '50/3/3',
+				developmentCosts: 90000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB6-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '30/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "OH NO, everybody hates Mirconoft's latest Vindows operating system, Vindows 8! Mirconoft has coded up a possible solution for those Vindows 8 haters. The solution is called Vindows 8.1. Vindows 8.1 includes fan-requested changes and features, such as the return of Start Button with a Metro design. Vindows 8.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 	};
 	/*  */
  

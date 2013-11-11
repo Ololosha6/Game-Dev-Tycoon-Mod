@@ -79,6 +79,15 @@ November 10, 2013:
 5. Implemented Vindows 95
 6. Changed Images for all Matari Platforms
 
+0.9.0:
+1. Implemented Vindows 98
+2. Implemented Vindows Me
+3. Implemented Vindows XP
+4. Implemented Vindows Vista
+5. Implemented Vindows 7
+6. Implemented Vindows 8
+7. Implemented Vindows 8.1
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
