@@ -96,6 +96,13 @@ November 11, 2013:
 3. Implemented Skindle Fire HD
 4. Implemented Skindle Fire HDX
 
+0.9.2:
+1. Implemented Zeeboz
+2. Implemented Tycoon Topic
+3. Implemented Mash A To Win Topic
+4. Implemented Exercise Cats Topic
+5. Implemented Cat Fighting Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

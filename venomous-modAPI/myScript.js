@@ -1,11 +1,9 @@
 (function () {
 	var ready = function () {
-	
-		//venomousmodAPI.addTopic();
+	  
+		//Adds Platforms
 		venomousmodAPI.addPlatform();
-		//venomousmodAPI.addEventCelebration();
-		//venomousmodAPI.addEventCuriosity();
-		//venomousmodAPI.addEventVac();
+		
 	};
 
 	requireLoad(['mods/gdt-modAPI/helpers/checks.js',

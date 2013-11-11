@@ -1,6 +1,6 @@
 var venomousmodAPI = {};
 (function () {	
-	
+
 	/* Platforms */
 	venomousmodAPI.addPlatform = function () {
 		var icon = './mods/venomous-modAPI/img/SuperBox.png';
@@ -783,7 +783,66 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon = './mods/venomous-modAPI/img/Zeeboz.png';
+		GDT.addPlatform(
+			{
+				id: 'Zeeboz',
+				name: 'Zeeboz',
+				company: 'Zeeboz Inc.',
+				startAmount: 2.124,
+				unitsSold: 2.140,
+				licencePrize: 60000,
+				published: '16/5/3',
+				platformRetireDate: '18/5/3',
+				developmentCosts: 90000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon,
+				events: [
+					{
+						id: '32638DB14-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '16/3/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Zeeboz Inc wanted to try in the video gaming market, by publishing their own console, Zeeboz. Zeeboz will be in stores {0}.".localize().format(General.getETADescription('16/3/3', '16/4/3')),
+								image: icon
+							});
+						}
+					}
+				]
+			});
 	};
-	/*  */
- 
+	
+	venomousmodAPI.addTopic = function () {
+	GDT.addTopics([
+		{
+			id: "Tycoon",
+	    	name: "Tycoon".localize("game topic"),
+	    	genreWeightings: [1, 0.9, 0.8, 1, 1, 0.6],
+	    	audienceWeightings: [0.8, 0.8, 0.6]
+		}, {
+	    	id: "Mash A To Win",
+	    	name: "Mash A To Win".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+	    	id: "Exercise Cats",
+	    	name: "Exercise Cats".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+	    	id: "Cat Fighting",
+	    	name: "Cat Fighting".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}
+		
+	 
+	    ]);
+	};
+	   
+
+	/*  */		       
 })();
