@@ -103,6 +103,13 @@ November 11, 2013:
 4. Implemented Exercise Cats Topic
 5. Implemented Cat Fighting Topic
 
+0.9.3:
+1. Implemented Cat Tag Topic
+2. Implemented Cat Sports Topic
+3. Implemented Angry Birds-Style Topic
+4. Implemented Trivia Topic
+5. Implemented Vac OS X Public Beta
+6. Bug-Fix: Random Console Images appearing on Console Notifications
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
