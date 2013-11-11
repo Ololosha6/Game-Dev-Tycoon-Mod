@@ -110,6 +110,7 @@ November 11, 2013:
 4. Implemented Trivia Topic
 5. Implemented Vac OS X Public Beta
 6. Bug-Fix: Random Console Images appearing on Console Notifications
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
