@@ -111,6 +111,24 @@ November 11, 2013:
 5. Implemented Vac OS X Public Beta
 6. Bug-Fix: Random Console Images appearing on Console Notifications
 
+November 12, 2013:
+
+0.9.4:
+1. Implemented Vac OS X 10.0
+2. Implemented Vac OS X 10.1
+3. Implemented Vac OS X 10.2
+4. Implemented Vac OS X Panther
+5. Implemented Vac OS X Tiger
+6. Implemented Vac OS X Leopard
+7. Implemented Vac OS X Snow Leopard
+8. Implemented Vac OS X Lion
+9. Implemented Vac OS X Mountain Lion
+10. Implemented Vac OS X Mavericks
+11. Implemented Computer Dev Topic
+12. Implemented Mod Dev Topic
+13. Implemented Burnout-Style Racing Topic
+14. Implemented Cop-Chase Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

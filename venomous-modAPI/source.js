@@ -843,6 +843,306 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon28 = './mods/venomous-modAPI/img/Vac OS X 10.0.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X 10.0',
+				name: 'Vac OS X 10.0',
+				company: 'Grapple',
+				startAmount: 0.450,
+				unitsSold: 0.878,
+				licencePrize: 12000,
+				published: '3/2/2',
+				platformRetireDate: '4/2/2',
+				developmentCosts: 14000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 2,
+				iconUri: icon28,
+				events: [
+					{
+						id: '31638DA15-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '3/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X 10.0, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('3/1/1', '3/2/2')),
+								image: icon28
+							});
+						}
+					}
+				]
+			});
+		var icon29 = './mods/venomous-modAPI/img/Vac OS X 10.1.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X 10.1',
+				name: 'Vac OS X 10.1',
+				company: 'Grapple',
+				startAmount: 0.550,
+				unitsSold: 0.978,
+				licencePrize: 14000,
+				published: '4/2/2',
+				platformRetireDate: '7/2/2',
+				developmentCosts: 18000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 3,
+				iconUri: icon29,
+				events: [
+					{
+						id: '31638DA16-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '4/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X 10.1, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('4/1/1', '4/2/2')),
+								image: icon29
+							});
+						}
+					}
+				]
+			});
+		var icon30 = './mods/venomous-modAPI/img/Vac OS X 10.2.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X 10.2',
+				name: 'Vac OS X 10.2',
+				company: 'Grapple',
+				startAmount: 0.750,
+				unitsSold: 1.978,
+				licencePrize: 210000,
+				published: '7/2/2',
+				platformRetireDate: '10/2/2',
+				developmentCosts: 220000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 4,
+				iconUri: icon30,
+				events: [
+					{
+						id: '31638DA17-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '7/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X 10.2, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('7/1/1', '7/2/2')),
+								image: icon30
+							});
+						}
+					}
+				]
+			});
+		var icon31 = './mods/venomous-modAPI/img/Vac OS X Panther.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Panther',
+				name: 'Vac OS X Panther',
+				company: 'Grapple',
+				startAmount: 2.250,
+				unitsSold: 2.978,
+				licencePrize: 220000,
+				published: '10/2/2',
+				platformRetireDate: '12/2/2',
+				developmentCosts: 240000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 5,
+				iconUri: icon31,
+				events: [
+					{
+						id: '31638DA18-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '10/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Panther, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('10/1/1', '10/2/2')),
+								image: icon31
+							});
+						}
+					}
+				]
+			});
+		var icon32 = './mods/venomous-modAPI/img/Vac OS X Tiger.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Tiger',
+				name: 'Vac OS X Tiger',
+				company: 'Grapple',
+				startAmount: 3.250,
+				unitsSold: 3.978,
+				licencePrize: 240000,
+				published: '12/2/2',
+				platformRetireDate: '14/2/2',
+				developmentCosts: 270000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 6,
+				iconUri: icon32,
+				events: [
+					{
+						id: '31638DA19-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '12/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Tiger, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('12/1/1', '12/2/2')),
+								image: icon32
+							});
+						}
+					}
+				]
+			});
+		var icon33 = './mods/venomous-modAPI/img/Vac OS X Leopard.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Leopard',
+				name: 'Vac OS X Leopard',
+				company: 'Grapple',
+				startAmount: 4.250,
+				unitsSold: 4.978,
+				licencePrize: 250000,
+				published: '14/2/2',
+				platformRetireDate: '16/2/2',
+				developmentCosts: 280000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 7,
+				iconUri: icon33,
+				events: [
+					{
+						id: '31638DA20-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '14/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('14/1/1', '14/2/2')),
+								image: icon33
+							});
+						}
+					}
+				]
+			});
+		var icon34 = './mods/venomous-modAPI/img/Vac OS X Snow Leopard.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Snow Leopard',
+				name: 'Vac OS X Snow Leopard',
+				company: 'Grapple',
+				startAmount: 4.250,
+				unitsSold: 4.978,
+				licencePrize: 280000,
+				published: '16/2/2',
+				platformRetireDate: '19/2/2',
+				developmentCosts: 320000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 8,
+				iconUri: icon34,
+				events: [
+					{
+						id: '31638DA21-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '16/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Snow Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('16/1/1', '16/2/2')),
+								image: icon34
+							});
+						}
+					}
+				]
+			});
+		var icon35 = './mods/venomous-modAPI/img/Vac OS X Lion.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Lion',
+				name: 'Vac OS X Lion',
+				company: 'Grapple',
+				startAmount: 5.250,
+				unitsSold: 5.978,
+				licencePrize: 290000,
+				published: '19/2/2',
+				platformRetireDate: '21/2/2',
+				developmentCosts: 330000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 9,
+				iconUri: icon35,
+				events: [
+					{
+						id: '31638DA22-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '19/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('19/1/1', '19/2/2')),
+								image: icon35
+							});
+						}
+					}
+				]
+			});
+		var icon36 = './mods/venomous-modAPI/img/Vac OS X Mountain Lion.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Mountain Lion',
+				name: 'Vac OS X Mountain Lion',
+				company: 'Grapple',
+				startAmount: 6.250,
+				unitsSold: 6.978,
+				licencePrize: 330000,
+				published: '21/2/2',
+				platformRetireDate: '23/2/2',
+				developmentCosts: 400000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon36,
+				events: [
+					{
+						id: '31638DA23-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '21/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Mountain Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('21/1/1', '21/2/2')),
+								image: icon36
+							});
+						}
+					}
+				]
+			});
+		var icon37 = './mods/venomous-modAPI/img/Vac OS X Mavericks.png';
+		GDT.addPlatform(
+			{
+				id: 'Vac OS X Mavericks',
+				name: 'Vac OS X Mavericks',
+				company: 'Grapple',
+				startAmount: 7.250,
+				unitsSold: 7.978,
+				licencePrize: 430000,
+				published: '23/2/2',
+				platformRetireDate: '50/2/2',
+				developmentCosts: 500000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 11,
+				iconUri: icon37,
+				events: [
+					{
+						id: '31638DA24-69G2-5G34-9965-Z1Z2621933ZZ',
+						date: '23/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Grapple has announced that Vac OS X Mavericks, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('23/1/1', '23/2/2')),
+								image: icon37
+							});
+						}
+					}
+				]
+			});
 	};
 	
 	venomousmodAPI.addTopic = function () {
@@ -885,6 +1185,26 @@ var venomousmodAPI = {};
 		}, {
 	    	id: "Trivia",
 	    	name: "Trivia".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Computer Dev",
+	    	name: "Computer Dev".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Mod Dev",
+	    	name: "Mod Dev".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Burnout-Style Racing",
+	    	name: "Burnout-Style Racing".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Cop Chase",
+	    	name: "Cop Chase".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}

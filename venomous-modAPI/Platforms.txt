@@ -27,3 +27,13 @@ List of Platforms in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 26. Skindle Fire HDX
 27. Zeeboz
 28. Vac OS X Public Beta
+29. Vac OS X 10.0
+30. Vac OS X 10.1
+31. Vac OS X 10.2
+32. Vac OS X Panther
+33. Vac OS X Tiger
+34. Vac OS X Leopard
+35. Vac OS X Snow Leopard
+36. Vac OS X Lion
+37. Vac OS X Mountain Lion
+38. Vac OS X Mavericks

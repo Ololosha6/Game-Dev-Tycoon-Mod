@@ -7,3 +7,7 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 6. Cat Sports 
 7. Angry Birds-Style 
 8. Trivia 
+9. Computer Dev 
+10. Mod Dev 
+11. Burnout-Style Racing 
+12. Cop-Chase 
