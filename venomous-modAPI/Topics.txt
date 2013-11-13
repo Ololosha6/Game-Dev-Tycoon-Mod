@@ -11,3 +11,7 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 10. Mod Dev 
 11. Burnout-Style Racing 
 12. Cop-Chase 
+13. Bean-Bag Toss
+14. Rescue Turtles
+15. Car Dodging
+16. Squirrel Dodging

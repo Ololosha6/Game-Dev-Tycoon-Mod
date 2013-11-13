@@ -127,7 +127,18 @@ November 12, 2013:
 11. Implemented Computer Dev Topic
 12. Implemented Mod Dev Topic
 13. Implemented Burnout-Style Racing Topic
-14. Implemented Cop-Chase Topic
+14. Implemented Cop Chase Topic
+
+November 13, 2013:
+
+0.9.5:
+1. Implemented SuperFox
+2. Implemented SuperFox 360
+3. Implemented Bean-Bag Toss Topic
+4. Implemented Rescue Turtles Topic
+5. Implemented Car Dodging Topic
+6. Implemented Squirrel Dodging Topic
+7. Implemented UI Structure Research
 
 How to install the mod:
 

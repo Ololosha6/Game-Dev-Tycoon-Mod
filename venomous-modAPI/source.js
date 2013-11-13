@@ -1143,8 +1143,81 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon38 = './mods/venomous-modAPI/img/SuperFox.png';
+		GDT.addPlatform(
+			{
+				id: 'SuperFox',
+				name: 'SuperFox',
+				company: 'Supersonic Games',
+				startAmount: 3.222,
+				unitsSold: 3.999,
+				licencePrize: 25000,
+				published: '18/8/2',
+				platformRetireDate: '21/8/4',
+				developmentCosts: 40000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 6,
+				iconUri: icon38,
+				events: [
+					{
+						id: '33873ES7-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '18/8/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperFox {0}. The SuperFox is smarter, better, strong, and more powerful than any other console in the history of video game consoles. The SuperFox has a brand new, custom graphics chip that has been custom-made for the console. The chip can do 2D Graphics and 3D Graphics of previous consoles easily in the SuperFox. It can also do a higher level of graphics power that hasn't been seen in a console before.".localize().format(General.getETADescription('18/8/2', '18/8/3')),
+								image: icon38
+							});
+						}
+					}
+				]
+			});	
+		var icon39 = './mods/venomous-modAPI/img/SuperFox 360.png';
+		GDT.addPlatform(
+			{
+				id: 'SuperFox 360',
+				name: 'SuperFox 360',
+				company: 'Supersonic Games',
+				startAmount: 4.222,
+				unitsSold: 7.999,
+				licencePrize: 45000,
+				published: '21/8/4',
+				platformRetireDate: '50/8/4',
+				developmentCosts: 70000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 7,
+				iconUri: icon39,
+				events: [
+					{
+						id: '33873ES8-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '21/8/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Supersonic Games has announced that they are publishing a shiny, new game console called the SuperFox 360 {0}. The SuperFox 360 is smarter, better, strong, and more powerful than any other console in the history of video game consoles. The SuperFox 360 has a brand new, custom graphics chip that has been custom-made for the console. The chip can do 2D Graphics and 3D Graphics of previous consoles easily in the SuperFox. It can also do a higher level of graphics power that hasn't been seen in a console before.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
+								image: icon39
+							});
+						}
+					}
+				]
+			});	
 	};
 	
+	venomousmodAPI.addResearchItem = function () {
+	GDT.addResearchItem(
+	{
+		id: "UI Structure",
+		name: "UI Structure".localize(),
+		v: 4,
+		canResearch: function (company) {
+			return LevelCalculator.getMissionLevel('Level Design') > 5 //The 'Level Design' level has to 6 or higher
+		},
+		category: "Level Design",
+		categoryDisplayName: "Level Design".localize()
+	});
+};
 	venomousmodAPI.addTopic = function () {
 	GDT.addTopics([
 		{
@@ -1207,9 +1280,28 @@ var venomousmodAPI = {};
 	    	name: "Cop Chase".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Bean-Bag Toss",
+	    	name: "Bean-Bag Toss".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Rescue Turtles",
+	    	name: "Rescue Turtles".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Car Dodging",
+	    	name: "Car Dodging".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Squirrel Dodging",
+	    	name: "Squirrel Dodging".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
 		}
 	    ]);
 	};
-	  	
-	/*  */		       
+	 /*  */		       
 })();
