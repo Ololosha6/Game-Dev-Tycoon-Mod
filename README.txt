@@ -140,6 +140,15 @@ November 13, 2013:
 6. Implemented Squirrel Dodging Topic
 7. Implemented UI Structure Research
 
+0.9.6:
+1. Implemented Animated Bosses Research
+2. Implemented 3D Graphics Version 8 Research
+3. Implemented 3D Graphics Version 9 Research
+4. Implemented Fish Fighting Topic
+5. Implemented Cat Treat Toss Topic
+6. Implemented Comic Book Development Topic
+7. Implemented Sandwich Making Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

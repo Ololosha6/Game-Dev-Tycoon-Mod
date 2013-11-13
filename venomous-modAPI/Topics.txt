@@ -15,3 +15,7 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 14. Rescue Turtles
 15. Car Dodging
 16. Squirrel Dodging
+17. Fish Fighting
+18. Cat Treat Toss
+19. Sandwich Making
+20. Comic Book Development

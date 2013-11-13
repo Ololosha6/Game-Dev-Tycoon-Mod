@@ -1212,11 +1212,44 @@ var venomousmodAPI = {};
 		name: "UI Structure".localize(),
 		v: 4,
 		canResearch: function (company) {
-			return LevelCalculator.getMissionLevel('Level Design') > 5 //The 'Level Design' level has to 6 or higher
+			return LevelCalculator.getMissionLevel('Level Design') < 5 //The 'Level Design' level has to 4 or lower
 		},
 		category: "Level Design",
 		categoryDisplayName: "Level Design".localize()
 	});
+	GDT.addResearchItem(
+		{
+			id: "Animated Bosses",
+			name: "Animated Bosses".localize(),
+			v: 2,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') <3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+		});
+		GDT.addResearchItem(
+		{
+			id: "3D Graphics Version 8",
+			name: "3D Graphics Version 8".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+		});
+		GDT.addResearchItem(
+		{
+			id: "3D Graphics Version 9",
+			name: "3D Graphics Version 9".localize(),
+			v: 9,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+		});
 };
 	venomousmodAPI.addTopic = function () {
 	GDT.addTopics([
@@ -1298,6 +1331,26 @@ var venomousmodAPI = {};
 		}, {
 			id: "Squirrel Dodging",
 	    	name: "Squirrel Dodging".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Fish Fighting",
+	    	name: "Fish Fighting".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Cat Treat Toss",
+	    	name: "Cat Treat Toss".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Sandwich Making",
+	    	name: "Sandwich Making".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Comic Book Development",
+	    	name: "Comic Book Development".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}
