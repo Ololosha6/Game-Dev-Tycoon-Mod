@@ -157,9 +157,12 @@ November 14, 2013:
 3. Implemented GTA-Style Topic
 4. Implemented Smashing Topic
 
+0.9.7.1:
+1. Fix for the new Mod API
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
 2. Paste the files into Steam/steamapps/common/Game Dev Tycoon/mods
-3. Register it manually under modConfig.js
+
 

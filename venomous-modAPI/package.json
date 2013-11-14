@@ -1,11 +1,11 @@
 {
 	"id" : "Mod",
 	"name" : "Game Dev Tycoon: Platforms, Events, and Topics OH MY!",
-	"version": "0.9.7",
-	"author":"Venomous aka Venom(Turntablelover) <darthcoolness@gmail.com>",
+	"version": "0.9.7.1",
+	"author": "Venomous aka Venom(Turntablelover)",
 	"description" : "Mod for Game Dev Tycoon",
 	"url" : "https://github.com/Turntablelover/Game-Dev-Tycoon-Mod",
-	"main" : "./venomous-modAPI",
+	"main" : "./myScript.js",
 	"dependencies" : {
 		"gdt-modAPI":"0.1.x"
 	}
