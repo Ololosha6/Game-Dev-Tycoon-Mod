@@ -19,3 +19,5 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 18. Cat Treat Toss
 19. Sandwich Making
 20. Comic Book Development
+21. Smashing
+22. GTA-Style

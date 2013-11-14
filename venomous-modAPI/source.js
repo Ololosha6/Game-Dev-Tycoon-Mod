@@ -1205,6 +1205,120 @@ var venomousmodAPI = {};
 			});	
 	};
 	
+		venomousmodAPI.addEventThunderstorm = function () {
+		var eventId = "12111996-0001-0000-0000-VENOMOUS";
+		
+		var Thunderstorm = {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 1,
+			trigger: function (company) {
+				
+				return company.currentLevel == 1 && company.isGameProgressBetween(0.1, 0.9);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "You were working on {0}! A huge thunderstorm has hit your city and your roof is starting to leak. You are scared that the rain will ruin your game."
+					.localize().format(game.title);
+				return new Notification({
+					sourceId: eventId,
+					header: "Thunderstorm".localize(),
+					text: msg,
+					options: ["Protect Game!", "Continue Working"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Protect Game".localize(),
+						text: "You cover your computer with a blanket, so the rain won't destroy your game."
+					});
+					n.adjustCash(+500, "Game is Safe");
+					n.adjustHype(5 + 10 * company.getRandom());
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Destroyed Game".localize(),
+						text: "You continue working on your game. the leak in your roof gets bigger and your garage is flooded. everything is destroyed including your computer."
+					});
+					n.adjustCash(-500, "Game is Destroyed");
+					n.adjustHype(5 - 10 * company.getRandom());
+					return;
+				}
+			}
+		};
+		GDT.addEvent(Thunderstorm);
+	};
+	
+		venomousmodAPI.addEventThief = function () {
+		var eventId = "12111996-0001-0000-0011-VENOMOUS";
+
+		var Thief= {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 1,
+			trigger: function (company) {
+				return company.currenLevel == 1 && company.isGameProgressBetween(0.4, 0.9);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "While working on your game,{0}, you heard from a group of teenagers about a game thief named Eddie. Rumour has it, that Eddie, the game thief, is planning on breaking into your garage in a few weeks{n}How he can manage to do this is a big mystery. You could swear you were outside the entire time!\nHow do you want to react?\n\nYou could call the police, ignore the incident or install a security system."
+					.localize().format(game.title);
+				
+				company.adjustHype(5 + 10 * company.getRandom());
+
+				return new Notification({
+					sourceId: eventId,
+					header: "Eddie, the game thief".localize(),
+					text: msg,
+					options: ["Call Police", "Ignore incident", "Install Security System"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Eddie, the game thief".localize(),
+						text: "Eddie breaks into your garage and steals your game code files from your computer. You call the police while your behind a book shelf. The police arrive at your garage and arrest Eddie."
+					});
+					n.adjustHype(5 + 10 * company.getRandom());
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Eddie, the game thief".localize(),
+						text: "Eddie breaks into your garage, and steals your game code files, while you were in the kitchen. Eddie smashes your computer in half, and sneaks out of the garage.\nUnfortunately you have to buy a new computer(-2000 cr.) - This might have been Eddie's big mistake",
+						weeksUntilFired: 1 + 2 * company.getRandom()
+					});
+					n.adjustCash(-2000, "restoring computer");
+					company.notifications.push(n);
+					return;
+				}
+				if (decision === 2) {
+					var n = new Notification({
+						header: "Eddie, the game thief".localize(),
+						text: "You install a security system on your house, so it calls the police when it gets disturbed. You can now work on your game in peace, without any distractions."
+					});
+					n.adjustHype(15 + 25 * company.getRandom());
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+			}
+		};
+
+		GDT.addEvent(Thief);
+	};
+	
 	venomousmodAPI.addResearchItem = function () {
 	GDT.addResearchItem(
 	{
@@ -1351,6 +1465,16 @@ var venomousmodAPI = {};
 		}, {
 			id: "Comic Book Development",
 	    	name: "Comic Book Development".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "GTA-Style",
+	    	name: "GTA-Style".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.6, 6, 1]
+		}, {
+			id: "Smashing",
+	    	name: "Smashing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}

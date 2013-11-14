@@ -149,6 +149,14 @@ November 13, 2013:
 6. Implemented Comic Book Development Topic
 7. Implemented Sandwich Making Topic
 
+November 14, 2013:
+
+0.9.7:
+1. Implemented Thunderstorm Event
+2. Implemented Thief Event
+3. Implemented GTA-Style Topic
+4. Implemented Smashing Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
