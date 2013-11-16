@@ -160,6 +160,26 @@ November 14, 2013:
 0.9.7.1:
 1. Fix for the new Mod API
 
+November 16, 2013:
+
+0.9.8:
+1. Implemented National Charlie Day Event
+2. Changed GTA-Style Topic to Sandbox Topic
+3. Implemented Pinball Topic
+4. Implemented Platformer Topic
+5. Implemented First-Person Shooter Topic
+6. Implemented Visual Novel Topic
+7. Implemented Third-Person Shooter Topic
+8. Implemented Japanese RPG Topic
+9. Implemented Western RPG Topic
+10. Implemented Social Topic
+11. Implemented 3D Graphics Version 10
+12. Implemented 3D Graphics Version 11
+13. Changed Mash A To Win Topic to Button Masher Topic
+14. Changed Burnout-Style Racing Topic to Arcade Racing Topic
+15. Implemented Melstar
+16. Implemented CVIDIA Shield
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

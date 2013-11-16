@@ -1203,6 +1203,66 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon40 = './mods/venomous-modAPI/img/Melstar.png';
+		GDT.addPlatform(
+			{
+				id: 'Melstar',
+				name: 'Melstar',
+				company: 'Moleco',
+				startAmount: 0.222,
+				unitsSold: 4.999,
+				licencePrize: 200000,
+				published: '1/2/1',
+				platformRetireDate: '5/9/4',
+				developmentCosts: 300000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 1,
+				iconUri: icon40,
+				events: [
+					{
+						id: '33873ES9-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '1/1/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Moleco has announced that Melstar, their new gaming console, is hitting store shelves {0}.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
+								image: icon40
+							});
+						}
+					}
+				]
+			});	
+		var icon41 = './mods/venomous-modAPI/img/CVIDIA Shield.png';
+		GDT.addPlatform(
+			{
+				id: 'CVIDIA Shield',
+				name: 'CVIDIA Shield',
+				company: 'CVIDIA',
+				startAmount: 0.222,
+				unitsSold: 40.999,
+				licencePrize: 900000,
+				published: '1/2/1',
+				platformRetireDate: '50/9/4',
+				developmentCosts: 1000000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 10,
+				iconUri: icon41,
+				events: [
+					{
+						id: '33873ES10-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '1/1/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
+								image: icon41
+							});
+						}
+					}
+				]
+			});	
 	};
 	
 		venomousmodAPI.addEventThunderstorm = function () {
@@ -1214,7 +1274,7 @@ var venomousmodAPI = {};
 			maxTriggers: 1,
 			trigger: function (company) {
 				
-				return company.currentLevel == 1 && company.isGameProgressBetween(0.1, 0.9);
+				return company.currentLevel == 1 && company.isGameProgressBetween(0.4, 0.6);
 			},
 			getNotification: function (company) {
 				var game = company.currentGame;
@@ -1264,7 +1324,7 @@ var venomousmodAPI = {};
 			isRandom: true,
 			maxTriggers: 1,
 			trigger: function (company) {
-				return company.currenLevel == 1 && company.isGameProgressBetween(0.4, 0.9);
+				return company.currenLevel == 1 && company.isGameProgressBetween(0.6, 0.7);
 			},
 			getNotification: function (company) {
 				var game = company.currentGame;
@@ -1319,6 +1379,57 @@ var venomousmodAPI = {};
 		GDT.addEvent(Thief);
 	};
 	
+		venomousmodAPI.addEventCharlieDay = function () {
+		var eventId = "12111996-0002-0000-0000-VENOMOUS";
+		
+		var CharlieDay = {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 1,
+			trigger: function (company) {
+				
+				return company.currentLevel == 2 && company.isGameProgressBetween(0.1, 0.5);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "Today is National Charlie Day! Charlie and the other Greenheart Games developers have set up a special parade for National Charlie Day. Do you want to work on {0}, or go to the National Charlie Day parade?"
+					.localize().format(game.title);
+				return new Notification({
+					sourceId: eventId,
+					header: "National Charlie Day!".localize(),
+					text: msg,
+					options: ["Parade", "No Parade"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Parade".localize(),
+						text: "You went to the National Charlie Day parade and made all of the Greenheart Games developers happy."
+					});
+					n.adjustCash(-500, "Parade");
+					n.adjustHype(5 + 50 * company.getRandom());
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "No Parade".localize(),
+						text: "You decided to not go to the parade, and work on {0} instead."
+					});
+					n.adjustCash(+500, "Continued Work On Game");
+					n.adjustHype(5 - 50 * company.getRandom());
+					return;
+				}
+			}
+		};
+		GDT.addEvent(CharlieDay);
+	};
+	
 	venomousmodAPI.addResearchItem = function () {
 	GDT.addResearchItem(
 	{
@@ -1364,7 +1475,29 @@ var venomousmodAPI = {};
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
 		});
-};
+		GDT.addResearchItem(
+		{
+			id: "3D Graphics Version 10",
+			name: "3D Graphics Version 10".localize(),
+			v: 10,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "3D Graphics Version 11",
+			name: "3D Graphics Version 11".localize(),
+			v: 11,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	};
 	venomousmodAPI.addTopic = function () {
 	GDT.addTopics([
 		{
@@ -1373,8 +1506,8 @@ var venomousmodAPI = {};
 	    	genreWeightings: [1, 0.9, 0.8, 1, 1, 0.6],
 	    	audienceWeightings: [0.8, 0.8, 0.6]
 		}, {
-	    	id: "Mash A To Win",
-	    	name: "Mash A To Win".localize("game topic"),
+	    	id: "Button Masher",
+	    	name: "Button Masher".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
@@ -1418,8 +1551,8 @@ var venomousmodAPI = {};
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
-			id: "Burnout-Style Racing",
-	    	name: "Burnout-Style Racing".localize("game topic"),
+			id: "Arcade Racing",
+	    	name: "Arcade Racing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
@@ -1468,14 +1601,54 @@ var venomousmodAPI = {};
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
-			id: "GTA-Style",
-	    	name: "GTA-Style".localize("game topic"),
+			id: "Sandbox",
+	    	name: "Sandbox".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.6, 6, 1]
 		}, {
 			id: "Smashing",
 	    	name: "Smashing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Platformer",
+	    	name: "Platformer".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Pinball",
+	    	name: "Pinball".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "First-Person Shooter",
+	    	name: "First-Person Shooter".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Visual Novel",
+	    	name: "Visual Novel".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Third-Person Shooter",
+	    	name: "Third-Person Shooter".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Japanese RPG",
+	    	name: "Japanese RPG".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Western RPG",
+	    	name: "Western RPG".localize("game topic"),
+	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Social",
+	    	name: "Social".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
 			audienceWeightings: [0.8, 1, 0.8]
 		}
 	    ]);

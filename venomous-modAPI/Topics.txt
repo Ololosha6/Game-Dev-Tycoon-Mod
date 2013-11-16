@@ -1,6 +1,6 @@
 List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 1. Tycoon
-2. Mash A To Win
+2. Button Masher
 3. Exercise Cats
 4. Cat Fighting
 5. Cat Tag 
@@ -9,7 +9,7 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 8. Trivia 
 9. Computer Dev 
 10. Mod Dev 
-11. Burnout-Style Racing 
+11. Arcade Racing
 12. Cop-Chase 
 13. Bean-Bag Toss
 14. Rescue Turtles
@@ -20,4 +20,12 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 19. Sandwich Making
 20. Comic Book Development
 21. Smashing
-22. GTA-Style
+22. Sandbox
+23. Platformer
+24. Pinball
+25. Visual Novel 
+26. First-Person Shooter
+27. Third-Person Shooter
+28. Japanese RPG
+29. Western RPG
+30. Social

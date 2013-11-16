@@ -39,3 +39,5 @@ List of Platforms in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 38. Vac OS X Mavericks
 39. SuperFox
 40. SuperFox 360
+41. Melstar
+42. CVIDIA Shield

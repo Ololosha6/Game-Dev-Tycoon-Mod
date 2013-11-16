@@ -3,3 +3,5 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 2. Animated Bosses
 3. 3D Graphics Version 8
 4. 3D Graphics Version 9
+5. 3D Graphics Version 10
+6. 3D Graphics Version 11
