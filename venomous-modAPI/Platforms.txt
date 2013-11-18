@@ -41,3 +41,11 @@ List of Platforms in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 40. SuperFox 360
 41. Melstar
 42. CVIDIA Shield
+43. Color MV Game
+44. Matari Pong
+45. Matari 2600
+46. Mairchild Channel M
+47. Cntellivision
+48. Mectrex
+49. Mrcadia
+50. Mally Mastrocade

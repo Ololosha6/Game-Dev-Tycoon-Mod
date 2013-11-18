@@ -102,21 +102,21 @@ var venomousmodAPI = {};
 				startAmount: 0.100,
 				unitsSold: 0.200,
 				licencePrize: 200,
-				published: '1/1/1',
-				platformRetireDate: '2/7/2',
+				published: '5/7/3',
+				platformRetireDate: '7/7/2',
 				developmentCosts: 1000,
 				genreWeightings: [1, 0.8, 0.9, 0.8, 0.7, 0.8],
 				audienceWeightings: [0.9, 1, 0.6],
-				techLevel: 1,
+				techLevel: 2,
 				iconUri: icon3,
 				events: [
 					{
 						id: '21638DA5-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '2/5/2',
+						date: '5/7/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Matari Inc., has announced that their console called the Matari 5200 was a massive flop and will retire {0}.".localize().format(General.getETADescription('2/5/2', '2/6/2')),
+								text: "Matari Inc., has announced that their console called the Matari 5200 was a massive flop and will retire {0}.".localize().format(General.getETADescription('5/5/2', '5/6/2')),
 								image: icon3
 							});
 						}
@@ -132,21 +132,21 @@ var venomousmodAPI = {};
 				startAmount: 0.300,
 				unitsSold: 0.400,
 				licencePrize: 80000,
-				published: '2/7/2',
-				platformRetireDate: '5/4/2',
+				published: '7/7/4',
+				platformRetireDate: '9/4/2',
 				developmentCosts: 35000,
 				genreWeightings: [1, 0.8, 0.9, 0.8, 0.7, 0.6],
 				audienceWeightings: [0.9, 1, 0.8],
-				techLevel: 2,
+				techLevel: 3,
 				iconUri: icon4,
 				events: [
 					{
 						id: '21638DA4-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '2/4/2',
+						date: '7/6/3',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('2/4/2', '2/6/2')),
+								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('7/6/3', '7/6/4')),
 								image: icon4
 							});
 						}
@@ -162,21 +162,21 @@ var venomousmodAPI = {};
 				startAmount: 0.450,
 				unitsSold: 0.320,
 				licencePrize: 120000,
-				published: '5/5/2',
-				platformRetireDate: '7/4/2',
+				published: '9/5/2',
+				platformRetireDate: '11/4/2',
 				developmentCosts: 40000,
 				genreWeightings: [1, 0.9, 0.7, 0.8, 0.8, 0.6],
 				audienceWeightings: [0.8, 0.9, 1],
-				techLevel: 3,
+				techLevel: 4,
 				iconUri: icon5,
 				events: [
 					{
 						id: '21648DA4-69G3-5G35-9966-Z1Z2621933ZZ',
-						date: '4/12/2',
+						date: '9/3/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "After a few years of low marketshare, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('4/12/2', '5/5/2')),
+								text: "After a few years of low marketshare, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('9/3/2', '9/4/2')),
 								image: icon5
 							});
 						}
@@ -192,21 +192,21 @@ var venomousmodAPI = {};
 				startAmount: 0.550,
 				unitsSold: 0.420,
 				licencePrize: 130000,
-				published: '7/5/2',
-				platformRetireDate: '9/5/2',
+				published: '11/5/2',
+				platformRetireDate: '13/5/2',
 				developmentCosts: 50000,
 				genreWeightings: [1, 0.9, 0.7, 0.8, 0.8, 0.6],
 				audienceWeightings: [0.8, 0.9, 1],
-				techLevel: 4,
+				techLevel: 5,
 				iconUri: icon6,
 				events: [
 					{
 						id: '21648DA5-69G3-5G35-9966-Z1Z2621933ZZ',
-						date: '6/12/2',
+						date: '11/3/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "After 2 years, The marketshare is still low and Matari Inc. announced another solution! The Matari Panther is said to be more focused upon the PC side of graphical power with a 90KB RAM chip!{n}The Matari Panther will be released {0}.".localize().format(General.getETADescription('6/12/2', '7/5/2')),
+								text: "After 2 years, The marketshare is still low and Matari Inc. announced another solution! The Matari Panther is said to be more focused upon the PC side of graphical power with a 90KB RAM chip!{n}The Matari Panther will be released {0}.".localize().format(General.getETADescription('11/3/2', '11/5/2')),
 								image: icon6
 							});
 						}
@@ -1210,11 +1210,11 @@ var venomousmodAPI = {};
 				name: 'Melstar',
 				company: 'Moleco',
 				startAmount: 0.222,
-				unitsSold: 4.999,
-				licencePrize: 200000,
+				unitsSold: 2.999,
+				licencePrize: 10000,
 				published: '1/2/1',
 				platformRetireDate: '5/9/4',
-				developmentCosts: 300000,
+				developmentCosts: 12000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [1.0, 1.0, 0.7],
 				techLevel: 1,
@@ -1240,11 +1240,11 @@ var venomousmodAPI = {};
 				name: 'CVIDIA Shield',
 				company: 'CVIDIA',
 				startAmount: 0.222,
-				unitsSold: 40.999,
-				licencePrize: 900000,
+				unitsSold: 30.999,
+				licencePrize: 6000,
 				published: '1/2/1',
 				platformRetireDate: '50/9/4',
-				developmentCosts: 1000000,
+				developmentCosts: 8000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [1.0, 1.0, 0.7],
 				techLevel: 10,
@@ -1263,6 +1263,246 @@ var venomousmodAPI = {};
 					}
 				]
 			});	
+		var icon42 = './mods/venomous-modAPI/img/Color MV Game.png';
+		GDT.addPlatform(
+			{
+				id: 'Color MV Game',
+				name: 'Color MV Game',
+				company: 'Ninvento',
+				startAmount: 0.222,
+				unitsSold: 2.999,
+				licencePrize: 10000,
+				published: '1/1/1',
+				platformRetireDate: '5/9/4',
+				developmentCosts: 13000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 1,
+				iconUri: icon42,
+				events: [
+					{
+						id: '33873ES11-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '4/9/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Ninvento has decided to retire the console, Color MV Game, that was exclusive to Japan. The Color MV Game is retiring off the store shelves in Japan {0}.".localize().format(General.getETADescription('4/9/4', '4/10/4')),
+								image: icon42
+							});
+						}
+					}
+				]
+			});	
+		var icon43 = './mods/venomous-modAPI/img/Matari Pong.png';
+		GDT.addPlatform(
+			{
+				id: 'Matari Pong',
+				name: 'Matari Pong',
+				company: 'Matari',
+				startAmount: 0.222,
+				unitsSold: 2.999,
+				licencePrize: 10000,
+				published: '1/1/1',
+				platformRetireDate: '2/7/2',
+				developmentCosts: 13000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 1,
+				iconUri: icon43,
+				events: [
+					{
+						id: '33873ES12-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '2/5/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Matari has decided to retire the console, Matari Pong. Matari Pong is retiring off the store shelves {0}.".localize().format(General.getETADescription('2/5/2', '2/5/3')),
+								image: icon43
+							});
+						}
+					}
+				]
+			});	
+		var icon44 = './mods/venomous-modAPI/img/Matari 2600.png';
+		GDT.addPlatform(
+			{
+				id: 'Matari 2600',
+				name: 'Matari 2600',
+				company: 'Matari',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 15000,
+				published: '2/8/2',
+				platformRetireDate: '5/7/2',
+				developmentCosts: 16000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon44,
+				events: [
+					{
+						id: '33873ES13-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '2/7/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Matari has announced their new console, Matari 2600. Matari 2600 will be on the store shelves {0}.".localize().format(General.getETADescription('2/7/2', '2/7/3')),
+								image: icon44
+							});
+						}
+					}
+				]
+			});	
+		var icon45 = './mods/venomous-modAPI/img/Mairchild Channel M.png';
+		GDT.addPlatform(
+			{
+				id: 'Mairchild Channel M',
+				name: 'Mairchild Channel M',
+				company: 'Mairchild Semiconductor',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 15000,
+				published: '1/1/1',
+				platformRetireDate: '5/7/2',
+				developmentCosts: 17000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon45,
+				events: [
+					{
+						id: '33873ES14-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/6/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Mairchild Semiconductor has announced their console, Mairchild Channel M is retiring soon from the store shelves. Mairchild Channel M will retire off the store shelves {0}.".localize().format(General.getETADescription('5/6/2', '5/6/3')),
+								image: icon45
+							});
+						}
+					}
+				]
+			});	
+		var icon46 = './mods/venomous-modAPI/img/Cntellivision.png';
+		GDT.addPlatform(
+			{
+				id: 'Cntellivision',
+				name: 'Cntellivision',
+				company: 'Cattel',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 30000,
+				published: '1/1/1',
+				platformRetireDate: '5/7/2',
+				developmentCosts: 40000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon46,
+				events: [
+					{
+						id: '33873ES15-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/6/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Cattel has announced their console, Cntellivison is retiring soon from the store shelves. Cntellivision will retire off the store shelves {0}.".localize().format(General.getETADescription('5/6/4', '5/7/1')),
+								image: icon46
+							});
+						}
+					}
+				]
+			});
+		var icon47 = './mods/venomous-modAPI/img/Mectrex.png';
+		GDT.addPlatform(
+			{
+				id: 'Mectrex',
+				name: 'Mectrex',
+				company: 'Mestern Technologies',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 30000,
+				published: '1/1/1',
+				platformRetireDate: '5/7/2',
+				developmentCosts: 50000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon47,
+				events: [
+					{
+						id: '33873ES16-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/7/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: " Mestern Technologies has announced their console, Mectrex is retiring soon from the store shelves. Mectrex will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/1', '5/7/2')),
+								image: icon47
+							});
+						}
+					}
+				]
+			});
+		var icon48 = './mods/venomous-modAPI/img/Mrcadia.png';
+		GDT.addPlatform(
+			{
+				id: 'Mrcadia',
+				name: 'Mrcadia',
+				company: 'Vmerson',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 20000,
+				published: '1/1/1',
+				platformRetireDate: '5/8/2',
+				developmentCosts: 40000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon48,
+				events: [
+					{
+						id: '33873ES17-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/7/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Vmerson has announced their console, Mrcadia is retiring soon from the store shelves. Mrcadia will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/2', '5/7/3')),
+								image: icon48
+							});
+						}
+					}
+				]
+			});
+		var icon49 = './mods/venomous-modAPI/img/Mally Mastrocade.png';
+		GDT.addPlatform(
+			{
+				id: 'Mally Mastrocade',
+				name: 'Mally Mastrocade',
+				company: 'Mally',
+				startAmount: 2.999,
+				unitsSold: 4.999,
+				licencePrize: 10000,
+				published: '1/1/1',
+				platformRetireDate: '5/8/2',
+				developmentCosts: 30000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [1.0, 1.0, 0.7],
+				techLevel: 2,
+				iconUri: icon49,
+				events: [
+					{
+						id: '33873ES18-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/7/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mally has announced their console, Mally Mastrocade is retiring soon from the store shelves. Mally Mastrocade will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/4', '5/8/1')),
+								image: icon49
+							});
+						}
+					}
+				]
+			});
 	};
 	
 		venomousmodAPI.addEventThunderstorm = function () {
@@ -1430,6 +1670,57 @@ var venomousmodAPI = {};
 		GDT.addEvent(CharlieDay);
 	};
 	
+		venomousmodAPI.addEventDalekInvasion = function () {
+		var eventId = "12111996-0003-0000-0000-VENOMOUS";
+		
+		var DalekInvasion = {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 2,
+			trigger: function (company) {
+				
+				return company.currentLevel == 2 && company.isGameProgressBetween(0.5, 0.7);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "You were working happily on your game, {0}, and you hear a huge explosion at the TV. A army of Daleks appear out of the smoke and exterminate all of your staff. Do you want to run away, or fight the army of Daleks?"
+					.localize().format(game.title);
+				return new Notification({
+					sourceId: eventId,
+					header: "Dalek Invasion!".localize(),
+					text: msg,
+					options: ["Run Away", "Fight the Daleks"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Run Away".localize(),
+						text: "You ran away, but you tripped and got exterminated by the Daleks."
+					});
+					n.adjustCash(-1000000000000000000000000, "Extermination");
+					n.adjustHype(5 - 5000 * company.getRandom());
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Fight the Daleks".localize(),
+						text: "You take out your sonic screwdriver, and fight the Daleks to save your office. You defeated the Daleks with your sonic screwdriver."
+					});
+					n.adjustCash(+1000000000000000000000000, "Saved the Day");
+					n.adjustHype(5 + 5000 * company.getRandom());
+					return;
+				}
+			}
+		};
+		GDT.addEvent(DalekInvasion);
+	};
+	
 	venomousmodAPI.addResearchItem = function () {
 	GDT.addResearchItem(
 	{
@@ -1493,6 +1784,50 @@ var venomousmodAPI = {};
 			v: 11,
 			canResearch: function (company) {
 				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "2K HD Graphics",
+			name: "2K HD Graphics".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "4K HD Graphics",
+			name: "4K HD Graphics".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') >3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Techno Music",
+			name: "Techno Music".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Sound') >3
+			},
+			category: "Sound",
+			categoryDisplayName: "Sound"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Arcade Graphics",
+			name: "Arcade Graphics".localize(),
+			v: 1,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') <3
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"

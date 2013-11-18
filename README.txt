@@ -180,6 +180,25 @@ November 16, 2013:
 15. Implemented Melstar
 16. Implemented CVIDIA Shield
 
+November 18, 2013:
+
+0.9.9:
+1. Implemented Color MV Game
+2. Implemented Matari Pong
+3. Implemented Matari 2600
+4. Implemented Mairchild Channel M
+5. Implemented Cntellivision
+6. Implemented Mectrex
+7. Implemented Mrcadia
+8. Implemented Mally Mastrocade
+9. Implemented 2K HD Graphics 
+10. Implemented 4K HD Graphics
+11. Implemented Techno Music
+12. Implemented Arcade Graphics
+13. Implemented Dalek Invasion Event
+14. Fixed Bug With Melstar being too overpowered
+15. Fixed Bug With CVIDIA Shield's Dev and License Fees being too high. 
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
