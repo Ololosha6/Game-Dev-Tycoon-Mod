@@ -1538,6 +1538,7 @@ var venomousmodAPI = {};
 					});
 					n.adjustCash(+500, "Game is Safe");
 					n.adjustHype(5 + 10 * company.getRandom());
+					n.adjustFans(1000);
 
 					company.activeNotifications.addRange(n.split());
 					return;
@@ -1549,6 +1550,7 @@ var venomousmodAPI = {};
 					});
 					n.adjustCash(-500, "Game is Destroyed");
 					n.adjustHype(5 - 10 * company.getRandom());
+					n.adjustFans(-1000);
 					return;
 				}
 			}
@@ -1590,6 +1592,8 @@ var venomousmodAPI = {};
 						text: "Eddie breaks into your garage and steals your game code files from your computer. You call the police while your behind a book shelf. The police arrive at your garage and arrest Eddie."
 					});
 					n.adjustHype(5 + 10 * company.getRandom());
+					n.adjustCash(2000);
+					n.adjustFans(2000);
 
 					company.activeNotifications.addRange(n.split());
 					return;
@@ -1601,6 +1605,7 @@ var venomousmodAPI = {};
 						weeksUntilFired: 1 + 2 * company.getRandom()
 					});
 					n.adjustCash(-2000, "restoring computer");
+					n.adjustFans(-2000);
 					company.notifications.push(n);
 					return;
 				}
@@ -1610,6 +1615,7 @@ var venomousmodAPI = {};
 						text: "You install a security system on your house, so it calls the police when it gets disturbed. You can now work on your game in peace, without any distractions."
 					});
 					n.adjustHype(15 + 25 * company.getRandom());
+					n.adjustFans(2000);
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1652,6 +1658,7 @@ var venomousmodAPI = {};
 					});
 					n.adjustCash(-500, "Parade");
 					n.adjustHype(5 + 50 * company.getRandom());
+					n.adjustFans(5000);
 
 					company.activeNotifications.addRange(n.split());
 					return;
@@ -1663,6 +1670,7 @@ var venomousmodAPI = {};
 					});
 					n.adjustCash(+500, "Continued Work On Game");
 					n.adjustHype(5 - 50 * company.getRandom());
+					n.adjustFans(-5000);
 					return;
 				}
 			}
@@ -1702,7 +1710,8 @@ var venomousmodAPI = {};
 						text: "You ran away, but you tripped and got exterminated by the Daleks."
 					});
 					n.adjustCash(-1000000000000000000000000, "Extermination");
-					n.adjustHype(5 - 5000 * company.getRandom());
+					n.adjustHype(5 - 6000 * company.getRandom());
+					n.adjustFans(-1000000000000000000000000);
 
 					company.activeNotifications.addRange(n.split());
 					return;
@@ -1713,12 +1722,119 @@ var venomousmodAPI = {};
 						text: "You take out your sonic screwdriver, and fight the Daleks to save your office. You defeated the Daleks with your sonic screwdriver."
 					});
 					n.adjustCash(+1000000000000000000000000, "Saved the Day");
-					n.adjustHype(5 + 5000 * company.getRandom());
+					n.adjustHype(5 + 6000 * company.getRandom());
+					n.adjustFans(1000000000000000000000000);
 					return;
 				}
 			}
 		};
 		GDT.addEvent(DalekInvasion);
+	};
+	
+		venomousmodAPI.addEventMeTube = function () {
+		var eventId = "12111996-0004-0000-0000-VENOMOUS";
+		
+		var MeTube = {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 2,
+			trigger: function (company) {
+				
+				return company.currentLevel == 3 && company.isGameProgressBetween(0.9, 1.0);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "Boss,Let's Players are doing walkthroughs of our game, {0}, on MeTube, by recording gameplay footage from their review copies of the game, {0}. Should we Content Match their gameplay footage and get money, or should we flag every video and force MeTube to take them down?"
+					.localize().format(game.title);
+				return new Notification({
+					sourceId: eventId,
+					header: "MeTube!".localize(),
+					text: msg,
+					options: ["Content Match!", "Flag the Videos"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Content Match!".localize(),
+						text: "You went on MeTube, and content matched every video that was related to your game, {0}."
+					});
+					n.adjustCash(+100000, "Content Match");
+					n.adjustHype(5 + 200 * company.getRandom());
+					n.adjustFans(100000);
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Flag the Videos".localize(),
+						text: "You flagged every video that was related to your game, {0}, and you told MeTube to take the videos down for copyright."
+					});
+					n.adjustCash(+200000, "Flagged Videos");
+					n.adjustHype(5 - 200 * company.getRandom());
+					n.adjustFans(-100000);
+					return;
+				}
+			}
+		};
+		GDT.addEvent(MeTube);
+	};
+	
+		venomousmodAPI.addEventGamePort = function () {
+		var eventId = "12111996-0005-0000-0000-VENOMOUS";
+		
+		var GamePort = {
+			id: eventId,
+			isRandom: true,
+			maxTriggers: 2,
+			trigger: function (company) {
+				
+				return company.currentLevel == 3 && company.isGameProgressBetween(1.0, 1.0);
+			},
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "Boss,Ninvento is doing a illegal port of our game, {0}, without our permission. Should we Sue Them or Warn Them?"
+					.localize().format(game.title);
+				return new Notification({
+					sourceId: eventId,
+					header: "Illegal Game Port".localize(),
+					text: msg,
+					options: ["Sue Them!", "Warn Them"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Sue Them!".localize(),
+						text: "You sued Ninvento in court for making a illegal port of your game, {0}. You won the case and Ninvento was considered guilty. They own your company the amount of money, they paid to port your game, {0}."
+					});
+					n.adjustCash(+10000000000000000000000, "Sued Ninvento");
+					n.adjustHype(5 + 2000 * company.getRandom());
+					n.adjustFans(-2000);
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Warn Them".localize(),
+						text: "You warned Ninvento, for making a port of your game, {0}, without your permission."
+					});
+					n.adjustCash(+200000, "Warned Ninvento");
+					n.adjustHype(5 + 2000 * company.getRandom());
+					n.adjustFans(100);
+					return;
+				}
+			}
+		};
+		GDT.addEvent(GamePort);
 	};
 	
 	venomousmodAPI.addResearchItem = function () {
@@ -1831,6 +1947,116 @@ var venomousmodAPI = {};
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Simple Quests",
+			name: "Simple Quests".localize(),
+			v: 2,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Story/Quests') <3
+			},
+			category: "Story/Quests",
+			categoryDisplayName: "Story/Quests"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Advanced Quests",
+			name: "Advanced Quests".localize(),
+			v: 3,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Story/Quests') <=3
+			},
+			category: "Story/Quests",
+			categoryDisplayName: "Story/Quests"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Difficult Quests",
+			name: "Difficult Quests".localize(),
+			v: 4,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Story/Quests') <=4
+			},
+			category: "Story/Quests",
+			categoryDisplayName: "Story/Quests"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Model Shading",
+			name: "Model Shading".localize(),
+			v: 4,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') <=4
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "HD Sound",
+			name: "HD Sound".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Sound') <13
+			},
+			category: "Sound",
+			categoryDisplayName: "Sound"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Advanced AI",
+			name: "Advanced A.I.".localize(),
+			v: 7,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('AI') >6
+			},
+			category: "AI",
+			categoryDisplayName: "A.I."
+	});
+	GDT.addResearchItem(
+		{
+			id: "Parkour",
+			name: "Parkour".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Gameplay') >7
+			},
+			category: "Gameplay",
+			categoryDisplayName: "Gameplay"
+	});
+	GDT.addResearchItem(
+		{
+			id: "No Loading Screens",
+			name: "No Loading Screens".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') >7
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "HD Dialogues",
+			name: "HD Dialogues".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Dialogues') >7
+			},
+			category: "Dialogs",
+			categoryDisplayName: "Dialogues"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Cyborg Music",
+			name: "Cyborg Music".localize(),
+			v: 9,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Sound') >8
+			},
+			category: "Sound",
+			categoryDisplayName: "Sound"
 	});
 	};
 	venomousmodAPI.addTopic = function () {

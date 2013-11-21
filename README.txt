@@ -199,6 +199,23 @@ November 18, 2013:
 14. Fixed Bug With Melstar being too overpowered
 15. Fixed Bug With CVIDIA Shield's Dev and License Fees being too high. 
 
+November 21, 2013:
+
+1.0.0:
+1. Implemented Simple Quests
+2. Implemented Advanced Quests
+3. Implemented Difficult Quests
+4. Implemented MeTube Event
+5. Implemented Game Port Event
+6. Added coding to all events, so that all events adjust your fans, no matter what option you choose on them
+7. Implemented Model Shading
+8. Implemented HD Sound
+9. Implemented Advanced AI
+10. Implemented Parkour
+11. Implemented No Loading Screens
+12. Implemented HD Dialogues
+13. Implemented Cyborg Music
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
