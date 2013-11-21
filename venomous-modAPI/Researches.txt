@@ -9,13 +9,13 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 8. 4K HD Graphics
 9. Techno Music
 10. Arcade Graphics
-11. Simple Quests
-12. Advanced Quests
+11. Simple Story
+12. Advanced Story
 13. Difficult Quests
 14. Model Shading
 15. HD Sound
 16. Advanced AI
-17. Parkour
+17. Boost
 18. No Loading Screens
 19. HD Dialogues
 20. Cyborg Music

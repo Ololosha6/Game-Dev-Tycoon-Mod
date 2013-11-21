@@ -216,9 +216,20 @@ November 21, 2013:
 12. Implemented HD Dialogues
 13. Implemented Cyborg Music
 
+1.0.1:
+1. Changed Parkour Research to Boost 
+2. Changed Simple Quests to Simple Story
+3. Changed Advanced Quests to Advanced Story
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
 2. Paste the files into Steam/steamapps/common/Game Dev Tycoon/mods
+3. Launch Game Dev Tycoon
+4. Go into Mods Menu
+5. Activate Game Dev Tycoon: Platforms, Events, and Topics OH MY to make it turn blue.
+6. Click OK at the bottom of the Mods Menu
+7. Exit Game Dev Tycoon
+8. Restart Game Dev Tycoon
 
 

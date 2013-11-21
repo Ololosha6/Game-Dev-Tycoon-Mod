@@ -1950,8 +1950,8 @@ var venomousmodAPI = {};
 	});
 	GDT.addResearchItem(
 		{
-			id: "Simple Quests",
-			name: "Simple Quests".localize(),
+			id: "Simple Story",
+			name: "Simple Story".localize(),
 			v: 2,
 			canResearch: function (company) {
 				return LevelCalculator.getMissionLevel('Story/Quests') <3
@@ -1961,8 +1961,8 @@ var venomousmodAPI = {};
 	});
 	GDT.addResearchItem(
 		{
-			id: "Advanced Quests",
-			name: "Advanced Quests".localize(),
+			id: "Advanced Story",
+			name: "Advanced Story".localize(),
 			v: 3,
 			canResearch: function (company) {
 				return LevelCalculator.getMissionLevel('Story/Quests') <=3
@@ -2016,8 +2016,8 @@ var venomousmodAPI = {};
 	});
 	GDT.addResearchItem(
 		{
-			id: "Parkour",
-			name: "Parkour".localize(),
+			id: "Boost",
+			name: "Boost".localize(),
 			v: 8,
 			canResearch: function (company) {
 				return LevelCalculator.getMissionLevel('Gameplay') >7
