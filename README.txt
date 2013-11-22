@@ -3,6 +3,10 @@ Game-Dev-Tycoon-Mod
 
 mod created for Game Dev Tycoon using the Game Dev Tycoon Modding API made by Greenheart Games
 
+Main Coder: Venomous
+Texture Maker and Finder: Gamingthrou
+
+To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
 Release Notes:
 
@@ -220,6 +224,20 @@ November 21, 2013:
 1. Changed Parkour Research to Boost 
 2. Changed Simple Quests to Simple Story
 3. Changed Advanced Quests to Advanced Story
+
+November 22, 2013:
+
+1.0.2:
+1. Better image for Color MV Game
+2. Better image for CVIDIA Shield
+3. Better image for Cntellivision
+4. Better image for Matari 2600
+5. Better image for Melstar
+6. Better image for Skindle Fire
+7. Better image for SuperRift
+8. Better image for Matari 7800
+9. Better image for Matari SEGS
+ 
 
 How to install the mod:
 
