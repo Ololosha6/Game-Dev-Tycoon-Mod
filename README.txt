@@ -237,7 +237,20 @@ November 22, 2013:
 7. Better image for SuperRift
 8. Better image for Matari 7800
 9. Better image for Matari SEGS
- 
+
+November 24, 2013:
+
+1.1.0:
+1. Enabled Topics in myScript.js
+2. Enabled Events in myScript.js
+3. Implemented Price Modifications
+4. Changed IDS for Events
+5. Enabled Researches in myScript.js
+6. Implemented IGN Interview Event
+7. Implemented MTC One
+8. Implemented Mookia 3310
+9. Implemented Mookia Moomia
+10 Implemented GRID Machine
 
 How to install the mod:
 

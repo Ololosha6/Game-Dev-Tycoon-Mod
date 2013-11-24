@@ -5,3 +5,4 @@ List of Events in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 4. Dalek Invasion
 5. MeTube
 6. Game Port
+7. IGN Interview

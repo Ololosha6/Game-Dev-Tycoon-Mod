@@ -49,3 +49,7 @@ List of Platforms in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 48. Mectrex
 49. Mrcadia
 50. Mally Mastrocade
+51. MTC One
+52. Mookia 3310
+53. Mookia Moomia
+54. GRID Machine

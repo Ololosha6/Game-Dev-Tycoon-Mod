@@ -1503,10 +1503,130 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon50 = './mods/venomous-modAPI/img/MTC One.png';
+		GDT.addPlatform(
+			{
+				id: 'MTC One',
+				name: 'MTC One',
+				company: 'MTC',
+				startAmount: 7.250,
+				unitsSold: 7.978,
+				licencePrize: 430000,
+				published: '23/2/2',
+				platformRetireDate: '50/2/2',
+				developmentCosts: 500000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.7],
+				techLevel: 11,
+				iconUri: icon50,
+				events: [
+					{
+						id: '33873ES19-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '23/1/1',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "MTC, manufacturer of smart-phones and tablets, has announced their new gaming smart-phone called the MTC One. The MTC One will be available in stores {0}.".localize().format(General.getETADescription('23/1/1', '23/2/2')),
+								image: icon50
+							});
+						}
+					}
+				]
+			});
+		var icon51 = './mods/venomous-modAPI/img/Mookia 3310.png';
+		GDT.addPlatform(
+			{
+				id: 'Mookia 3310',
+				name: 'Mookia 3310',
+				company: 'Mookia',
+				startAmount: 2.250,
+				unitsSold: 2.978,
+				licencePrize: 100000,
+				published: '12/12/1',
+				platformRetireDate: '16/2/2',
+				developmentCosts: 300000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.6],
+				techLevel: 5,
+				iconUri: icon51,
+				events: [
+					{
+						id: '33873ES20-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '12/10/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mookia, manufacturer of cell phones and other technology, has announced their new cell phone called the Mookia 3310. The Mookia 3310 will be available in stores {0}.".localize().format(General.getETADescription('12/10/4', '12/12/1')),
+								image: icon51
+							});
+						}
+					}
+				]
+			});
+		var icon52 = './mods/venomous-modAPI/img/Mookia Moomia.png';
+		GDT.addPlatform(
+			{
+				id: 'Mookia Moomia',
+				name: 'Mookia Moomia',
+				company: 'Mookia',
+				startAmount: 7.222,
+				unitsSold: 9.320,
+				licencePrize: 180000,
+				published: '30/3/3',
+				platformRetireDate: '50/3/3',
+				developmentCosts: 190000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon52,
+				events: [
+					{
+						id: '33873ES21-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '30/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mookia and Mirconoft have teamed up to make the Mookia Moomia. The Mookia Moomia runs a modified version of the mBox 360 and Vindows operating systems. The Mookia Moomia will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/3/3')),
+								image: icon52
+							});
+						}
+					}
+				]
+			});
+		var icon53 = './mods/venomous-modAPI/img/GRID Machine.png';
+		GDT.addPlatform(
+			{
+				id: 'GRID Machine',
+				name: 'GRID Machine',
+				company: 'GRID',
+				startAmount: 7.222,
+				unitsSold: 9.320,
+				licencePrize: 180000,
+				published: '30/3/3',
+				platformRetireDate: '50/3/3',
+				developmentCosts: 190000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 10,
+				iconUri: icon53,
+				events: [
+					{
+						id: '33873ES22-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '30/1/3',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "GRID, the most popular company that started the GRID platform for games, have announced that they are making a new gaming console called the GRID Machine. The GRID Machine runs on the GRID operating system, the same operating system that runs the GRID gaming platform. The GRID Machine will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/3/3')),
+								image: icon53
+							});
+						}
+					}
+				]
+			});
 	};
 	
 		venomousmodAPI.addEventThunderstorm = function () {
-		var eventId = "12111996-0001-0000-0000-VENOMOUS";
+		var eventId = "00000000000-0000-0000-0000-VENOMOUS";
 		
 		var Thunderstorm = {
 			id: eventId,
@@ -1559,7 +1679,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventThief = function () {
-		var eventId = "12111996-0001-0000-0011-VENOMOUS";
+		var eventId = "00000000000-0000-0000-1111-VENOMOUS";
 
 		var Thief= {
 			id: eventId,
@@ -1626,7 +1746,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventCharlieDay = function () {
-		var eventId = "12111996-0002-0000-0000-VENOMOUS";
+		var eventId = "00000000000-0000-1111-1111-VENOMOUS";
 		
 		var CharlieDay = {
 			id: eventId,
@@ -1679,7 +1799,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventDalekInvasion = function () {
-		var eventId = "12111996-0003-0000-0000-VENOMOUS";
+		var eventId = "00000000000-0001-1111-1111-VENOMOUS";
 		
 		var DalekInvasion = {
 			id: eventId,
@@ -1732,7 +1852,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventMeTube = function () {
-		var eventId = "12111996-0004-0000-0000-VENOMOUS";
+		var eventId = "00000000000-0011-1111-1111-VENOMOUS";
 		
 		var MeTube = {
 			id: eventId,
@@ -1785,7 +1905,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventGamePort = function () {
-		var eventId = "12111996-0005-0000-0000-VENOMOUS";
+		var eventId = "00000000000-0111-1111-1111-VENOMOUS";
 		
 		var GamePort = {
 			id: eventId,
@@ -1837,7 +1957,75 @@ var venomousmodAPI = {};
 		GDT.addEvent(GamePort);
 	};
 	
-	venomousmodAPI.addResearchItem = function () {
+		venomousmodAPI.addEventIGN = function () {
+		var eventId = "00000000000-1111-1111-1111-VENOMOUS";
+		
+		var IGN = {
+			id: eventId,
+			isRandom: false,
+			date: '3/7/4',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+            	var msg = "IGN, also known as Incredible Gaming Network, has offered to interview you about your games and your gaming company.{n} IGN interviews gaming companies to promote gaming and help gamers learn about different developers.\n\n Do you accept this interview? If yes, decide what stuff you would like to discuss with IGN.".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Interview".localize(),
+					text: msg,
+					options: ["No, Thank You.", "Game Development", "Games"]
+				});
+			},
+                       
+			complete: function (decision) {
+                       
+				var company = GameManager.company;
+                               
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Interview".localize(),
+						text: "You declined the interview. IGN was disappointed that they didn't get to interview you."
+					});    
+					company.activeNotifications.addRange(n.split());
+					return;                                                                                        
+				}
+				if (decision === 1) {
+                	var n = new Notification({
+                    header: "Interview".localize(),
+                    text: "You tell IGN, that game development is going strong, and promise to develop more exciting games in the future. {n} The interviewer asked if you can predict the future of the video game market.\n\n You answered that in the future, technology will get better and gaming platforms will improve."
+               	});
+                   	n.adjustFans(500);
+                    company.notifications.push(n);
+                                       
+                    var m = new Notification ({
+                    	header: "GamerStop Sponsorship".localize(),
+                    	text: "GamerStop loved your recent interview with IGN, when they streamed it on their TVs in the store. GamerStop contacted you and gave you some money as a little gift to boost your current game project. They hope that the sponsorship will boost sales for the game developers and GamerStop."
+                    });
+                	if (company.isGameProgressBetween(0.2, 0.9)) {
+                    	m.adjustCash(60000, "GamerStop Sponsorship");
+                    	m.adjustHype(5 + 25 * company.getRandom());
+						m.adjustFans(500);
+                    	company.notifications.push(m);
+                    }
+                    return;                        
+                }
+                if (decision === 2) {
+                	var n = new Notification({
+                    	header: "Interview".localize(),
+                        text: "You tell IGN about your past games, and how they influenced the gaming market. \nYou say that your past games showed the gamers, how hard the developers worked on the game. You hope that in 4-6 years, the company will get bigger and you will be able to work on way more advanced and complex projects.{n} The interviewer asked if you can predict the future of the gaming industry.\n\n You answered that only God knows everything, and that God only knows what the future will bring."
+                    });
+                	n.adjustFans(500);
+                	if (company.isGameProgressBetween(0.2, 0.9)) {
+                    	n.adjustHype(5 + 25 * company.getRandom());
+                    }
+                    company.notifications.push(n);
+                    return;             
+               	}
+			}
+        };
+        
+        GDT.addEvent(IGN);
+	};
+	
+	venomousmodAPI.addResearch = function () {
 	GDT.addResearchItem(
 	{
 		id: "UI Structure",
@@ -1866,7 +2054,7 @@ var venomousmodAPI = {};
 			name: "3D Graphics Version 8".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1875,9 +2063,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 9",
 			name: "3D Graphics Version 9".localize(),
-			v: 9,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1886,9 +2074,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 10",
 			name: "3D Graphics Version 10".localize(),
-			v: 10,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1897,9 +2085,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 11",
 			name: "3D Graphics Version 11".localize(),
-			v: 11,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1908,9 +2096,9 @@ var venomousmodAPI = {};
 		{
 			id: "2K HD Graphics",
 			name: "2K HD Graphics".localize(),
-			v: 12,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1919,9 +2107,9 @@ var venomousmodAPI = {};
 		{
 			id: "4K HD Graphics",
 			name: "4K HD Graphics".localize(),
-			v: 12,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') >3
+				return LevelCalculator.getMissionLevel('Graphic') <9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1930,9 +2118,9 @@ var venomousmodAPI = {};
 		{
 			id: "Techno Music",
 			name: "Techno Music".localize(),
-			v: 12,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') >3
+				return LevelCalculator.getMissionLevel('Sound') <9
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -1943,7 +2131,7 @@ var venomousmodAPI = {};
 			name: "Arcade Graphics".localize(),
 			v: 1,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <3
+				return LevelCalculator.getMissionLevel('Graphic') <2
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1963,9 +2151,9 @@ var venomousmodAPI = {};
 		{
 			id: "Advanced Story",
 			name: "Advanced Story".localize(),
-			v: 3,
+			v: 6,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Story/Quests') <=3
+				return LevelCalculator.getMissionLevel('Story/Quests') <7
 			},
 			category: "Story/Quests",
 			categoryDisplayName: "Story/Quests"
@@ -1974,9 +2162,9 @@ var venomousmodAPI = {};
 		{
 			id: "Difficult Quests",
 			name: "Difficult Quests".localize(),
-			v: 4,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Story/Quests') <=4
+				return LevelCalculator.getMissionLevel('Story/Quests') <9
 			},
 			category: "Story/Quests",
 			categoryDisplayName: "Story/Quests"
@@ -1987,7 +2175,7 @@ var venomousmodAPI = {};
 			name: "Model Shading".localize(),
 			v: 4,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <=4
+				return LevelCalculator.getMissionLevel('Graphic') <6
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -1996,9 +2184,9 @@ var venomousmodAPI = {};
 		{
 			id: "HD Sound",
 			name: "HD Sound".localize(),
-			v: 12,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') <13
+				return LevelCalculator.getMissionLevel('Sound') <9
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2007,9 +2195,9 @@ var venomousmodAPI = {};
 		{
 			id: "Advanced AI",
 			name: "Advanced A.I.".localize(),
-			v: 7,
+			v: 6,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('AI') >6
+				return LevelCalculator.getMissionLevel('AI') <7
 			},
 			category: "AI",
 			categoryDisplayName: "A.I."
@@ -2020,7 +2208,7 @@ var venomousmodAPI = {};
 			name: "Boost".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Gameplay') >7
+				return LevelCalculator.getMissionLevel('Gameplay') <9
 			},
 			category: "Gameplay",
 			categoryDisplayName: "Gameplay"
@@ -2031,7 +2219,7 @@ var venomousmodAPI = {};
 			name: "No Loading Screens".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') >7
+				return LevelCalculator.getMissionLevel('Engine') <9
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2042,7 +2230,7 @@ var venomousmodAPI = {};
 			name: "HD Dialogues".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Dialogues') >7
+			return LevelCalculator.getMissionLevel('Dialogs') <9
 			},
 			category: "Dialogs",
 			categoryDisplayName: "Dialogues"
@@ -2051,9 +2239,9 @@ var venomousmodAPI = {};
 		{
 			id: "Cyborg Music",
 			name: "Cyborg Music".localize(),
-			v: 9,
+			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') >8
+				return LevelCalculator.getMissionLevel('Sound') <9
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2165,7 +2353,7 @@ var venomousmodAPI = {};
 			id: "Sandbox",
 	    	name: "Sandbox".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.6, 6, 1]
+			audienceWeightings: [0.6, 0.6, 1]
 		}, {
 			id: "Smashing",
 	    	name: "Smashing".localize("game topic"),
@@ -2214,5 +2402,179 @@ var venomousmodAPI = {};
 		}
 	    ]);
 	};
+	
+		/* Custom prices for games */
+	var company = GameManager.company;
+	var gamePrice;
+	var newPrice;
+	
+	UI.selectPriceClick = function (a) {
+	Sound.click();
+		switch (a.id) {
+			case "applyPrice":
+			applyPrice();
+				break;
+			default:
+				return;
+		}
+	};
+	
+	var div = $("body");
+	div.append('<div id="PriceContainer" class="windowBorder tallWindow" style="overflow:auto;display:none;"> <div id="priceSelector" class="windowTitle smallerWindowTitle">Custom Game Price</div>');
+	div = $("#PriceContainer");
+	
+	div.append('<div id="venomous_price" style="text-align:center;margin-left:50px;width: 450px"></div>');
+	div.append('<div id="venomous_current_price" style="text-align:center;margin-left:50px;width: 450px"></div>');
+	div.append('<div id="venomous_select_price" style="text-align:center;margin-left:50px;width: 450px"></div>');
+	div.append('<div class="priceSlider"></div>');
+	div.append('<div id="applyPrice" class="selectorButton whiteButton" onclick="UI.selectPriceClick(this)" style="margin-left:50px;width: 450px">Set Price</div>');
+	
+	function applyPrice() {
+		game = GameManager.company.currentGame;
+		
+		if (game.gameSize === "medium") {
+			Sales.mediumUnitPrice = newPrice;
+		}
+		else if (game.gameSize === "large") {
+			Sales.largeUnitPrice = newPrice;
+		}
+		else if (game.gameSize === "aaa") {
+			Sales.aaaUnitPrice = newPrice;
+		}
+		else {
+			Sales.smallUnitPrice = newPrice;
+		}
+		
+		gamePrice = newPrice;
+		div.find("#venomous_current_price").html("Current price: " + gamePrice);
+	};
+	
+	function setPrice(e) {
+		var game = GameManager.company.currentGame;
+		newPrice = e
+		
+		var div = $("#PriceContainer");
+		
+		if(newPrice == 7 && game.gameSize === "small")
+			div.find("#venomous_price").html(newPrice + " Cr. (Default)");
+		else if(newPrice == 11 && game.gameSize === "medium")
+			div.find("#venomous_price").html(newPrice + " Cr. (Default)");
+		else if(newPrice == 14 && game.gameSize === "large")
+			div.find("#venomous_price").html(newPrice + " Cr. (Default)");
+		else if(newPrice == 18 && game.gameSize === "aaa")
+			div.find("#venomous_price").html(newPrice + " Cr. (Default)");
+		else
+			div.find("#venomous_price").html(newPrice + " Cr.");
+	};
+	
+	/* calculateSales algorithm */
+	var salesCalculated = function (company, game, gamePrice) {
+		var price = gamePrice;
+		
+		if(GameManager.company.isCurrentlyDevelopingGame())
+		{
+			var priceRatio = function (price) {
+				var a;
+				var game = GameManager.company.currentGame;
+				
+				if(game.gameSize === "small")
+					a = price / 10;
+				else if(game.gameSize === "medium")
+					a = price / 20;
+				else if(game.gameSize === "large")
+					a = price / 40;
+				else if(game.gameSize === "aaa")
+					a = price / 60;
+				
+				return a;
+			}
+			
+			var sRatio = function (price, score) {
+				var b;
+				
+				if(score >= 9)
+					b = 1;
+				else if (score >= 7)
+					b = 0.8;
+				else if (score >= 5)
+					b = 0.6;
+				else if (score >= 3)
+					b = 0.4;
+				else
+					b = 0.2;
+					
+				return b;
+			}
+			
+			if(priceRatio - sRatio > 0)
+				saleReach -= priceRatio + sRatio;
+			else
+				saleReach += priceRatio + sRatio;
+			
+			saleReach = [saleReach, saleReach, saleReach];
+			
+			reach[i] += saleReach[i];
+		}
+	};
+	
+	GDT.on(GDT.eventKeys.gameplay.salesCalculated, salesCalculated);
+	/*  */
+	
+	var original_showContextMenu = UI._showContextMenu;
+	var new_showContextMenu = function (b, c, d, h) {
+		GameManager.company.isCurrentlyDevelopingGame() && c.push({
+				label: "Game Price...",
+				action: function () {
+					Sound.click();
+					GameManager.resume(true);
+					
+					var div = $("#PriceContainer");
+						 
+					div.scrollTop()
+						 
+					div.gdDialog({
+						popout: !0,
+						close: !0
+					})
+				}
+			})
+			
+		var game = GameManager.company.currentGame;
+		var max_price;
+		
+		if (GameManager.company.isCurrentlyDevelopingGame() && game.gameSize === "medium") {
+			max_price = 20;
+			gamePrice = Sales.mediumUnitPrice;
+		}
+		else if (GameManager.company.isCurrentlyDevelopingGame() && game.gameSize === "large") {
+			max_price = 40;
+			gamePrice = Sales.largeUnitPrice;
+		}
+		else if (GameManager.company.isCurrentlyDevelopingGame() && game.gameSize === "aaa") {
+			max_price = 60;
+			gamePrice = Sales.aaaUnitPrice;
+		}
+		else if (GameManager.company.isCurrentlyDevelopingGame()) {
+			max_price = 10;
+			gamePrice = Sales.smallUnitPrice;
+		}
+		
+		div.find(".priceSlider").slider({
+			min: 1,
+			max: max_price,
+			range: "min",
+			value: Math.floor(gamePrice),
+			animate: !1,
+			slide: function (a, b) {
+				var c = b.value;
+				setPrice(c);
+			}
+		});
+		setPrice(gamePrice);
+	
+		original_showContextMenu(b, c, d, h);
+	};
+	UI._showContextMenu = new_showContextMenu;
+	
 	 /*  */		       
 })();

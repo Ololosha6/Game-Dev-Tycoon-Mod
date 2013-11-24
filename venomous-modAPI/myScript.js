@@ -4,6 +4,20 @@
 		//Adds Platforms
 		venomousmodAPI.addPlatform();
 		
+	    //Adds Topics
+		venomousmodAPI.addTopic();
+		
+		//Adds Events
+		venomousmodAPI.addEventThunderstorm();
+		venomousmodAPI.addEventThief();
+		venomousmodAPI.addEventCharlieDay();
+		venomousmodAPI.addEventDalekInvasion();
+		venomousmodAPI.addEventMeTube();
+		venomousmodAPI.addEventGamePort();
+		venomousmodAPI.addEventIGN();
+		
+		//Adds Researches
+		venomousmodAPI.addResearch();
 	};
 
 	var error = function () {
