@@ -243,14 +243,13 @@ November 24, 2013:
 1.1.0:
 1. Enabled Topics in myScript.js
 2. Enabled Events in myScript.js
-3. Implemented Price Modifications
-4. Changed IDS for Events
-5. Enabled Researches in myScript.js
-6. Implemented IGN Interview Event
-7. Implemented MTC One
-8. Implemented Mookia 3310
-9. Implemented Mookia Moomia
-10 Implemented GRID Machine
+3. Changed IDS for Events
+4. Enabled Researches in myScript.js
+5. Implemented IGN Interview Event
+6. Implemented MTC One
+7. Implemented Mookia 3310
+8. Implemented Mookia Moomia
+9. Implemented GRID Machine
 
 How to install the mod:
 
