@@ -251,6 +251,13 @@ November 24, 2013:
 8. Implemented Mookia Moomia
 9. Implemented GRID Machine
 
+November 25, 2013:
+
+1.1.1:
+1. Implemented Gaming Market Event
+2. Implemented Mission Overrides for Tycoon Topic
+3. Implemented Mission Overrides for Button Masher Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

@@ -2025,6 +2025,74 @@ var venomousmodAPI = {};
         GDT.addEvent(IGN);
 	};
 	
+		venomousmodAPI.addEventGamingMarket = function () {
+		var eventId = "00000000001-1111-1111-1111-VENOMOUS";
+		
+		var GamingMarket = {
+			id: eventId,
+			isRandom: false,
+			date: '1/1/1',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+            	var msg = "Welcome to the Gaming Market.{n} You will be competing against super popular companies such as Ninvento and Mirconoft to push out the best games ever.\n\n Have fun and start coding your games!".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Gaming Market".localize(),
+					text: msg,
+					options: ["Games", "Game Companies", "Fans"]
+				});
+			},
+                       
+			complete: function (decision) {
+                       
+				var company = GameManager.company;
+                               
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Gaming Market".localize(),
+						text: "In the Gaming Market, you will be learning about game development and what types of topics and genres can work with the game that you are developing."
+					});    
+					company.activeNotifications.addRange(n.split());
+					return;                                                                                        
+				}
+				if (decision === 1) {
+                	var n = new Notification({
+                    header: "Gaming Market".localize(),
+                    text: "In the Gaming Market, you will be competing against other game companies. {n} The other gaming companies will try to be better than you by making their own games. \n\n Have fun and remember to watch out for tricks and traps from the other gaming companies."
+               	});
+                   	n.adjustFans(500);
+                    company.notifications.push(n);
+                                       
+                    var m = new Notification ({
+                    	header: "Gaming Market".localize(),
+                    	text: "The Gaming Market is the market that holds sales for every game in the Game Dev Tycoon universe."
+                    });
+                	if (company.isGameProgressBetween(0.0, 0.0)) {
+                    	m.adjustCash(60000, "GamerStop Sponsorship");
+                    	m.adjustHype(5 + 25 * company.getRandom());
+						m.adjustFans(500);
+                    	company.notifications.push(m);
+                    }
+                    return;                        
+                }
+                if (decision === 2) {
+                	var n = new Notification({
+                    	header: "Gaming Market".localize(),
+                        text: "In The Gaming Market, you will get fans, if your game is good enough. \nFans will like your company if the game is awesome."
+                    });
+                	n.adjustFans(500);
+                	if (company.isGameProgressBetween(0.0, 0.0)) {
+                    	n.adjustHype(5 + 25 * company.getRandom());
+                    }
+                    company.notifications.push(n);
+                    return;             
+               	}
+			}
+        };
+        
+        GDT.addEvent(GamingMarket);
+	};
+	
 	venomousmodAPI.addResearch = function () {
 	GDT.addResearchItem(
 	{
@@ -2247,18 +2315,35 @@ var venomousmodAPI = {};
 			categoryDisplayName: "Sound"
 	});
 	};
+	
 	venomousmodAPI.addTopic = function () {
 	GDT.addTopics([
 		{
 			id: "Tycoon",
 	    	name: "Tycoon".localize("game topic"),
-	    	genreWeightings: [1, 0.9, 0.8, 1, 1, 0.6],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 1, 0.9],
 	    	audienceWeightings: [0.8, 0.8, 0.6]
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			]
 		}, {
 	    	id: "Button Masher",
 	    	name: "Button Masher".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8]
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			]
 		}, {
 	    	id: "Exercise Cats",
 	    	name: "Exercise Cats".localize("game topic"),

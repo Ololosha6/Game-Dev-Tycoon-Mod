@@ -15,9 +15,11 @@
 		venomousmodAPI.addEventMeTube();
 		venomousmodAPI.addEventGamePort();
 		venomousmodAPI.addEventIGN();
+		venomousmodAPI.addEventGamingMarket();
 		
 		//Adds Researches
 		venomousmodAPI.addResearch();
+		
 	};
 
 	var error = function () {
