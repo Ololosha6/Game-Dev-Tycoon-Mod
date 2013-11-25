@@ -1971,7 +1971,7 @@ var venomousmodAPI = {};
 					sourceId: eventId,
 					header: "Interview".localize(),
 					text: msg,
-					options: ["No, Thank You.", "Game Development", "Games"]
+					options: ["Declined!", "Game Development", "Games"]
 				});
 			},
                        
@@ -2322,38 +2322,50 @@ var venomousmodAPI = {};
 			id: "Tycoon",
 	    	name: "Tycoon".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 1, 0.9],
-	    	audienceWeightings: [0.8, 0.8, 0.6]
+	    	audienceWeightings: [0.8, 0.8, 0.6],
 			missionOverrides: [
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
 			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			]
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Button Masher",
 	    	name: "Button Masher".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
 			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
 			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			]
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Exercise Cats",
 	    	name: "Exercise Cats".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Cat Fighting",
 	    	name: "Cat Fighting".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Cat Tag",
 	    	name: "Cat Tag".localize("game topic"),

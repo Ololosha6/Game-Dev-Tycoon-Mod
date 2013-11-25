@@ -258,6 +258,12 @@ November 25, 2013:
 2. Implemented Mission Overrides for Tycoon Topic
 3. Implemented Mission Overrides for Button Masher Topic
 
+1.1.2:
+1. Fixed Bug with Mission Overrides
+2. Implemented Mission Overrides for Exercise Cats Topic
+3. Implemented Mission Overrides for Cat Fighting Topic
+4. Changed No, Thank You Option in IGN Interview Event to Declined!
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
