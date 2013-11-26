@@ -29,3 +29,8 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 28. Japanese RPG
 29. Western RPG
 30. Social
+31. Lion Tackle
+32. Waterfall Jumping
+33. Hedgehog Bowling
+34. Robot Smashing
+35. Doctor Who-Style

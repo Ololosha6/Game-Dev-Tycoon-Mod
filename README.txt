@@ -5,6 +5,7 @@ mod created for Game Dev Tycoon using the Game Dev Tycoon Modding API made by Gr
 
 Main Coder: Venomous
 Texture Maker and Finder: Gamingthrou
+Code Design and Special Event Code: DzjengisKhan
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
@@ -263,6 +264,27 @@ November 25, 2013:
 2. Implemented Mission Overrides for Exercise Cats Topic
 3. Implemented Mission Overrides for Cat Fighting Topic
 4. Changed No, Thank You Option in IGN Interview Event to Declined!
+
+November 26, 2013:
+
+1.2.0:
+1. Implemented Mission Overrides for Cat Tag Topic
+2. Implemented Mission Overrides for Cat Sports Topic
+3. Implemented Mission Overrides for Angry Birds-Style Topic
+4. Implemented Mission Overrides for Trivia Topic
+5. Implemented Mission Overrides for Computer Dev Topic
+6. Implemented Mission Overrides for Mod Dev Topic
+7. Implemented Dalek Music Research
+8. Implemented Main Menu Research
+9. Implemented Advanced Main Menu Research
+10. Implemented Animated Main Menu Research
+11. Implemented Day/Night Main Menu Research
+12. Implement Govodore Trouble Event
+13. Implemented Lion Tackle Topic
+14. Implemented Waterfall Jumping Topic
+15. Implemented Hedgehog Bowling Topic
+16. Implemented Robot Smashing Topic
+17. Implemented Doctor Who-Style Topic
 
 How to install the mod:
 

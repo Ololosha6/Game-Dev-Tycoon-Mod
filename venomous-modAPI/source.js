@@ -2093,6 +2093,74 @@ var venomousmodAPI = {};
         GDT.addEvent(GamingMarket);
 	};
 	
+		venomousmodAPI.addEventGovodoreTrouble = function () {
+		var eventId = "00000000011-1111-1111-1111-VENOMOUS";
+		
+		var GovodoreTrouble = {
+			id: eventId,
+			isRandom: false,
+			date: '2/1/1',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+            	var msg = "We just got reports of Govodore G64's breaking down around the world.{n} Govodore's mail systems were being attacked by tons and tons of reports of their Govodore G64 overheating and getting blue screens of death. .\n\n What will Govodore do?".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Govodore Trouble".localize(),
+					text: msg,
+					options: ["Ignore the Problems", "Fix the Problems", "Apologize!"]
+				});
+			},
+                       
+			complete: function (decision) {
+                       
+				var company = GameManager.company;
+                               
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Govodore Trouble".localize(),
+						text: "Govodore ignores the problems of the Govodore G64 and they throw away every mail piece related to the problem."
+					});    
+					company.activeNotifications.addRange(n.split());
+					return;                                                                                        
+				}
+				if (decision === 1) {
+                	var n = new Notification({
+                    header: "Govodore Trouble".localize(),
+                    text: "Govodore fixes the problems in the Govodore G64, and they make every fan happy."
+               	});
+                   	n.adjustFans(500);
+                    company.notifications.push(n);
+                                       
+                    var m = new Notification ({
+                    	header: "Govodore Trouble".localize(),
+                    	text: "IGN wrote a article on their website about the problems of the Govodore G64, and how they were fixed. "
+                    });
+                	if (company.isGameProgressBetween(0.1, 0.9)) {
+                    	m.adjustCash(60000, "Article");
+                    	m.adjustHype(5 + 25 * company.getRandom());
+						m.adjustFans(500);
+                    	company.notifications.push(m);
+                    }
+                    return;                        
+                }
+                if (decision === 2) {
+                	var n = new Notification({
+                    	header: "Govodore Trouble".localize(),
+                        text: "Govodore apologized to their fans about the trouble with the Govodore G64, and told everyone that the problems are not being fixed. \nFans are disappointed!"
+                    });
+                	n.adjustFans(100);
+                	if (company.isGameProgressBetween(0.1, 0.9)) {
+                    	n.adjustHype(5 + 25 * company.getRandom());
+                    }
+                    company.notifications.push(n);
+                    return;             
+               	}
+			}
+        };
+        
+        GDT.addEvent(GovodoreTrouble);
+	};
+	
 	venomousmodAPI.addResearch = function () {
 	GDT.addResearchItem(
 	{
@@ -2314,6 +2382,61 @@ var venomousmodAPI = {};
 			category: "Sound",
 			categoryDisplayName: "Sound"
 	});
+	GDT.addResearchItem(
+		{
+			id: "Dalek Music",
+			name: "Dalek Music".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Sound') <9
+			},
+			category: "Sound",
+			categoryDisplayName: "Sound"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Main Menu",
+			name: "Main Menu".localize(),
+			v: 1,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <2
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Advanced Main Menu",
+			name: "Advanced Main Menu".localize(),
+			v: 4,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <8
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Animated Main Menu",
+			name: "Animated Main Menu".localize(),
+			v: 6,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <8
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Day/Night Main Menu",
+			name: "Day/Night Main Menu".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <9
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
 	};
 	
 	venomousmodAPI.addTopic = function () {
@@ -2370,32 +2493,74 @@ var venomousmodAPI = {};
 	    	id: "Cat Tag",
 	    	name: "Cat Tag".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Cat Sports",
 	    	name: "Cat Sports".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Angry Birds-Style",
 	    	name: "Angry Birds-Style".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Trivia",
 	    	name: "Trivia".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Computer Dev",
 	    	name: "Computer Dev".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Mod Dev",
 	    	name: "Mod Dev".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Arcade Racing",
 	    	name: "Arcade Racing".localize("game topic"),
@@ -2494,6 +2659,31 @@ var venomousmodAPI = {};
 		}, {
 			id: "Social",
 	    	name: "Social".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Lion Tackle",
+	    	name: "Lion Tackle".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Waterfall Jumping",
+	    	name: "Waterfall Jumping".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Hedgehog Bowling",
+	    	name: "Hedgehog Bowling".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1.0],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Robot Smashing",
+	    	name: "Robot Smashing".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Doctor Who-Style",
+	    	name: "Doctor Who-Style".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
 			audienceWeightings: [0.8, 1, 0.8]
 		}

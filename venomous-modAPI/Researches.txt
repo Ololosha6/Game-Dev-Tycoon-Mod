@@ -19,3 +19,8 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 18. No Loading Screens
 19. HD Dialogues
 20. Cyborg Music
+21. Dalek Music
+22. Main Menu
+23. Advanced Main Menu
+24. Animated Main Menu
+25. Day/Night Main Menu

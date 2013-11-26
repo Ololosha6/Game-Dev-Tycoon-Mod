@@ -7,3 +7,4 @@ List of Events in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 6. Game Port
 7. IGN Interview
 8. Gaming Market
+9. Govodore Trouble

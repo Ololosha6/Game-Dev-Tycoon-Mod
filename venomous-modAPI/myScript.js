@@ -16,6 +16,7 @@
 		venomousmodAPI.addEventGamePort();
 		venomousmodAPI.addEventIGN();
 		venomousmodAPI.addEventGamingMarket();
+		venomousmodAPI.addEventGovodoreTrouble();
 		
 		//Adds Researches
 		venomousmodAPI.addResearch();
