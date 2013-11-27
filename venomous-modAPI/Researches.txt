@@ -24,3 +24,8 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 23. Advanced Main Menu
 24. Animated Main Menu
 25. Day/Night Main Menu
+26. Realistic Graphical Worlds
+27. Warzones
+28. Advanced Warzones
+29. PVP
+30. Realistic Bosses

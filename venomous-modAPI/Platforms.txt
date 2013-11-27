@@ -53,3 +53,5 @@ List of Platforms in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 52. Mookia 3310
 53. Mookia Moomia
 54. GRID Machine
+55. BFF MV Mun
+56. Sdyssey

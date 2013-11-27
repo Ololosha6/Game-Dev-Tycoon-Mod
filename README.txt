@@ -279,12 +279,41 @@ November 26, 2013:
 9. Implemented Advanced Main Menu Research
 10. Implemented Animated Main Menu Research
 11. Implemented Day/Night Main Menu Research
-12. Implement Govodore Trouble Event
+12. Implemented Govodore Trouble Event
 13. Implemented Lion Tackle Topic
 14. Implemented Waterfall Jumping Topic
 15. Implemented Hedgehog Bowling Topic
 16. Implemented Robot Smashing Topic
 17. Implemented Doctor Who-Style Topic
+
+November 27, 2013:
+
+1.3.0:
+1. Lowered Rewards for Dalek Invasion Event for both options
+2. Changed Publishing and Retiring Date for CVIDIA Shield
+3. Implemented Mission Overrides for Arcade Racing Topic
+4. Implemented Mission Overrides for Cop Chase Topic
+5. Implemented Mission Overrides for Bean-Bag Toss Topic
+6. Implemented Mission Overrides for Rescue Turtles Topic
+7. Implemented Mission Overrides for Car Dodging Topic
+8. Implemented Mission Overrides for Squirrel Dodging Topic
+9. Implemented BFF MV Mun
+10. Implemented Sdyssey
+11. Implemented Realistic Graphical Worlds Research
+12. Implemented Warzones Research
+13. Implemented Advanced Warzones Research
+14. Implemented PVP Research
+15. Implemented Realistic Bosses Research
+16. Implemented Combat Topic
+17. Implemented Defense Topic
+18. Implemented Flight Topic
+19. Implemented Light Gun Topic
+20. Implemented Rogue Topic
+21. Implemented Ball Rollan Games Topic
+22. Implemented FMV Topic
+24. Implemented Adult Topic
+25. Implemented Advergame Topic
+26. Implemented Art Topic
 
 How to install the mod:
 

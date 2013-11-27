@@ -34,3 +34,13 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 33. Hedgehog Bowling
 34. Robot Smashing
 35. Doctor Who-Style
+36. Combat
+37. Defense
+38. Flight
+39. Light Gun
+40. Rogue 
+41. Ball Rollan Games
+42. FMV
+43. Adult
+44. Advergame
+45. Art

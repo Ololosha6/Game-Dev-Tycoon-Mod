@@ -1242,8 +1242,8 @@ var venomousmodAPI = {};
 				startAmount: 0.222,
 				unitsSold: 30.999,
 				licencePrize: 6000,
-				published: '1/2/1',
-				platformRetireDate: '50/9/4',
+				published: '23/8/4',
+				platformRetireDate: '70/9/4',
 				developmentCosts: 8000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [1.0, 1.0, 0.7],
@@ -1252,11 +1252,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '33873ES10-70G5-5G38-11169-Z5Z4843155ZZ',
-						date: '1/1/2',
+						date: '23/8/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
+								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('23/8/2', '23/8/4')),
 								image: icon41
 							});
 						}
@@ -1623,6 +1623,66 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon54 = './mods/venomous-modAPI/img/BFF MV Mun.png';
+		GDT.addPlatform(
+			{
+				id: 'BFF MV Mun',
+				name: 'BFF MV Mun',
+				company: 'BFF Electronics',
+				startAmount: 0.222,
+				unitsSold: 2.222,
+				licencePrize: 100,
+				published: '1/1/1',
+				platformRetireDate: '4/4/4',
+				developmentCosts: 300,
+				genreWeightings: [0.6, 0.6, 0.6, 1, 0.9, 1],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 1,
+				iconUri: icon54,
+				events: [
+					{
+						id: '33873ES23-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '4/2/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "The BFF MV Mun, a video game console by BFF Electronics, had a good run, but it wasn't enough for the sales. The BFF MV Mun will retire from store shelves {0}.".localize().format(General.getETADescription('4/2/4', '4/4/4')),
+								image: icon54
+							});
+						}
+					}
+				]
+			});
+		var icon55 = './mods/venomous-modAPI/img/Sdyssey.png';
+		GDT.addPlatform(
+			{
+				id: 'Sdyssey',
+				name: 'Sdyssey',
+				company: 'Sagnavox',
+				startAmount: 0.222,
+				unitsSold: 2.222,
+				licencePrize: 200,
+				published: '1/1/1',
+				platformRetireDate: '5/4/4',
+				developmentCosts: 400,
+				genreWeightings: [0.6, 0.6, 0.6, 1, 0.9, 1],
+				audienceWeightings: [0.9, 1.0, 0.9],
+				techLevel: 1,
+				iconUri: icon55,
+				events: [
+					{
+						id: '33873ES24-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '5/2/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Sagnavox is announcing that Sdyssey is retiring soon. Sdyssey will retire from store shelves {0}.".localize().format(General.getETADescription('5/2/4', '5/4/4')),
+								image: icon55
+							});
+						}
+					}
+				]
+			});
 	};
 	
 		venomousmodAPI.addEventThunderstorm = function () {
@@ -1829,9 +1889,9 @@ var venomousmodAPI = {};
 						header: "Run Away".localize(),
 						text: "You ran away, but you tripped and got exterminated by the Daleks."
 					});
-					n.adjustCash(-1000000000000000000000000, "Extermination");
-					n.adjustHype(5 - 6000 * company.getRandom());
-					n.adjustFans(-1000000000000000000000000);
+					n.adjustCash(-10000000, "Extermination");
+					n.adjustHype(5 - 3000 * company.getRandom());
+					n.adjustFans(-10000000);
 
 					company.activeNotifications.addRange(n.split());
 					return;
@@ -1841,9 +1901,9 @@ var venomousmodAPI = {};
 						header: "Fight the Daleks".localize(),
 						text: "You take out your sonic screwdriver, and fight the Daleks to save your office. You defeated the Daleks with your sonic screwdriver."
 					});
-					n.adjustCash(+1000000000000000000000000, "Saved the Day");
-					n.adjustHype(5 + 6000 * company.getRandom());
-					n.adjustFans(1000000000000000000000000);
+					n.adjustCash(10000000, "Saved the Day");
+					n.adjustHype(5 + 3000 * company.getRandom());
+					n.adjustFans(10000000);
 					return;
 				}
 			}
@@ -2437,6 +2497,61 @@ var venomousmodAPI = {};
 			category: "Engine",
 			categoryDisplayName: "Engine"
 	});
+	GDT.addResearchItem(
+		{
+			id: "Realistic Graphical Worlds",
+			name: "Realistic Graphical Worlds".localize(),
+			v: 10,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') <12
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Warzones",
+			name: "Warzones".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <14
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Advanced Warzones",
+			name: "Advanced Warzones".localize(),
+			v: 14,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <16
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "PVP",
+			name: "PVP".localize(),
+			v: 10,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Engine') <12
+			},
+			category: "Engine",
+			categoryDisplayName: "Engine"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Realistic Bosses",
+			name: "Realistic Bosses".localize(),
+			v: 14,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') <16
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
 	};
 	
 	venomousmodAPI.addTopic = function () {
@@ -2565,32 +2680,74 @@ var venomousmodAPI = {};
 			id: "Arcade Racing",
 	    	name: "Arcade Racing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Cop Chase",
 	    	name: "Cop Chase".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Bean-Bag Toss",
 	    	name: "Bean-Bag Toss".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Rescue Turtles",
 	    	name: "Rescue Turtles".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Car Dodging",
 	    	name: "Car Dodging".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Squirrel Dodging",
 	    	name: "Squirrel Dodging".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Fish Fighting",
 	    	name: "Fish Fighting".localize("game topic"),
@@ -2659,32 +2816,82 @@ var venomousmodAPI = {};
 		}, {
 			id: "Social",
 	    	name: "Social".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
 			id: "Lion Tackle",
 	    	name: "Lion Tackle".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
 			id: "Waterfall Jumping",
 	    	name: "Waterfall Jumping".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
 			id: "Hedgehog Bowling",
 	    	name: "Hedgehog Bowling".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1.0],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
 			id: "Robot Smashing",
 	    	name: "Robot Smashing".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}, {
 			id: "Doctor Who-Style",
 	    	name: "Doctor Who-Style".localize("game topic"),
-	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1.0],
+	    	genreWeightings: [0.8, 0.8, 0.9, 1, 0.8, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Combat",
+	    	name: "Combat".localize("game topic"),
+	    	genreWeightings: [0.8, 0.8, 0.8, 1, 0.8, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Defense",
+	    	name: "Defense".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Flight",
+	    	name: "Flight".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Light Gun",
+	    	name: "Light Gun".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Rogue",
+	    	name: "Rogue".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Ball Rollan Games",
+	    	name: "Ball Rollan Games".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "FMV",
+	    	name: "FMV".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Adult",
+	    	name: "Adult".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.6, 0.6, 1]
+		}, {
+			id: "Advergame",
+	    	name: "Advergame".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Art",
+	    	name: "Art".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
 		}
 	    ]);
