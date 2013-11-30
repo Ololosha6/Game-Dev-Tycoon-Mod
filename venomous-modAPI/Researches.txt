@@ -29,3 +29,8 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 28. Advanced Warzones
 29. PVP
 30. Realistic Bosses
+31. SD Sound Quality
+32. Cartoon World
+33. Animated Cartoon World
+34. Animated Textures
+35. Super-Realistic AI

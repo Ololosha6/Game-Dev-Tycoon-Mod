@@ -44,3 +44,8 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 43. Adult
 44. Advergame
 45. Art
+46. Turkey Baking
+47. Potato Mashing
+48. Fuzzy Brushing
+49. Mountain Skating
+50. Halloween

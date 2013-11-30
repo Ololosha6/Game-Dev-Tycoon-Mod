@@ -1242,7 +1242,7 @@ var venomousmodAPI = {};
 				startAmount: 0.222,
 				unitsSold: 30.999,
 				licencePrize: 6000,
-				published: '23/8/4',
+				published: '23/9/1',
 				platformRetireDate: '70/9/4',
 				developmentCosts: 8000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
@@ -1252,11 +1252,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '33873ES10-70G5-5G38-11169-Z5Z4843155ZZ',
-						date: '23/8/2',
+						date: '23/8/3',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('23/8/2', '23/8/4')),
+								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('23/8/3', '23/9/1')),
 								image: icon41
 							});
 						}
@@ -2162,7 +2162,7 @@ var venomousmodAPI = {};
 			date: '2/1/1',
 			ignoreGameLengthModifier: false,
 			getNotification: function (company) {
-            	var msg = "We just got reports of Govodore G64's breaking down around the world.{n} Govodore's mail systems were being attacked by tons and tons of reports of their Govodore G64 overheating and getting blue screens of death. .\n\n What will Govodore do?".localize();
+            	var msg = "We just got reports of Govodore G64's breaking down around the world.{n} Govodore's mail systems were being attacked by tons and tons of reports of their Govodore G64 overheating and getting blue screens of death.\n\n What will Govodore do?".localize();
 				return new Notification({
 					sourceId: eventId,
 					header: "Govodore Trouble".localize(),
@@ -2193,7 +2193,7 @@ var venomousmodAPI = {};
                                        
                     var m = new Notification ({
                     	header: "Govodore Trouble".localize(),
-                    	text: "IGN wrote a article on their website about the problems of the Govodore G64, and how they were fixed. "
+                    	text: "IGN wrote a article on their website about the problems of the Govodore G64, and how they were fixed."
                     });
                 	if (company.isGameProgressBetween(0.1, 0.9)) {
                     	m.adjustCash(60000, "Article");
@@ -2221,6 +2221,143 @@ var venomousmodAPI = {};
         GDT.addEvent(GovodoreTrouble);
 	};
 	
+		venomousmodAPI.addEventSabotage = function () {
+		var eventId = "00000000011-1111-1111-1111-VENOMOUS";
+		
+		var Sabotage = {
+			id: eventId,
+			isRandom: false,
+			date: '4/1/1',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+            	var msg = "Cybermen have hacked into your computer network, the same computer network that you were using to code your games for your gaming company.{n} The computer starts going crazy, opening over 1000 tabs in a second, with a animation of a Cybermen laughing at you.\n\n What will you do to save your company?".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Sabotage".localize(),
+					text: msg,
+					options: ["Hack the Cybermen", "Smash the Computer", "Call the Doctor!"]
+				});
+			},
+                       
+			complete: function (decision) {
+                       
+				var company = GameManager.company;
+                               
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Hack the Cybermen".localize(),
+						text: "You attempted to hack the Cybermen back, but their firewall blocked your signal."
+					});    
+					company.activeNotifications.addRange(n.split());
+					return;                                                                                        
+				}
+				if (decision === 1) {
+                	var n = new Notification({
+                    header: "Smash the Computer".localize(),
+                    text: "You smashed the computer, because you got tired of the Cybermen messing up everything."
+               	});
+                   	n.adjustFans(-900);
+					n.adjustCash(-100000);
+                    company.notifications.push(n);
+                                       
+                    var m = new Notification ({
+                    	header: "Cybermen Proposal".localize(),
+                    	text: "Cybermen have appeared on your computer screen, and proposed to you to join their army of Cybermen and help them take over the world."
+                    });
+                	if (company.isGameProgressBetween(0.1, 0.9)) {
+                    	m.adjustCash(60000, "Proposal");
+                    	m.adjustHype(5 + 35 * company.getRandom());
+						m.adjustFans(200);
+                    	company.notifications.push(m);
+                    }
+                    return;                        
+                }
+                if (decision === 2) {
+                	var n = new Notification({
+                    	header: "Call the Doctor".localize(),
+                        text: "The Doctor did a massive virus scan on your computer, and removed the Cybermen virus. \nFans are excited!"
+                    });
+                	n.adjustFans(1000);
+					n.adjustCash(1000);
+                	if (company.isGameProgressBetween(0.1, 0.9)) {
+                    	n.adjustHype(5 + 25 * company.getRandom());
+                    }
+                    company.notifications.push(n);
+                    return;             
+               	}
+			}
+        };
+        
+        GDT.addEvent(Sabotage);
+	};
+	
+		venomousmodAPI.addEventMboxOneRumours = function () {
+		var eventId = "00000000111-1111-1111-1111-VENOMOUS";
+		
+		var MboxOneRumours = {
+			id: eventId,
+			isRandom: false,
+			date: '22/9/2',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+            	var msg = "Rumours have been spread around the entire world about Mirconoft's next gen console. {n} Fans of the Mbox 360 have been nagging Mirconoft like crazy trying to retrieve info from them about the new console. \n\n All of the info, we have been getting are unconfirmed rumors.".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Mbox One Rumours".localize(),
+					text: msg,
+					options: ["Rumours", "Design", "Software"]
+				});
+			},
+                       
+			complete: function (decision) {
+                       
+				var company = GameManager.company;
+                               
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Rumours".localize(),
+						text: "There are several rumours for the Mbox One soaring around the world, such as the rumour for Blu-Ray Support for playback and games."
+					});    
+					company.activeNotifications.addRange(n.split());
+					return;                                                                                        
+				}
+				if (decision === 1) {
+                	var n = new Notification({
+                    header: "Design".localize(),
+                    text: "We heard a rumour about the design of the Mbox One. The Mbox One was supposed to be a massive version of the Mbox 360."
+               	});
+                   	company.notifications.push(n);
+                                       
+                    var m = new Notification ({
+                    	header: "Mbox One Rumours Response".localize(),
+                    	text: "IGN responded that those rumours were blasphemy and didn't make sense at all."
+                    });
+                	if (company.isGameProgressBetween(0.4, 0.9)) {
+                    	m.adjustCash(70000, "Article");
+                    	m.adjustHype(5 + 30 * company.getRandom());
+						m.adjustFans(600);
+                    	company.notifications.push(m);
+                    }
+                    return;                        
+                }
+                if (decision === 2) {
+                	var n = new Notification({
+                    	header: "Software".localize(),
+                        text: "The Mbox One's software will be extraordinary with epic graphics and a epic storage of 25 GB on a Blu-Ray Disc."
+                    });
+                	n.adjustFans(100);
+                	if (company.isGameProgressBetween(0.1, 0.9)) {
+                    	n.adjustHype(5 + 25 * company.getRandom());
+                    }
+                    company.notifications.push(n);
+                    return;             
+               	}
+			}
+        };
+        
+        GDT.addEvent(MboxOneRumours);
+	};
+	
 	venomousmodAPI.addResearch = function () {
 	GDT.addResearchItem(
 	{
@@ -2228,7 +2365,7 @@ var venomousmodAPI = {};
 		name: "UI Structure".localize(),
 		v: 4,
 		canResearch: function (company) {
-			return LevelCalculator.getMissionLevel('Level Design') < 5 //The 'Level Design' level has to 4 or lower
+			return LevelCalculator.getMissionLevel('Level Design') > 3 //The 'Level Design' level has to 4 or lower
 		},
 		category: "Level Design",
 		categoryDisplayName: "Level Design".localize()
@@ -2239,7 +2376,7 @@ var venomousmodAPI = {};
 			name: "Animated Bosses".localize(),
 			v: 2,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <3
+				return LevelCalculator.getMissionLevel('Graphic') > 1
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2250,7 +2387,7 @@ var venomousmodAPI = {};
 			name: "3D Graphics Version 8".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 7
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2259,9 +2396,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 9",
 			name: "3D Graphics Version 9".localize(),
-			v: 8,
+			v: 10,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 8
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2270,9 +2407,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 10",
 			name: "3D Graphics Version 10".localize(),
-			v: 8,
+			v: 12,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2281,9 +2418,9 @@ var venomousmodAPI = {};
 		{
 			id: "3D Graphics Version 11",
 			name: "3D Graphics Version 11".localize(),
-			v: 8,
+			v: 14,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 10
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2292,9 +2429,9 @@ var venomousmodAPI = {};
 		{
 			id: "2K HD Graphics",
 			name: "2K HD Graphics".localize(),
-			v: 8,
+			v: 12,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 10
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2303,9 +2440,9 @@ var venomousmodAPI = {};
 		{
 			id: "4K HD Graphics",
 			name: "4K HD Graphics".localize(),
-			v: 8,
+			v: 14,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <9
+				return LevelCalculator.getMissionLevel('Graphic') > 10
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2316,7 +2453,7 @@ var venomousmodAPI = {};
 			name: "Techno Music".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') <9
+				return LevelCalculator.getMissionLevel('Sound') > 7
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2327,7 +2464,7 @@ var venomousmodAPI = {};
 			name: "Arcade Graphics".localize(),
 			v: 1,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <2
+				return LevelCalculator.getMissionLevel('Graphic') > 0
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2338,7 +2475,7 @@ var venomousmodAPI = {};
 			name: "Simple Story".localize(),
 			v: 2,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Story/Quests') <3
+				return LevelCalculator.getMissionLevel('Story/Quests') > 1
 			},
 			category: "Story/Quests",
 			categoryDisplayName: "Story/Quests"
@@ -2349,7 +2486,7 @@ var venomousmodAPI = {};
 			name: "Advanced Story".localize(),
 			v: 6,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Story/Quests') <7
+				return LevelCalculator.getMissionLevel('Story/Quests') > 4
 			},
 			category: "Story/Quests",
 			categoryDisplayName: "Story/Quests"
@@ -2360,7 +2497,7 @@ var venomousmodAPI = {};
 			name: "Difficult Quests".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Story/Quests') <9
+				return LevelCalculator.getMissionLevel('Story/Quests') > 7
 			},
 			category: "Story/Quests",
 			categoryDisplayName: "Story/Quests"
@@ -2371,7 +2508,7 @@ var venomousmodAPI = {};
 			name: "Model Shading".localize(),
 			v: 4,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <6
+				return LevelCalculator.getMissionLevel('Graphic') > 3
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2382,7 +2519,7 @@ var venomousmodAPI = {};
 			name: "HD Sound".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') <9
+				return LevelCalculator.getMissionLevel('Sound') > 7
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2393,7 +2530,7 @@ var venomousmodAPI = {};
 			name: "Advanced A.I.".localize(),
 			v: 6,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('AI') <7
+				return LevelCalculator.getMissionLevel('AI') > 5
 			},
 			category: "AI",
 			categoryDisplayName: "A.I."
@@ -2404,7 +2541,7 @@ var venomousmodAPI = {};
 			name: "Boost".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Gameplay') <9
+				return LevelCalculator.getMissionLevel('Gameplay') > 7
 			},
 			category: "Gameplay",
 			categoryDisplayName: "Gameplay"
@@ -2415,7 +2552,7 @@ var venomousmodAPI = {};
 			name: "No Loading Screens".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <9
+				return LevelCalculator.getMissionLevel('Engine') > 7
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2426,7 +2563,7 @@ var venomousmodAPI = {};
 			name: "HD Dialogues".localize(),
 			v: 8,
 			canResearch: function (company) {
-			return LevelCalculator.getMissionLevel('Dialogs') <9
+			return LevelCalculator.getMissionLevel('Dialogs') > 7
 			},
 			category: "Dialogs",
 			categoryDisplayName: "Dialogues"
@@ -2437,7 +2574,7 @@ var venomousmodAPI = {};
 			name: "Cyborg Music".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') <9
+				return LevelCalculator.getMissionLevel('Sound') > 7
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2448,7 +2585,7 @@ var venomousmodAPI = {};
 			name: "Dalek Music".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Sound') <9
+				return LevelCalculator.getMissionLevel('Sound') > 7
 			},
 			category: "Sound",
 			categoryDisplayName: "Sound"
@@ -2459,7 +2596,7 @@ var venomousmodAPI = {};
 			name: "Main Menu".localize(),
 			v: 1,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <2
+				return LevelCalculator.getMissionLevel('Engine') > 0
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2470,7 +2607,7 @@ var venomousmodAPI = {};
 			name: "Advanced Main Menu".localize(),
 			v: 4,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <8
+				return LevelCalculator.getMissionLevel('Engine') > 3
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2481,7 +2618,7 @@ var venomousmodAPI = {};
 			name: "Animated Main Menu".localize(),
 			v: 6,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <8
+				return LevelCalculator.getMissionLevel('Engine') > 5
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2492,7 +2629,7 @@ var venomousmodAPI = {};
 			name: "Day/Night Main Menu".localize(),
 			v: 8,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <9
+				return LevelCalculator.getMissionLevel('Engine') > 7
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2503,7 +2640,7 @@ var venomousmodAPI = {};
 			name: "Realistic Graphical Worlds".localize(),
 			v: 10,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <12
+				return LevelCalculator.getMissionLevel('Graphic') > 9
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
@@ -2514,7 +2651,7 @@ var venomousmodAPI = {};
 			name: "Warzones".localize(),
 			v: 12,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <14
+				return LevelCalculator.getMissionLevel('Engine') > 11
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2525,7 +2662,7 @@ var venomousmodAPI = {};
 			name: "Advanced Warzones".localize(),
 			v: 14,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <16
+				return LevelCalculator.getMissionLevel('Engine') > 13
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2536,7 +2673,7 @@ var venomousmodAPI = {};
 			name: "PVP".localize(),
 			v: 10,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Engine') <12
+				return LevelCalculator.getMissionLevel('Engine') > 9
 			},
 			category: "Engine",
 			categoryDisplayName: "Engine"
@@ -2547,10 +2684,65 @@ var venomousmodAPI = {};
 			name: "Realistic Bosses".localize(),
 			v: 14,
 			canResearch: function (company) {
-				return LevelCalculator.getMissionLevel('Graphic') <16
+				return LevelCalculator.getMissionLevel('Graphic') > 13
 			},
 			category: "Graphic",
 			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "SD Sound Quality",
+			name: "SD Sound Quality".localize(),
+			v: 6,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Sound') > 4
+			},
+			category: "Sound",
+			categoryDisplayName: "Sound"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Cartoon World",
+			name: "Cartoon World".localize(),
+			v: 6,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('World Design') > 4
+			},
+			category: "World Design",
+			categoryDisplayName: "World Design"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Animated Cartoon World",
+			name: "Animated Cartoon World".localize(),
+			v: 8,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('World Design') > 7
+			},
+			category: "World Design",
+			categoryDisplayName: "World Design"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Animated Textures",
+			name: "Animated Textures".localize(),
+			v: 10,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Level Design') > 8
+			},
+			category: "Level Design",
+			categoryDisplayName: "Level Design"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Super-Realistic AI",
+			name: "Super-Realistic AI".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Level Design') > 10
+			},
+			category: "AI",
+			categoryDisplayName: "A.I."
 	});
 	};
 	
@@ -2752,77 +2944,182 @@ var venomousmodAPI = {};
 			id: "Fish Fighting",
 	    	name: "Fish Fighting".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Cat Treat Toss",
 	    	name: "Cat Treat Toss".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Sandwich Making",
 	    	name: "Sandwich Making".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Comic Book Development",
 	    	name: "Comic Book Development".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Sandbox",
 	    	name: "Sandbox".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.6, 0.6, 1]
+			audienceWeightings: [0.6, 0.6, 1],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Smashing",
 	    	name: "Smashing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Platformer",
 	    	name: "Platformer".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Pinball",
 	    	name: "Pinball".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "First-Person Shooter",
 	    	name: "First-Person Shooter".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Visual Novel",
 	    	name: "Visual Novel".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Third-Person Shooter",
 	    	name: "Third-Person Shooter".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Japanese RPG",
 	    	name: "Japanese RPG".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Western RPG",
 	    	name: "Western RPG".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Social",
 	    	name: "Social".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Lion Tackle",
 	    	name: "Lion Tackle".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Waterfall Jumping",
 	    	name: "Waterfall Jumping".localize("game topic"),
@@ -2893,9 +3190,34 @@ var venomousmodAPI = {};
 	    	name: "Art".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Turkey Baking",
+	    	name: "Turkey Baking".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Potato Mashing",
+	    	name: "Potato Mashing".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Fuzzy Brushing",
+	    	name: "Fuzzy Brushing".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Mountain Skating",
+	    	name: "Mountain Skating".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [0.8, 1, 0.8]
+		}, {
+			id: "Halloween",
+	    	name: "Halloween".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [0.6, 1, 1]
 		}
 	    ]);
 	};
-	
-	 /*  */		       
+
+	/*  */		       
 })();

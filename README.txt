@@ -315,6 +315,40 @@ November 27, 2013:
 25. Implemented Advergame Topic
 26. Implemented Art Topic
 
+November 30, 2013:
+
+1.4.0:
+1. Fixed Bug where all of the Researches got unlocked as soon as you researched Custom Game Engine in the Garage
+2. Implemented Mission Overrides for Fish Fighting Topic
+3. Implemented Mission Overrides for Cat Treat Toss Topic
+4. Fixed Publishing Date for CVIDIA Shield
+5. Implemented Mission Overrides for Sandwich Making Topic
+6. Implemented Mission Overrides for Comic Book Development Topic
+7. Implemented Mission Overrides for Sandbox Topic
+8. Implemented Mission Overrides for Smashing Topic
+9. Implemented Mission Overrides for Platformer Topic
+10. Implemented Mission Overrides for Pinball Topic
+11. Implemented Turkey Baking Topic
+12. Implemented Potato Mashing Topic
+13. Implemented Fuzzy Brushing Topic
+14. Implemented Mountain Skating Topic
+15. Implemented Halloween Topic
+16. Implemented Mbox One Rumours Event
+17. Fixed Bug in Govodore Trouble Event where there were two periods in the introduction message. 
+18. Implemented SD Sound Quality Research
+19. Implemented Cartoon World Research
+20. Implemented Animated Cartoon World Research
+21. Implemented Animated Textures Research
+22. Implemented Super-Realistic AI Research
+23. Implemented Sabotage Event
+24. Implemented Mission Overrides for First-Person Shooter Topic
+25. Implemented Mission Overrides for Visual Novel Topic
+26. Implemented Mission Overrides for Third-Person Shooter Topic
+27. Implemented Mission Overrides for Japanese RPG Topic
+28. Implemented Mission Overrides for Western RPG Topic
+29. Implemented Mission Overrides for Social Topic
+30. Implemented Mission Overrides for Lion Tackle Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

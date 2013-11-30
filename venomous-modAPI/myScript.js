@@ -17,6 +17,8 @@
 		venomousmodAPI.addEventIGN();
 		venomousmodAPI.addEventGamingMarket();
 		venomousmodAPI.addEventGovodoreTrouble();
+		venomousmodAPI.addEventSabotage();
+		venomousmodAPI.addEventMboxOneRumours();
 		
 		//Adds Researches
 		venomousmodAPI.addResearch();
