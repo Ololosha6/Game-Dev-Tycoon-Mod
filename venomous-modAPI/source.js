@@ -2222,7 +2222,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventSabotage = function () {
-		var eventId = "00000000011-1111-1111-1111-VENOMOUS";
+		var eventId = "00000001111-1111-1111-1111-VENOMOUS";
 		
 		var Sabotage = {
 			id: eventId,
@@ -2292,7 +2292,7 @@ var venomousmodAPI = {};
 	};
 	
 		venomousmodAPI.addEventMboxOneRumours = function () {
-		var eventId = "00000000111-1111-1111-1111-VENOMOUS";
+		var eventId = "00000011111-1111-1111-1111-VENOMOUS";
 		
 		var MboxOneRumours = {
 			id: eventId,
