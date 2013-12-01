@@ -352,6 +352,14 @@ November 30, 2013:
 29. Implemented Mission Overrides for Social Topic
 30. Implemented Mission Overrides for Lion Tackle Topic
 
+December 1, 2013:
+
+1.4.1:
+1. Changed ID for Game Dev Tycoon: Platforms, Events, and Topics OH MY
+2. Implemented Mission Overrides for Waterfall Jumping Topic
+3. Implemented Mission Overrides for Hedgehog Bowling Topic
+4. Implemented Mission Overrides for Robot Smashing Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

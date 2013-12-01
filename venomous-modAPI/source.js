@@ -3124,17 +3124,38 @@ var venomousmodAPI = {};
 			id: "Waterfall Jumping",
 	    	name: "Waterfall Jumping".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Hedgehog Bowling",
 	    	name: "Hedgehog Bowling".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Robot Smashing",
 	    	name: "Robot Smashing".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Doctor Who-Style",
 	    	name: "Doctor Who-Style".localize("game topic"),
