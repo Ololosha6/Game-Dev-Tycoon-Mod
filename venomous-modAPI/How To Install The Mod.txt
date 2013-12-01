@@ -1,10 +1,21 @@
 How to install and enjoy the mod:
 
+Steam Users:
 1. Extract the .zip file you downloaded from the Releases tab
 2. Paste the files into Steam/steamapps/common/Game Dev Tycoon/mods
 3. Launch Game Dev Tycoon
 4. Go into Mods Menu
 5. Activate Game Dev Tycoon: Platforms, Events, and Topics OH MY to make it turn blue.
-6. Click OK at the bottom of the Mods Menu
+6. Exit Out of the Mods Menu
+7. Exit Game Dev Tycoon
+8. Restart Game Dev Tycoon
+
+Non-Steam Users:
+1. Extract the .zip file you downloaded from the Releases tab
+2. Paste the files into your Game Dev Tycoon install directory
+3. Launch Game Dev Tycoon
+4. Go into Mods Menu
+5. Activate Game Dev Tycoon: Platforms, Events, and Topics OH MY to make it turn blue.
+6. Exit Out of the Mods Menu
 7. Exit Game Dev Tycoon
 8. Restart Game Dev Tycoon

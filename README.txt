@@ -9,6 +9,9 @@ Code Design and Special Event Code: DzjengisKhan
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
+Warning: Thanks to DzjengisKhan's and LineLiar's new shiny compatibility checking sensor in their ExpansionPack Mod, you can only play through this epic mod, 
+when you don't have the ExpansionPack Mod selected as blue on your Mod menu.
+
 Release Notes:
 
 November 8, 2013:
