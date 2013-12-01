@@ -2724,7 +2724,7 @@ var venomousmodAPI = {};
 	});
 	GDT.addResearchItem(
 		{
-			id: "Animated Textures",
+			id: "Animated Textures-1",
 			name: "Animated Textures".localize(),
 			v: 10,
 			canResearch: function (company) {

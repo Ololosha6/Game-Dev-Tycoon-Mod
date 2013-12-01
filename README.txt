@@ -359,6 +359,7 @@ December 1, 2013:
 2. Implemented Mission Overrides for Waterfall Jumping Topic
 3. Implemented Mission Overrides for Hedgehog Bowling Topic
 4. Implemented Mission Overrides for Robot Smashing Topic
+5. Fixed ID for Animated Textures Research
 
 How to install the mod:
 
