@@ -23,6 +23,9 @@
 		//Adds Researches
 		venomousmodAPI.addResearch();
 		
+		//Adds Marketing
+		venomousmodAPI.addMarketing();
+		
 	};
 
 	var error = function () {
@@ -35,6 +38,7 @@
 	'mods/gdt-modAPI/api/topics.js',
 	'mods/gdt-modAPI/api/research.js',
 	'mods/gdt-modAPI/examples/examples.js',
-	'mods/venomous-modAPI/source.js'
+	'mods/venomous-modAPI/source.js',
+	'mods/venomous-modAPI/api/Marketing.js'
 	], ready, error);
 })();

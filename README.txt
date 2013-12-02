@@ -361,6 +361,17 @@ December 1, 2013:
 4. Implemented Mission Overrides for Robot Smashing Topic
 5. Fixed ID for Animated Textures Research
 
+December 2, 2013:
+
+1.4.2:
+1. Implemented Beta Code for Custom Marketing
+2. Updated Mission Overrides for Tycoon Topic
+3. Updated Mission Overrides for Button Masher Topic
+4. Updated Mission Overrides for Exercise Cats Topic
+5. Updated Mission Overrides for Cat Fighting Topic
+6. Updated Mission Overrides for Cat Tag Topic
+7. Updated Mission Overrides for Cat Sports Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
