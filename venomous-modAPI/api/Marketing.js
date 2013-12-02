@@ -11,7 +11,7 @@
 	var checkMarketing = function (Marketing) {
 		if (!(Checks.checkPropertiesPresent(Marketing, ['id', 'name', 'shortName', 'description','marketingFactor', 'cost'])
 			&& Checks.checkUniqueness(Marketing, 'id', Research.bigProjects))
-			&& Marketing.pointsCost <= 0)
+			&& Marketing.marketingFactor <= 0)
 			return false;
 
 		return true;
