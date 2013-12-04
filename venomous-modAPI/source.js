@@ -42,8 +42,8 @@ var venomousmodAPI = {};
 				startAmount: 0.150,
 				unitsSold: 0.678,
 				licencePrize: 6000,
-				published: '1/2/2',
-				platformRetireDate: '3/2/2',
+				published: '1/2/1',
+				platformRetireDate: '4/2/2',
 				developmentCosts: 12000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -52,11 +52,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA2-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '1/2/1',
+						date: '1/1/3',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Mirconoft has announced that Vindows 1.0, the new operating system for PC, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/2/1', '1/2/2')),
+								text: "Mirconoft has announced that Vindows 1.0, the new operating system for PC, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/1/3', '1/2/1')),
 								image: icon1
 							});
 						}
@@ -72,8 +72,8 @@ var venomousmodAPI = {};
 				startAmount: 0.150,
 				unitsSold: 0.678,
 				licencePrize: 6000,
-				published: '1/2/2',
-				platformRetireDate: '3/2/2',
+				published: '1/2/1',
+				platformRetireDate: '4/2/2',
 				developmentCosts: 12000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -82,11 +82,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DB2-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '1/2/1',
+						date: '1/1/4',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple wants to compete with Mirconoft's Vindows operating system, so they have announced that Vac OS X Public Beta, the new operating system for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/2/1', '1/2/2')),
+								text: "Grapple wants to compete with Mirconoft's Vindows operating system, so they have announced that Vac OS X Public Beta, the new operating system for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/1/4', '1/2/1')),
 								image: icon2
 							});
 						}
@@ -102,8 +102,8 @@ var venomousmodAPI = {};
 				startAmount: 0.100,
 				unitsSold: 0.200,
 				licencePrize: 200,
-				published: '5/7/3',
-				platformRetireDate: '7/7/2',
+				published: '3/7/3',
+				platformRetireDate: '6/7/2',
 				developmentCosts: 1000,
 				genreWeightings: [1, 0.8, 0.9, 0.8, 0.7, 0.8],
 				audienceWeightings: [0.9, 1, 0.6],
@@ -112,11 +112,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '21638DA5-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '5/7/2',
+						date: '3/7/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Matari Inc., has announced that their console called the Matari 5200 was a massive flop and will retire {0}.".localize().format(General.getETADescription('5/5/2', '5/6/2')),
+								text: "Matari Inc., has announced that their console called the Matari 5200 was a massive flop and will retire {0}.".localize().format(General.getETADescription('3/7/2', '3/7/3')),
 								image: icon3
 							});
 						}
@@ -132,8 +132,8 @@ var venomousmodAPI = {};
 				startAmount: 0.300,
 				unitsSold: 0.400,
 				licencePrize: 80000,
-				published: '7/7/4',
-				platformRetireDate: '9/4/2',
+				published: '6/7/4',
+				platformRetireDate: '8/4/2',
 				developmentCosts: 35000,
 				genreWeightings: [1, 0.8, 0.9, 0.8, 0.7, 0.6],
 				audienceWeightings: [0.9, 1, 0.8],
@@ -142,11 +142,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '21638DA4-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '7/6/3',
+						date: '6/6/3',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('7/6/3', '7/6/4')),
+								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('6/6/3', '6/7/4')),
 								image: icon4
 							});
 						}
@@ -162,7 +162,7 @@ var venomousmodAPI = {};
 				startAmount: 0.450,
 				unitsSold: 0.320,
 				licencePrize: 120000,
-				published: '9/5/2',
+				published: '8/5/2',
 				platformRetireDate: '11/4/2',
 				developmentCosts: 40000,
 				genreWeightings: [1, 0.9, 0.7, 0.8, 0.8, 0.6],
@@ -172,11 +172,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '21648DA4-69G3-5G35-9966-Z1Z2621933ZZ',
-						date: '9/3/2',
+						date: '8/3/2',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "After a few years of low marketshare, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('9/3/2', '9/4/2')),
+								text: "After a few years of low market-share, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('8/3/2', '8/5/2')),
 								image: icon5
 							});
 						}
@@ -206,7 +206,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "After 2 years, The marketshare is still low and Matari Inc. announced another solution! The Matari Panther is said to be more focused upon the PC side of graphical power with a 90KB RAM chip!{n}The Matari Panther will be released {0}.".localize().format(General.getETADescription('11/3/2', '11/5/2')),
+								text: "After 2 years, The market-share is still low and Matari Inc. announced another solution! The Matari Panther is said to be more focused upon the PC side of graphical power with a 90KB RAM chip!{n}The Matari Panther will be released {0}.".localize().format(General.getETADescription('11/3/2', '11/5/2')),
 								image: icon6
 							});
 						}
@@ -2735,21 +2735,76 @@ var venomousmodAPI = {};
 	});
 	GDT.addResearchItem(
 		{
-			id: "Super-Realistic AI",
-			name: "Super-Realistic AI".localize(),
+			id: "Advanced Animated Textures-1",
+			name: "Advanced Animated Textures".localize(),
 			v: 12,
 			canResearch: function (company) {
 				return LevelCalculator.getMissionLevel('Level Design') > 10
 			},
+			category: "Level Design",
+			categoryDisplayName: "Level Design"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Perfect Animated Textures-1",
+			name: "Perfect Animated Textures".localize(),
+			v: 14,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Level Design') > 12
+			},
+			category: "Level Design",
+			categoryDisplayName: "Level Design"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Super-Realistic AI",
+			name: "Super-Realistic AI".localize(),
+			v: 12,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('AI') > 10
+			},
 			category: "AI",
 			categoryDisplayName: "A.I."
+	});
+	GDT.addResearchItem(
+		{
+			id: "TES Graphics",
+			name: "TES Graphics".localize(),
+			v: 2,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') > 1
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "TES 64 Graphics",
+			name: "TES 64 Graphics".localize(),
+			v: 4,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') > 3
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
+	});
+	GDT.addResearchItem(
+		{
+			id: "Game-Sphere Graphics",
+			name: "Game-Sphere Graphics".localize(),
+			v: 6,
+			canResearch: function (company) {
+				return LevelCalculator.getMissionLevel('Graphic') > 5
+			},
+			category: "Graphic",
+			categoryDisplayName: "Graphic"
 	});
 	};
 	
 	venomousmodAPI.addMarketing = function () {
 	GDT.addMarketing(
 		{
-			id: "MagazineMarketing",
+			id: "MagazineMarketing-1",
 			name: "Advertise in Magazines".localize(),
 			shortName: "Magazine News Article".localize("short name"),
 			description: "Write a news article in a magazine to introduce the game to the public.".localize(),
@@ -2838,416 +2893,588 @@ var venomousmodAPI = {};
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 	    	id: "Trivia",
 	    	name: "Trivia".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Computer Dev",
 	    	name: "Computer Dev".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Mod Dev",
 	    	name: "Mod Dev".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Arcade Racing",
 	    	name: "Arcade Racing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Cop Chase",
 	    	name: "Cop Chase".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Bean-Bag Toss",
 	    	name: "Bean-Bag Toss".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Rescue Turtles",
 	    	name: "Rescue Turtles".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Car Dodging",
 	    	name: "Car Dodging".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Squirrel Dodging",
 	    	name: "Squirrel Dodging".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Fish Fighting",
 	    	name: "Fish Fighting".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Cat Treat Toss",
 	    	name: "Cat Treat Toss".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Sandwich Making",
 	    	name: "Sandwich Making".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Comic Book Development",
 	    	name: "Comic Book Development".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Sandbox",
 	    	name: "Sandbox".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.6, 0.6, 1],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Smashing",
 	    	name: "Smashing".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Platformer",
 	    	name: "Platformer".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Pinball",
 	    	name: "Pinball".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "First-Person Shooter",
 	    	name: "First-Person Shooter".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Visual Novel",
 	    	name: "Visual Novel".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Third-Person Shooter",
 	    	name: "Third-Person Shooter".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Japanese RPG",
 	    	name: "Japanese RPG".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Western RPG",
 	    	name: "Western RPG".localize("game topic"),
 	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Social",
 	    	name: "Social".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Lion Tackle",
 	    	name: "Lion Tackle".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Waterfall Jumping",
 	    	name: "Waterfall Jumping".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Hedgehog Bowling",
 	    	name: "Hedgehog Bowling".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Robot Smashing",
 	    	name: "Robot Smashing".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
 			audienceWeightings: [0.8, 1, 0.8],
 			missionOverrides: [
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8],
-			[1, 0.9, 0, 0, 0.9, 1, 1, 0.9, 0.8]],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Doctor Who-Style",
 	    	name: "Doctor Who-Style".localize("game topic"),
 	    	genreWeightings: [0.8, 0.8, 0.9, 1, 0.8, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Combat",
 	    	name: "Combat".localize("game topic"),
 	    	genreWeightings: [0.8, 0.8, 0.8, 1, 0.8, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Defense",
 	    	name: "Defense".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Flight",
 	    	name: "Flight".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Light Gun",
 	    	name: "Light Gun".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Rogue",
 	    	name: "Rogue".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Ball Rollan Games",
 	    	name: "Ball Rollan Games".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "FMV",
 	    	name: "FMV".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Adult",
 	    	name: "Adult".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.6, 0.6, 1]
+			audienceWeightings: [0.6, 0.6, 1],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Advergame",
 	    	name: "Advergame".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Art",
 	    	name: "Art".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Turkey Baking",
 	    	name: "Turkey Baking".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Potato Mashing",
 	    	name: "Potato Mashing".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.8, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Fuzzy Brushing",
 	    	name: "Fuzzy Brushing".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Mountain Skating",
 	    	name: "Mountain Skating".localize("game topic"),
 	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
-			audienceWeightings: [0.8, 1, 0.8]
+			audienceWeightings: [0.8, 1, 0.8],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}, {
 			id: "Halloween",
 	    	name: "Halloween".localize("game topic"),
 	    	genreWeightings: [1, 1, 1, 1, 1, 1],
-			audienceWeightings: [0.6, 1, 1]
+			audienceWeightings: [0.6, 1, 1],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
+		}, {
+			id: "Thanksgiving",
+	    	name: "Thanksgiving".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [0.8, 0.9, 1],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
+		}, {
+			id: "Christmas",
+	    	name: "Christmas".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [0.6, 1, 1],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
+		}, {
+			id: "Sonic the Hedgehog",
+	    	name: "Sonic the Hedgehog".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [1, 1, 0.6],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
+		}, {
+			id: "Mario",
+	    	name: "Mario".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [1, 1, 0.6],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
+		}, {
+			id: "Legend of Zelda",
+	    	name: "Legend of Zelda".localize("game topic"),
+	    	genreWeightings: [1, 1, 1, 1, 1, 1],
+			audienceWeightings: [1, 1, 0.6],
+			missionOverrides: [
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[0.7, 0.6, 0.7, 0.7, 0.7, 0.7, 0.8, 0.7, 0.7],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8],
+			[1, 0.9, 0.6, 0.6, 0.9, 1, 1, 0.9, 0.8]],
 		}
 	    ]);
 	};

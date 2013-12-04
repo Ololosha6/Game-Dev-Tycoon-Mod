@@ -34,3 +34,8 @@ List of Researches in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 33. Animated Cartoon World
 34. Animated Textures
 35. Super-Realistic AI
+36. Advanced Animated Textures
+37. Perfect Animated Textures
+38. TES Graphics
+39. TES 64 Graphics
+40. Game-Sphere Graphics

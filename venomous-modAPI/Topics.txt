@@ -49,3 +49,8 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 48. Fuzzy Brushing
 49. Mountain Skating
 50. Halloween
+51. Thanksgiving
+52. Christmas
+53. Sonic the Hedgehog
+54. Mario
+55. Legend of Zelda

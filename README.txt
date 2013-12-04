@@ -364,13 +364,39 @@ December 1, 2013:
 December 2, 2013:
 
 1.4.2:
-1. Implemented Beta Code for Custom Marketing
+1. Implemented Custom Marketing
 2. Updated Mission Overrides for Tycoon Topic
 3. Updated Mission Overrides for Button Masher Topic
 4. Updated Mission Overrides for Exercise Cats Topic
 5. Updated Mission Overrides for Cat Fighting Topic
 6. Updated Mission Overrides for Cat Tag Topic
 7. Updated Mission Overrides for Cat Sports Topic
+
+December 4, 2013:
+
+1.5.0:
+1. Updated Mission Overrides for Angry Birds-Style Topic
+2. Updated Mission Overrides for Trivia Topic
+3. Updated Mission Overrides for Computer Dev Topic
+4. Updated Mission Overrides for Mod Dev Topic
+5. Updated Mission Overrides for Arcade Racing Topic
+6. Updated Mission Overrides for Cop Chase Topic
+7. Updated Mission Overrides for Bean-Bag Toss Topic
+8. Updated Mission Overrides for Rescue Turtles Topic
+9. Updated Mission Overrides for Car Dodging Topic
+10. Shifted all Platforms Back
+11. Implemented Thanksgiving Topic
+12. Implemented Christmas Topic
+13. Implemented Sonic the Hedgehog Topic
+14. Implemented Mario Topic
+15. Implemented Legend of Zelda Topic
+16. Implemented Advanced Animated Textures Research
+17. Implemented Perfect Animated Textures Research
+18. Implemented API Method for Custom Contracts
+19. Fixed Game-Breaking Bug with Custom Marketing
+20. Implemented TES Graphics Research
+21. Implemented TES 64 Graphics Research
+22. Implemented Game-Sphere Graphics Research
 
 How to install the mod:
 
