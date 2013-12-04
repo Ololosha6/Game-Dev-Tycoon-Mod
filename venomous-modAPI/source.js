@@ -72,8 +72,8 @@ var venomousmodAPI = {};
 				startAmount: 0.150,
 				unitsSold: 0.678,
 				licencePrize: 6000,
-				published: '1/2/1',
-				platformRetireDate: '4/2/2',
+				published: '2/2/1',
+				platformRetireDate: '5/2/2',
 				developmentCosts: 12000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.8],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -82,11 +82,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DB2-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '1/1/4',
+						date: '1/4/4',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple wants to compete with Mirconoft's Vindows operating system, so they have announced that Vac OS X Public Beta, the new operating system for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/1/4', '1/2/1')),
+								text: "Grapple wants to compete with Mirconoft's Vindows operating system, so they have announced that Vac OS X Public Beta, the new operating system for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('1/4/4', '2/2/1')),
 								image: icon2
 							});
 						}
@@ -852,8 +852,8 @@ var venomousmodAPI = {};
 				startAmount: 0.450,
 				unitsSold: 0.878,
 				licencePrize: 12000,
-				published: '3/2/2',
-				platformRetireDate: '4/2/2',
+				published: '6/2/2',
+				platformRetireDate: '8/2/2',
 				developmentCosts: 14000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -862,11 +862,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA15-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '3/1/1',
+						date: '6/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X 10.0, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('3/1/1', '3/2/2')),
+								text: "Grapple has announced that Vac OS X 10.0, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('6/1/1', '6/2/2')),
 								image: icon28
 							});
 						}
@@ -882,8 +882,8 @@ var venomousmodAPI = {};
 				startAmount: 0.550,
 				unitsSold: 0.978,
 				licencePrize: 14000,
-				published: '4/2/2',
-				platformRetireDate: '7/2/2',
+				published: '9/2/2',
+				platformRetireDate: '11/2/2',
 				developmentCosts: 18000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -892,11 +892,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA16-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '4/1/1',
+						date: '9/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X 10.1, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('4/1/1', '4/2/2')),
+								text: "Grapple has announced that Vac OS X 10.1, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('9/1/1', '9/2/2')),
 								image: icon29
 							});
 						}
@@ -912,8 +912,8 @@ var venomousmodAPI = {};
 				startAmount: 0.750,
 				unitsSold: 1.978,
 				licencePrize: 210000,
-				published: '7/2/2',
-				platformRetireDate: '10/2/2',
+				published: '12/2/2',
+				platformRetireDate: '14/2/2',
 				developmentCosts: 220000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -922,11 +922,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA17-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '7/1/1',
+						date: '12/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X 10.2, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('7/1/1', '7/2/2')),
+								text: "Grapple has announced that Vac OS X 10.2, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('12/1/1', '12/2/2')),
 								image: icon30
 							});
 						}
@@ -942,8 +942,8 @@ var venomousmodAPI = {};
 				startAmount: 2.250,
 				unitsSold: 2.978,
 				licencePrize: 220000,
-				published: '10/2/2',
-				platformRetireDate: '12/2/2',
+				published: '14/3/2',
+				platformRetireDate: '16/2/2',
 				developmentCosts: 240000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -952,11 +952,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA18-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '10/1/1',
+						date: '14/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Panther, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('10/1/1', '10/2/2')),
+								text: "Grapple has announced that Vac OS X Panther, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('14/1/1', '14/3/2')),
 								image: icon31
 							});
 						}
@@ -972,8 +972,8 @@ var venomousmodAPI = {};
 				startAmount: 3.250,
 				unitsSold: 3.978,
 				licencePrize: 240000,
-				published: '12/2/2',
-				platformRetireDate: '14/2/2',
+				published: '16/3/2',
+				platformRetireDate: '18/2/2',
 				developmentCosts: 270000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -982,11 +982,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA19-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '12/1/1',
+						date: '16/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Tiger, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('12/1/1', '12/2/2')),
+								text: "Grapple has announced that Vac OS X Tiger, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('16/1/1', '16/3/2')),
 								image: icon32
 							});
 						}
@@ -1002,8 +1002,8 @@ var venomousmodAPI = {};
 				startAmount: 4.250,
 				unitsSold: 4.978,
 				licencePrize: 250000,
-				published: '14/2/2',
-				platformRetireDate: '16/2/2',
+				published: '19/2/2',
+				platformRetireDate: '21/2/2',
 				developmentCosts: 280000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -1012,11 +1012,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA20-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '14/1/1',
+						date: '19/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('14/1/1', '14/2/2')),
+								text: "Grapple has announced that Vac OS X Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('19/1/1', '19/2/2')),
 								image: icon33
 							});
 						}
@@ -1032,8 +1032,8 @@ var venomousmodAPI = {};
 				startAmount: 4.250,
 				unitsSold: 4.978,
 				licencePrize: 280000,
-				published: '16/2/2',
-				platformRetireDate: '19/2/2',
+				published: '21/3/2',
+				platformRetireDate: '24/2/2',
 				developmentCosts: 320000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -1042,11 +1042,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA21-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '16/1/1',
+						date: '21/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Snow Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('16/1/1', '16/2/2')),
+								text: "Grapple has announced that Vac OS X Snow Leopard, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('21/1/1', '21/3/2')),
 								image: icon34
 							});
 						}
@@ -1062,8 +1062,8 @@ var venomousmodAPI = {};
 				startAmount: 5.250,
 				unitsSold: 5.978,
 				licencePrize: 290000,
-				published: '19/2/2',
-				platformRetireDate: '21/2/2',
+				published: '24/3/2',
+				platformRetireDate: '27/2/2',
 				developmentCosts: 330000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -1072,11 +1072,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA22-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '19/1/1',
+						date: '24/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('19/1/1', '19/2/2')),
+								text: "Grapple has announced that Vac OS X Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('24/1/1', '24/3/2')),
 								image: icon35
 							});
 						}
@@ -1092,8 +1092,8 @@ var venomousmodAPI = {};
 				startAmount: 6.250,
 				unitsSold: 6.978,
 				licencePrize: 330000,
-				published: '21/2/2',
-				platformRetireDate: '23/2/2',
+				published: '27/3/2',
+				platformRetireDate: '30/2/2',
 				developmentCosts: 400000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -1102,11 +1102,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA23-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '21/1/1',
+						date: '27/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Mountain Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('21/1/1', '21/2/2')),
+								text: "Grapple has announced that Vac OS X Mountain Lion, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('27/1/1', '27/3/2')),
 								image: icon36
 							});
 						}
@@ -1122,8 +1122,8 @@ var venomousmodAPI = {};
 				startAmount: 7.250,
 				unitsSold: 7.978,
 				licencePrize: 430000,
-				published: '23/2/2',
-				platformRetireDate: '50/2/2',
+				published: '30/3/2',
+				platformRetireDate: '70/2/2',
 				developmentCosts: 500000,
 				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.9],
 				audienceWeightings: [0.9, 1.0, 0.9],
@@ -1132,11 +1132,11 @@ var venomousmodAPI = {};
 				events: [
 					{
 						id: '31638DA24-69G2-5G34-9965-Z1Z2621933ZZ',
-						date: '23/1/1',
+						date: '30/1/1',
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Grapple has announced that Vac OS X Mavericks, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('23/1/1', '23/2/2')),
+								text: "Grapple has announced that Vac OS X Mavericks, for Vac, just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('30/1/1', '30/3/2')),
 								image: icon37
 							});
 						}

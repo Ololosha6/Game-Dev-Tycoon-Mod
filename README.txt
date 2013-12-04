@@ -398,6 +398,11 @@ December 4, 2013:
 21. Implemented TES 64 Graphics Research
 22. Implemented Game-Sphere Graphics Research
 
+
+1.5.1:
+1. Changed Publishing Dates for Vac Platforms
+2. Improved Code in API Method for Custom Marketing
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
