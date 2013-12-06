@@ -26,7 +26,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Coming out of nowhere a company called Supersonic Games has announced that they will publish a new game console called the SuperBox {0}.".localize().format(General.getETADescription('1/1/1', '1/2/1')),
+								text: "Coming out of nowhere, a company called Supersonic Games has announced that they will publish a new game console called the SuperBox {0}.".localize().format(General.getETADescription('1/1/1', '1/2/1')),
 								image: icon
 							});
 						}
@@ -146,7 +146,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Creators of the video game console flop, the Matari 5200, Matari Inc., have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('6/6/3', '6/7/4')),
+								text: "Creators of the video game console flop, the Matari 5200, Matari Inc, have announced that their new console called the Matari 7800 will be released {0}.".localize().format(General.getETADescription('6/6/3', '6/7/4')),
 								image: icon4
 							});
 						}
@@ -176,7 +176,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "After a few years of low market-share, Matari Inc. have today announced their solution! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('8/3/2', '8/5/2')),
+								text: "After a few years of low market-share, Matari Inc. has announced their solution to their low market-share! The Matari SEGS is said to be more focused upon the PC side of power with a 64KB RAM!{n}The Matari SEGS will be released {0}.".localize().format(General.getETADescription('8/3/2', '8/5/2')),
 								image: icon5
 							});
 						}
@@ -716,7 +716,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, Skindle Fire, called the Skindle Fire HD. The Skindle Fire HD will be in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
+								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, the Skindle Fire, called the Skindle Fire HD. The Skindle Fire HD will be in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
 								image: icon23
 							});
 						}
@@ -746,7 +746,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Mirconoft has released Vindows 8. Vindows 8 comes with a new Metro-UI, that is very confusing to use. Vindows 8 also comes with touch-screen compatibility, when you install it on a PC or Mirconoft tablet. Vindows 8 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
+								text: "Mirconoft has released Vindows 8. Vindows 8 comes with a new Metro-UI, that is very confusing to use. Vindows 8 also comes with touch-screen compatibility when you install it on a PC with a touch-screen monitor or Mirconoft tablet. Vindows 8 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('29/1/3', '29/2/3')),
 								image: icon24
 							});
 						}
@@ -776,7 +776,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "OH NO, everybody hates Mirconoft's latest Vindows operating system, Vindows 8! Mirconoft has coded up a possible solution for those Vindows 8 haters. The solution is called Vindows 8.1. Vindows 8.1 includes fan-requested changes and features, such as the return of Start Button with a Metro design. Vindows 8.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
+								text: "OH NO, everybody hates Mirconoft's latest Vindows operating system, Vindows 8! Mirconoft has coded up a possible solution for those Vindows 8 haters. The solution is called Vindows 8.1! Vindows 8.1 includes fan-requested changes and features, such as the return of Start Button with a Metro design. Vindows 8.1 just hit RTM, and it will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
 								image: icon25
 							});
 						}
@@ -806,7 +806,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, Skindle Fire HD, called the Skindle Fire HDX. The Skindle Fire HDX has a brand new feature, where you can call Samazon's customer service any-time, 24/7. The Skindle Fire HDX will be in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
+								text: "Samazon Inc, the owner of the popular shopping website, Samazon.com, has just released a new version of their gaming tablet, the Skindle Fire HD, called the Skindle Fire HDX. The Skindle Fire HDX has a brand new feature, where you can call Samazon's customer service any-time, 24/7. The Skindle Fire HDX will be in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/2/3')),
 								image: icon26
 							});
 						}
@@ -836,7 +836,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Zeeboz Inc wanted to try in the video gaming market, by publishing their own console, Zeeboz. Zeeboz will be in stores {0}.".localize().format(General.getETADescription('16/3/3', '16/4/3')),
+								text: "Zeeboz Inc wanted to try their hand at the video gaming market by publishing their own console, the Zeeboz. Zeeboz will be in stores {0}.".localize().format(General.getETADescription('16/3/3', '16/4/3')),
 								image: icon27
 							});
 						}
@@ -1226,7 +1226,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Moleco has announced that Melstar, their new gaming console, is hitting store shelves {0}.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
+								text: " Moleco has announced that the Melstar, their new gaming console, is hitting store shelves {0}.".localize().format(General.getETADescription('21/8/2', '21/8/3')),
 								image: icon40
 							});
 						}
@@ -1256,7 +1256,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " CVIDIA, the most popular company that makes graphics cards for PC, have announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('23/8/3', '23/9/1')),
+								text: " CVIDIA, the most popular company that makes graphics cards for PC, has announced that they are making a new handheld gaming console called the CVIDIA Shield. The CVIDIA Shield is hitting store shelves {0}.".localize().format(General.getETADescription('23/8/3', '23/9/1')),
 								image: icon41
 							});
 						}
@@ -1286,7 +1286,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Ninvento has decided to retire the console, Color MV Game, that was exclusive to Japan. The Color MV Game is retiring off the store shelves in Japan {0}.".localize().format(General.getETADescription('4/9/4', '4/10/4')),
+								text: " Ninvento has decided to retire their console, the Color MV Game, that was exclusive to Japan. The Color MV Game is retiring off the store shelves in Japan {0}.".localize().format(General.getETADescription('4/9/4', '4/10/4')),
 								image: icon42
 							});
 						}
@@ -1316,7 +1316,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Matari has decided to retire the console, Matari Pong. Matari Pong is retiring off the store shelves {0}.".localize().format(General.getETADescription('2/5/2', '2/5/3')),
+								text: " Matari has decided to retire their console, the Matari Pong system. Matari Pong is retiring from the store shelves {0}.".localize().format(General.getETADescription('2/5/2', '2/5/3')),
 								image: icon43
 							});
 						}
@@ -1346,7 +1346,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Matari has announced their new console, Matari 2600. Matari 2600 will be on the store shelves {0}.".localize().format(General.getETADescription('2/7/2', '2/7/3')),
+								text: " Matari has announced that their new console, the Matari 2600. Matari 2600 will be on the store shelves {0}.".localize().format(General.getETADescription('2/7/2', '2/7/3')),
 								image: icon44
 							});
 						}
@@ -1376,7 +1376,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Mairchild Semiconductor has announced their console, Mairchild Channel M is retiring soon from the store shelves. Mairchild Channel M will retire off the store shelves {0}.".localize().format(General.getETADescription('5/6/2', '5/6/3')),
+								text: " Mairchild Semiconductor has announced that their console, the Mairchild Channel M, is soon retiring from the store shelves. The Mairchild Channel M will retire from the store shelves {0}.".localize().format(General.getETADescription('5/6/2', '5/6/3')),
 								image: icon45
 							});
 						}
@@ -1406,7 +1406,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Cattel has announced their console, Cntellivison is retiring soon from the store shelves. Cntellivision will retire off the store shelves {0}.".localize().format(General.getETADescription('5/6/4', '5/7/1')),
+								text: " Cattel has announced that their console, the Cntellivision is soon retiring from the store shelves. Cntellivision will retire from the store shelves {0}.".localize().format(General.getETADescription('5/6/4', '5/7/1')),
 								image: icon46
 							});
 						}
@@ -1436,7 +1436,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: " Mestern Technologies has announced their console, Mectrex is retiring soon from the store shelves. Mectrex will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/1', '5/7/2')),
+								text: " Mestern Technologies has announced that their console, the Mectrex is soon retiring from the store shelves. Mectrex will retire from the store shelves {0}.".localize().format(General.getETADescription('5/7/1', '5/7/2')),
 								image: icon47
 							});
 						}
@@ -1466,7 +1466,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Vmerson has announced their console, Mrcadia is retiring soon from the store shelves. Mrcadia will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/2', '5/7/3')),
+								text: "Vmerson has announced that their console, the Mrcadia is soon retiring from the store shelves. The Mrcadia will retire from the store shelves {0}.".localize().format(General.getETADescription('5/7/2', '5/7/3')),
 								image: icon48
 							});
 						}
@@ -1496,7 +1496,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Mally has announced their console, Mally Mastrocade is retiring soon from the store shelves. Mally Mastrocade will retire off the store shelves {0}.".localize().format(General.getETADescription('5/7/4', '5/8/1')),
+								text: "Mally has announced that their console, the Mally Mastrocade is soon retire from the store shelves. The Mally Mastrocade will retire from the store shelves {0}.".localize().format(General.getETADescription('5/7/4', '5/8/1')),
 								image: icon49
 							});
 						}
@@ -1526,7 +1526,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "MTC, manufacturer of smart-phones and tablets, has announced their new gaming smart-phone called the MTC One. The MTC One will be available in stores {0}.".localize().format(General.getETADescription('23/1/1', '23/2/2')),
+								text: "MTC, a manufacturer of smart-phones and tablets, has announced a new gaming smart-phone called the MTC One. The MTC One will be available in stores {0}.".localize().format(General.getETADescription('23/1/1', '23/2/2')),
 								image: icon50
 							});
 						}
@@ -1556,7 +1556,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Mookia, manufacturer of cell phones and other technology, has announced their new cell phone called the Mookia 3310. The Mookia 3310 will be available in stores {0}.".localize().format(General.getETADescription('12/10/4', '12/12/1')),
+								text: "Mookia, a manufacturer of cell phones and other technology, has announced a new cell phone called the Mookia 3310. The Mookia 3310 will be available in stores {0}.".localize().format(General.getETADescription('12/10/4', '12/12/1')),
 								image: icon51
 							});
 						}
@@ -1616,7 +1616,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "GRID, the most popular company that started the GRID platform for games, have announced that they are making a new gaming console called the GRID Machine. The GRID Machine runs on the GRID operating system, the same operating system that runs the GRID gaming platform. The GRID Machine will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/3/3')),
+								text: "GRID, the most popular company that started the GRID platform for games, has announced that they are making a new gaming console called the GRID Machine. The GRID Machine runs on the GRID operating system, the same operating system that runs the GRID gaming platform. The GRID Machine will be available in stores {0}.".localize().format(General.getETADescription('30/1/3', '30/3/3')),
 								image: icon53
 							});
 						}
@@ -1646,7 +1646,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "The BFF MV Mun, a video game console by BFF Electronics, had a good run, but it wasn't enough for the sales. The BFF MV Mun will retire from store shelves {0}.".localize().format(General.getETADescription('4/2/4', '4/4/4')),
+								text: "The BFF MV Mun, a video game console from BFF Electronics, had a good run, but it wasn't good enough for the market. The BFF MV Mun will retire from store shelves {0}.".localize().format(General.getETADescription('4/2/4', '4/4/4')),
 								image: icon54
 							});
 						}
@@ -1676,7 +1676,7 @@ var venomousmodAPI = {};
 						getNotification: function (company) {
 							return new Notification({
 								header: "Industry News".localize(),
-								text: "Sagnavox is announcing that Sdyssey is retiring soon. Sdyssey will retire from store shelves {0}.".localize().format(General.getETADescription('5/2/4', '5/4/4')),
+								text: "Sagnavox is announcing that the Sdyssey is retiring soon. The Sdyssey will retire from store shelves {0}.".localize().format(General.getETADescription('5/2/4', '5/4/4')),
 								image: icon55
 							});
 						}
@@ -1699,7 +1699,7 @@ var venomousmodAPI = {};
 			getNotification: function (company) {
 				var game = company.currentGame;
 
-				var msg = "You were working on {0}! A huge thunderstorm has hit your city and your roof is starting to leak. You are scared that the rain will ruin your game."
+				var msg = "You were working on {0}! A huge thunderstorm has hit your city and your roof is starting to leak! You are scared that the rain will ruin your game!"
 					.localize().format(game.title);
 				return new Notification({
 					sourceId: eventId,
@@ -1716,10 +1716,8 @@ var venomousmodAPI = {};
 						header: "Protect Game".localize(),
 						text: "You cover your computer with a blanket, so the rain won't destroy your game."
 					});
-					n.adjustCash(+500, "Game is Safe");
-					n.adjustHype(5 + 10 * company.getRandom());
-					n.adjustFans(1000);
-
+					n.adjustCash(+100, "Game is Safe");
+					
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1729,8 +1727,6 @@ var venomousmodAPI = {};
 						text: "You continue working on your game. the leak in your roof gets bigger and your garage is flooded. everything is destroyed including your computer."
 					});
 					n.adjustCash(-500, "Game is Destroyed");
-					n.adjustHype(5 - 10 * company.getRandom());
-					n.adjustFans(-1000);
 					return;
 				}
 			}
@@ -1772,9 +1768,8 @@ var venomousmodAPI = {};
 						text: "Eddie breaks into your garage and steals your game code files from your computer. You call the police while your behind a book shelf. The police arrive at your garage and arrest Eddie."
 					});
 					n.adjustHype(5 + 10 * company.getRandom());
-					n.adjustCash(2000);
-					n.adjustFans(2000);
-
+					n.adjustFans(1000);
+					
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1785,7 +1780,6 @@ var venomousmodAPI = {};
 						weeksUntilFired: 1 + 2 * company.getRandom()
 					});
 					n.adjustCash(-2000, "restoring computer");
-					n.adjustFans(-2000);
 					company.notifications.push(n);
 					return;
 				}
@@ -1795,7 +1789,8 @@ var venomousmodAPI = {};
 						text: "You install a security system on your house, so it calls the police when it gets disturbed. You can now work on your game in peace, without any distractions."
 					});
 					n.adjustHype(15 + 25 * company.getRandom());
-					n.adjustFans(2000);
+					n.adjustFans(1000);
+					
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1838,8 +1833,8 @@ var venomousmodAPI = {};
 					});
 					n.adjustCash(-500, "Parade");
 					n.adjustHype(5 + 50 * company.getRandom());
-					n.adjustFans(5000);
-
+					n.adjustFans(2000);
+					
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1849,8 +1844,6 @@ var venomousmodAPI = {};
 						text: "You decided to not go to the parade, and work on {0} instead."
 					});
 					n.adjustCash(+500, "Continued Work On Game");
-					n.adjustHype(5 - 50 * company.getRandom());
-					n.adjustFans(-5000);
 					return;
 				}
 			}
@@ -1892,7 +1885,7 @@ var venomousmodAPI = {};
 					n.adjustCash(-10000000, "Extermination");
 					n.adjustHype(5 - 3000 * company.getRandom());
 					n.adjustFans(-10000000);
-
+					
 					company.activeNotifications.addRange(n.split());
 					return;
 				}
@@ -1925,7 +1918,7 @@ var venomousmodAPI = {};
 			getNotification: function (company) {
 				var game = company.currentGame;
 
-				var msg = "Boss,Let's Players are doing walkthroughs of our game, {0}, on MeTube, by recording gameplay footage from their review copies of the game, {0}. Should we Content Match their gameplay footage and get money, or should we flag every video and force MeTube to take them down?"
+				var msg = "Boss, Let's Players are doing walkthroughs of our game, {0}, on MeTube, by recording gameplay footage from their review copies of the game, {0}. Should we Content Match their gameplay footage and get money, or should we flag every video and force MeTube to take them down?"
 					.localize().format(game.title);
 				return new Notification({
 					sourceId: eventId,
@@ -2256,7 +2249,6 @@ var venomousmodAPI = {};
                     header: "Smash the Computer".localize(),
                     text: "You smashed the computer, because you got tired of the Cybermen messing up everything."
                	});
-                   	n.adjustFans(-900);
 					n.adjustCash(-100000);
                     company.notifications.push(n);
                                        
@@ -2267,7 +2259,7 @@ var venomousmodAPI = {};
                 	if (company.isGameProgressBetween(0.1, 0.9)) {
                     	m.adjustCash(60000, "Proposal");
                     	m.adjustHype(5 + 35 * company.getRandom());
-						m.adjustFans(200);
+						m.adjustFans(-200);
                     	company.notifications.push(m);
                     }
                     return;                        

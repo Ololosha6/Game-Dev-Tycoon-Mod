@@ -6,6 +6,7 @@ mod created for Game Dev Tycoon using the Game Dev Tycoon Modding API made by Gr
 Main Coder: Venomous
 Texture Maker and Finder: Gamingthrou
 Code Design and Special Event Code: DzjengisKhan
+Bug and Code Fixing Helper: Zayo
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
@@ -398,10 +399,14 @@ December 4, 2013:
 21. Implemented TES 64 Graphics Research
 22. Implemented Game-Sphere Graphics Research
 
-
 1.5.1:
 1. Changed Publishing Dates for Vac Platforms
 2. Improved Code in API Method for Custom Marketing
+
+December 6, 2013:
+
+1.5.2:
+1. Miscellaneous bug and code fixes to make the mod more entertaining for the player.
 
 How to install the mod:
 
