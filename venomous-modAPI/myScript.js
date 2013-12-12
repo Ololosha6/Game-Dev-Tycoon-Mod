@@ -5,7 +5,7 @@
 		venomousmodAPI.addPlatform();
 		
 	    //Adds Topics
-		venomousmodAPI.addTopic();
+		venomousmodAPI.addTopics();
 		
 		//Adds Events
 		venomousmodAPI.addEventThunderstorm();
