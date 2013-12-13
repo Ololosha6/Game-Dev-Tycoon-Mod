@@ -413,6 +413,11 @@ December 12, 2013:
 1.5.3:
 1. Miscellaneous code fixes to make the mod more entertaining for the player.
 
+December 13, 2013:
+
+1.5.4:
+1. Miscellaneous code fixes
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
