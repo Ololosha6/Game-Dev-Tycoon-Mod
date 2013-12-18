@@ -1,7 +1,7 @@
 Game-Dev-Tycoon-Mod
 ===================
 
-mod created for Game Dev Tycoon using the Game Dev Tycoon Modding API made by Greenheart Games
+mod created for Game Dev Tycoon using the Game Dev Tycoon Mod API made by Greenheart Games
 
 Main Coder: Venomous
 Texture Maker and Finder: Gamingthrou
@@ -416,7 +416,19 @@ December 12, 2013:
 December 13, 2013:
 
 1.5.4:
-1. Miscellaneous code fixes
+1. Miscellaneous code and bug fixes
+
+December 18, 2013:
+
+1.6.0:
+1. Implemented Wii Fit Topic
+2. Implemented Animal Crossing Topic
+3. Implemented The Muppets Topic
+4. Implemented Disney Topic
+5. Implemented Marvel Topic
+6. Implemented Costume Party Event
+7. Implemented 45 Year, 50 Year, 55 Year, and 60 Year Game Extensions
+8. Implemented TV Commercial Marketing
 
 How to install the mod:
 

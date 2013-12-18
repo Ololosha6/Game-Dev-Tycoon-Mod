@@ -19,6 +19,7 @@
 		venomousmodAPI.addEventGovodoreTrouble();
 		venomousmodAPI.addEventSabotage();
 		venomousmodAPI.addEventMboxOneRumours();
+		venomousmodAPI.addEventCostumeParty();
 		
 		//Adds Researches
 		venomousmodAPI.addResearch();
@@ -26,6 +27,8 @@
 		//Adds Marketing
 		venomousmodAPI.addMarketing();
 		
+		//Special Stuff
+		venomousmodAPI.addExtendGame();
 	};
 
 	var error = function () {

@@ -2350,6 +2350,55 @@ var venomousmodAPI = {};
         GDT.addEvent(MboxOneRumours);
 	};
 	
+		venomousmodAPI.addEventCostumeParty = function () {
+		var eventId = "00000111111-1111-1111-1111-VENOMOUS";
+		
+		var CostumeParty = {
+			id: eventId,
+			isRandom: false,
+			date: '6/1/1',
+			ignoreGameLengthModifier: false,
+			getNotification: function (company) {
+				var game = company.currentGame;
+
+				var msg = "Everyone loves our gaming company. They have invited us to a special Costume Party, where we have to dress up as one of the characters from our games. Should we have fun, or decline the invitation?".localize();
+				return new Notification({
+					sourceId: eventId,
+					header: "Costume Party".localize(),
+					text: msg,
+					options: ["Have Fun!", "Decline Invitation"]
+				});
+			},
+			complete: function (decision) {
+				var company = GameManager.company;
+
+				if (decision === 0) {
+					var n = new Notification({
+						header: "Have Fun!".localize(),
+						text: "You decided to go to the party, and have fun with your loyal fans, while dressed up as one of the characters from your games."
+					});
+					n.adjustCash(+1000, "Had Fun With Fans");
+					n.adjustHype(10 + 2500 * company.getRandom());
+					n.adjustFans(+6000);
+
+					company.activeNotifications.addRange(n.split());
+					return;
+				}
+				if (decision === 1) {
+					var n = new Notification({
+						header: "Decline Invitation".localize(),
+						text: "You declined the invitation. You disappointed every fan."
+					});
+					n.adjustCash(-2000, "Declined Invitation");
+					n.adjustHype(10 - 2500 * company.getRandom());
+					n.adjustFans(-6000);
+					return;
+				}
+			}
+		};
+		GDT.addEvent(CostumeParty);
+	};
+	
 	venomousmodAPI.addResearch = function () {
 	GDT.addResearchItem(
 	{
@@ -2802,6 +2851,13 @@ var venomousmodAPI = {};
 			description: "Write a news article in a magazine to introduce the game to the public.".localize(),
 			marketingFactor: 0.5,
 			cost: 100000
+		}, {
+			id: "TV Commercial-1",
+			name: "Make A TV Commercial".localize(),
+			shortName: "TV Commercial".localize("short name"),
+			description: "Make a TV commercial that showcases game-play footage and features of the game to the public.".localize(),
+			marketingFactor: 0.5,
+			cost: 100000
 		});
 	};
 	
@@ -3082,9 +3138,57 @@ var venomousmodAPI = {};
 	    	name: "Legend of Zelda".localize("game topic"),
 	    	genreWeightings: [1, 1, 1, 1, 1, 1],
 			audienceWeightings: [1, 1, 0.6],
+		}, {
+			id: "Wii Fit",
+	    	name: "Wii Fit".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [1, 1, 0.6],
+		}, {
+			id: "Animal Crossing",
+	    	name: "Animal Crossing".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [1, 1, 0.6],
+		}, {
+			id: "The Muppets",
+	    	name: "The Muppets".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [1, 1, 0.6],
+		}, {
+			id: "Disney",
+	    	name: "Disney".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [1, 1, 0.6],
+		}, {
+			id: "Marvel",
+	    	name: "Marvel".localize("game topic"),
+	    	genreWeightings: [0.6, 0.6, 0.6, 1, 0.7, 1],
+			audienceWeightings: [1, 1, 0.6],
 		}
 	    ]);
 	};
 
-	/*  */		       
+	venomousmodAPI.addExtendGame = function () {
+		var element = document.getElementById("gameLengthSelection");
+		var VenomOption = document.createElement("option");
+		VenomOption.text = "45 Years";
+		VenomOption.value = "1.45";
+		element.appendChild(VenomOption);
+	
+		VenomOption = document.createElement("option");
+		VenomOption.text = "50 Years";
+		VenomOption.value = "1.5";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "55 Years";
+		VenomOption.value = "1.55";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "60 Years";
+		VenomOption.value = "1.6";
+		element.appendChild(VenomOption);
+	
+	};
+	/*  */
 })();

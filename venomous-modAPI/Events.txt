@@ -10,3 +10,4 @@ List of Events in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 9. Govodore Trouble
 10. Sabotage
 11. Mbox One Rumours
+12. Costume Party
