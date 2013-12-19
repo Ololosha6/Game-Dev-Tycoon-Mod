@@ -54,7 +54,7 @@ List of Topics in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
 53. Sonic the Hedgehog
 54. Mario
 55. Legend of Zelda
-56. Wii Fit
+56. Exercise
 57. Animal Crossing
 58. The Muppets
 59. Disney

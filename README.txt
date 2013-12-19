@@ -430,6 +430,14 @@ December 18, 2013:
 7. Implemented 45 Year, 50 Year, 55 Year, and 60 Year Game Extensions
 8. Implemented TV Commercial Marketing
 
+December 19, 2013:
+
+1.6.1:
+1. Implemented 65 Year, 70 Year, 75 Year, and 80 Year Game Extensions
+2. Balanced Platforms
+3. Changed Wii Fit Topic to Exercise Topic
+4. Changed Genre Weightings for Mario Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
