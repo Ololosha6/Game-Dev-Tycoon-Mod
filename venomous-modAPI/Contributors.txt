@@ -3,3 +3,4 @@ Venomous-Main Coder
 Gamingthrou-Texture Maker and Finder
 DzjengisKhan-Code Design and Original Coder for Special Event Code
 Zayo-Bug and Code Fixing Helper
+SirEverard-Gave Permission to Use the Game Extensions Code

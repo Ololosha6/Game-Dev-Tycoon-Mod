@@ -1857,7 +1857,7 @@ var venomousmodAPI = {};
 		var DalekInvasion = {
 			id: eventId,
 			isRandom: true,
-			maxTriggers: 2,
+			maxTriggers: 1,
 			trigger: function (company) {
 				
 				return company.currentLevel == 2 && company.isGameProgressBetween(0.5, 0.7);
@@ -3171,42 +3171,62 @@ var venomousmodAPI = {};
 		var element = document.getElementById("gameLengthSelection");
 		var VenomOption = document.createElement("option");
 		VenomOption.text = "45 Years";
-		VenomOption.value = "1.45";
+		VenomOption.value = "1.5";
 		element.appendChild(VenomOption);
 	
 		VenomOption = document.createElement("option");
 		VenomOption.text = "50 Years";
-		VenomOption.value = "1.5";
+		VenomOption.value = "1.9";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "55 Years";
-		VenomOption.value = "1.55";
+		VenomOption.value = "1.95";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "60 Years";
-		VenomOption.value = "1.6";
+		VenomOption.value = "2";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "65 Years";
-		VenomOption.value = "1.65";
+		VenomOption.value = "2.16667";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "70 Years";
-		VenomOption.value = "1.7";
+		VenomOption.value = "2.2";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "75 Years";
-		VenomOption.value = "1.75";
+		VenomOption.value = "2.5";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "80 Years";
-		VenomOption.value = "1.8";
+		VenomOption.value = "2.78";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "85 Years";
+		VenomOption.value = "2.81";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "90 Years";
+		VenomOption.value = "3";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "95 Years";
+		VenomOption.value = "3.05";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "100 Years";
+		VenomOption.value = "3.1";
 		element.appendChild(VenomOption);
 	
 	};

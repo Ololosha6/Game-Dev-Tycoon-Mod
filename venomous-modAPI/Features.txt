@@ -1,0 +1,7 @@
+New Features in Game Dev Tycoon: Platforms, Events, and Topics OH MY:
+1. New Topics
+2. New Platforms
+3. New Events
+4. New Researches
+5. Custom Marketing
+6. New Game Extensions

@@ -7,6 +7,7 @@ Main Coder: Venomous
 Texture Maker and Finder: Gamingthrou
 Code Design and Special Event Code: DzjengisKhan
 Bug and Code Fixing Helper: Zayo
+Gave Permission to Use the Game Extensions Code: SirEverard
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
@@ -437,6 +438,13 @@ December 19, 2013:
 2. Balanced Platforms
 3. Changed Wii Fit Topic to Exercise Topic
 4. Changed Genre Weightings for Mario Topic
+
+December 20, 2013:
+
+1.6.2:
+1. Implemented 85 Year, 90 Year, 95 Year, and 100 Year Game Extensions
+2. Fixed Bug with Dalek Invasion Event, where it occurs 2 times in a row, while the game is being developed in the Second Office
+3. Fixed Values on Game Extensions
 
 How to install the mod:
 
