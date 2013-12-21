@@ -5,11 +5,11 @@ var venomousmodAPI = {};
 	var UpdateCheck = function (data) {
 		for (var i = 0; i < ModSupport.availableMods.length; i++) {
 			var mod = ModSupport.availableMods[i];
-			if(mod.url == "https://github.com/Turntablelover/Game-Dev-Tycoon-Mod" && mod.active) {
+			if(mod.url == "https://github.com/Turntablelover/Game-Dev-Tycoon-Mod" && mod.version > "1.7.0" && mod.active) {
 				var div = $("body");
 				div.append('<div id="UpdateContainer" class="windowBorder smallWindow" style="overflow:auto;display:none;"> <div id="cheatmodtop" class="windowTitle smallerWindowTitle">Update Is Now Available!</div>');
 				div = $("#UpdateContainer");
-				div.append('<div id="update" style="margin-left:50px;width: 400px;" >A new update <span style="color:red;">for</span> Game Dev Tycoon: Platforms, Events, and Topics OH MY is now available.</br></br> Please update to 1.7.0 at https://github.com/Turntablelover/Game-Dev-Tycoon-Mod NOW!</div>');
+				div.append('<div id="update" style="margin-left:50px;width: 400px;" >A new update <span style="color:red;">for</span> Game Dev Tycoon: Platforms, Events, and Topics OH MY is now available.</br></br> Please update to 1.7.0 at https://github.com/Turntablelover/Game-Dev-Tycoon-Mod </div>');
 				div.append('<div id="mainmenubutton" class="selectorButton whiteButton" onclick="UI.toggleMainMenu()" style="display:inline-block;position: relative;margin-left:50px;width: 350px;" >Main Menu</div>');
 				div.gdDialog({popout: !0,close: 0})
 			}
