@@ -1,6 +1,30 @@
 var venomousmodAPI = {};
 (function () {	
 
+	//Update Checker
+	var UpdateCheck = function (data) {
+		for (var i = 0; i < ModSupport.availableMods.length; i++) {
+			var mod = ModSupport.availableMods[i];
+			if(mod.url == "https://github.com/Turntablelover/Game-Dev-Tycoon-Mod" && mod.active) {
+				var div = $("body");
+				div.append('<div id="UpdateContainer" class="windowBorder smallWindow" style="overflow:auto;display:none;"> <div id="cheatmodtop" class="windowTitle smallerWindowTitle">Update Is Now Available!</div>');
+				div = $("#UpdateContainer");
+				div.append('<div id="update" style="margin-left:50px;width: 400px;" >A new update for<span style="color:red;">NOT</span> Game Dev Tycoon: Platforms, Events, and Topics OH MY is now available.</br></br> Please update to 1.7.0 at https://github.com/Turntablelover/Game-Dev-Tycoon-Mod NOW!</div>');
+				div.append('<div id="mainmenubutton" class="selectorButton whiteButton" onclick="UI.toggleMainMenu()" style="display:inline-block;position: relative;margin-left:50px;width: 350px;" >Main Menu</div>');
+				div.gdDialog({popout: !0,close: 0})
+			}
+		}
+	};
+	
+	venomousmodAPI.initUpdateChecks = function () {
+		if (GDT.updateCheckActive == 'undefined' || GDT.updateCheckActive == null) {
+			GDT.on(GDT.eventKeys.saves.loading, UpdateCheck);
+			GDT.on(GDT.eventKeys.saves.saving, UpdateCheck);
+			GDT.updateCheckActive = true;
+		}
+	};
+	/*  */
+	
 	/* Platforms */
 	venomousmodAPI.addPlatform = function () {
 		var icon = './mods/venomous-modAPI/img/SuperBox.png';
@@ -1683,6 +1707,96 @@ var venomousmodAPI = {};
 					}
 				]
 			});
+		var icon56 = './mods/venomous-modAPI/img/MBM Simon.png';
+		GDT.addPlatform(
+			{
+				id: 'MBM Simon',
+				name: 'MBM Simon',
+				company: 'MBM',
+				startAmount: 0.150,
+				unitsSold: 0.378,
+				licencePrize: 5000,
+				published: '1/1/1',
+				platformRetireDate: '6/6/4',
+				developmentCosts: 10000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.7],
+				audienceWeightings: [0.9, 1.0, 0.8],
+				techLevel: 1,
+				iconUri: icon56,
+				events: [
+					{
+						id: '43873ES24-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '4/4/2',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "MBM's mobile phone, MBM Simon will be retiring {0}.".localize().format(General.getETADescription('4/4/2', '6/6/4')),
+								image: icon56
+							});
+						}
+					}
+				]
+			});
+		var icon57 = './mods/venomous-modAPI/img/CalmCilot5000.png';
+		GDT.addPlatform(
+			{
+				id: 'Calm Cilot 5000',
+				name: 'Calm Cilot 5000',
+				company: 'Calm',
+				startAmount: 0.378,
+				unitsSold: 0.578,
+				licencePrize: 10000,
+				published: '6/7/4',
+				platformRetireDate: '8/7/4',
+				developmentCosts: 20000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.7],
+				audienceWeightings: [0.9, 1.0, 0.8],
+				techLevel: 2,
+				iconUri: icon57,
+				events: [
+					{
+						id: '53873ES24-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '8/6/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Calm's mobile phone, Calm Cilot 5000 will be retiring {0}.".localize().format(General.getETADescription('8/6/4', '8/7/4')),
+								image: icon2
+							});
+						}
+					}
+				]
+			});
+		var icon58 = './mods/venomous-modAPI/img/Vindows CE.png';
+		GDT.addPlatform(
+			{
+				id: 'Vindows CE',
+				name: 'Vindows CE',
+				company: 'Mirconoft',
+				startAmount: 0.578,
+				unitsSold: 0.878,
+				licencePrize: 20000,
+				published: '8/7/4',
+				platformRetireDate: '10/7/4',
+				developmentCosts: 30000,
+				genreWeightings: [0.9, 1.0, 1.0, 0.9, 1, 0.7],
+				audienceWeightings: [0.9, 1.0, 0.8],
+				techLevel: 3,
+				iconUri: icon58,
+				events: [
+					{
+						id: '63873ES24-70G5-5G38-11169-Z5Z4843155ZZ',
+						date: '10/6/4',
+						getNotification: function (company) {
+							return new Notification({
+								header: "Industry News".localize(),
+								text: "Mirconoft's mobile operating system, Vindows CE will be retiring {0}.".localize().format(General.getETADescription('10/6/4', '10/7/4')),
+								image: icon58
+							});
+						}
+					}
+				]
+			});
 	};
 	
 		venomousmodAPI.addEventThunderstorm = function () {
@@ -1910,7 +2024,7 @@ var venomousmodAPI = {};
 		var MeTube = {
 			id: eventId,
 			isRandom: true,
-			maxTriggers: 2,
+			maxTriggers: 1,
 			trigger: function (company) {
 				
 				return company.currentLevel == 3 && company.isGameProgressBetween(0.9, 1.0);
@@ -1918,7 +2032,7 @@ var venomousmodAPI = {};
 			getNotification: function (company) {
 				var game = company.currentGame;
 
-				var msg = "Boss, Let's Players are doing walkthroughs of our game, {0}, on MeTube, by recording game-play footage from their review copies of the game, {0}. Should we Content Match their gameplay footage and get money, or should we flag every video and force MeTube to take them down?"
+				var msg = "Boss, Let's Players are doing walkthroughs of our game, {0}, on MeTube, by recording game-play footage from their review copies of the game, {0}. Should we Content Match their game-play footage and get money, or should we flag every video and force MeTube to take them down?"
 					.localize().format(game.title);
 				return new Notification({
 					sourceId: eventId,
@@ -1933,7 +2047,7 @@ var venomousmodAPI = {};
 				if (decision === 0) {
 					var n = new Notification({
 						header: "Content Match!".localize(),
-						text: "You went on MeTube, and content matched every video that was related to your game, {0}."
+						text: "You went on MeTube, and content matched every video that was related to your game."
 					});
 					n.adjustCash(+100000, "Content Match");
 					n.adjustHype(5 + 200 * company.getRandom());
@@ -1963,7 +2077,7 @@ var venomousmodAPI = {};
 		var GamePort = {
 			id: eventId,
 			isRandom: true,
-			maxTriggers: 2,
+			maxTriggers: 1,
 			trigger: function (company) {
 				
 				return company.currentLevel == 3 && company.isGameProgressBetween(1.0, 1.0);
@@ -1971,7 +2085,7 @@ var venomousmodAPI = {};
 			getNotification: function (company) {
 				var game = company.currentGame;
 
-				var msg = "Boss,Ninvento is doing a illegal port of our game,{0}, without our permission. Should we Sue Them or Warn Them?"
+				var msg = "Boss,Ninvento is doing a illegal port of our game,{0}, without our permission. Should We Sue Them or Warn Them?"
 					.localize().format(game.title);
 				return new Notification({
 					sourceId: eventId,
@@ -2851,13 +2965,6 @@ var venomousmodAPI = {};
 			description: "Write a news article in a magazine to introduce the game to the public.".localize(),
 			marketingFactor: 0.5,
 			cost: 100000
-		}, {
-			id: "TV Commercial-1",
-			name: "Make A TV Commercial".localize(),
-			shortName: "TV Commercial".localize("short name"),
-			description: "Make a TV commercial that showcases game-play footage and features of the game to the public.".localize(),
-			marketingFactor: 0.5,
-			cost: 100000
 		});
 	};
 	
@@ -3196,22 +3303,22 @@ var venomousmodAPI = {};
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "70 Years";
-		VenomOption.value = "2.2";
+		VenomOption.value = "2.25";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "75 Years";
-		VenomOption.value = "2.5";
+		VenomOption.value = "2.45";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "80 Years";
-		VenomOption.value = "2.78";
+		VenomOption.value = "2.68";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "85 Years";
-		VenomOption.value = "2.81";
+		VenomOption.value = "2.79";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
@@ -3221,14 +3328,35 @@ var venomousmodAPI = {};
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "95 Years";
-		VenomOption.value = "3.05";
+		VenomOption.value = "3.16667";
 		element.appendChild(VenomOption);
 		
 		VenomOption = document.createElement("option");
 		VenomOption.text = "100 Years";
-		VenomOption.value = "3.1";
+		VenomOption.value = "3.25";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "105 Years";
+		VenomOption.value = "3.45";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "110 Years";
+		VenomOption.value = "3.68";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "115 Years";
+		VenomOption.value = "3.79";
+		element.appendChild(VenomOption);
+		
+		VenomOption = document.createElement("option");
+		VenomOption.text = "120 Years";
+		VenomOption.value = "4";
 		element.appendChild(VenomOption);
 	
 	};
+	
 	/*  */
 })();

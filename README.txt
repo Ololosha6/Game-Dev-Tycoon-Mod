@@ -8,6 +8,7 @@ Texture Maker and Finder: Gamingthrou
 Code Design and Special Event Code: DzjengisKhan
 Bug and Code Fixing Helper: Zayo
 Gave Permission to Use the Game Extensions Code: SirEverard
+Inspiration for Update Checker Code: LineLiar
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
@@ -445,6 +446,19 @@ December 20, 2013:
 1. Implemented 85 Year, 90 Year, 95 Year, and 100 Year Game Extensions
 2. Fixed Bug with Dalek Invasion Event, where it occurs 2 times in a row, while the game is being developed in the Second Office
 3. Fixed Values on Game Extensions
+
+December 21, 2013:
+
+1.7.0:
+1. Implemented 105 Year, 110 Year, 115 Year, and 120 Year Game Extensions
+2. Implemented Update Checker
+3. Removed TV Commercial Marketing
+4. Fixed 2 Bugs With the MeTube Event
+5. Fixed Bug with Game Port Event
+6. Implemented MBM Simon
+7. Implemented Calm Cilot 5000
+8. Implemented Vindows CE
+9. Fixed Values For Game Extensions
 
 How to install the mod:
 

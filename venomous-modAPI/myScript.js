@@ -29,6 +29,7 @@
 		
 		//Special Stuff
 		venomousmodAPI.addExtendGame();
+		venomousmodAPI.initUpdateChecks();
 	};
 
 	var error = function () {
