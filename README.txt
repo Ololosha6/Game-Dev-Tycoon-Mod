@@ -460,6 +460,11 @@ December 21, 2013:
 8. Implemented Vindows CE
 9. Fixed Values For Game Extensions
 
+December 26, 2013:
+
+1.7.1:
+1. Implemented 125 Year, 130 Year, 135 Year, and 140 Year Game Extensions
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
