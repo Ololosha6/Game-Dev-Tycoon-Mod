@@ -465,6 +465,11 @@ December 26, 2013:
 1.7.1:
 1. Implemented 125 Year, 130 Year, 135 Year, and 140 Year Game Extensions
 
+December 27, 2013:
+
+1.7.2:
+1. Improved Action Genre Weightings for First-Person Shooter Topic and Third-Person Shooter Topic
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab

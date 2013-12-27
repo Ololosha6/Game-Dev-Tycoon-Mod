@@ -3093,8 +3093,8 @@ var venomousmodAPI = {};
 		}, {
 			id: "First-Person Shooter",
 	    	name: "First-Person Shooter".localize("game topic"),
-	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8],
+	    	genreWeightings: [0.9, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.9],
 		}, {
 			id: "Visual Novel",
 	    	name: "Visual Novel".localize("game topic"),
@@ -3103,8 +3103,8 @@ var venomousmodAPI = {};
 		}, {
 			id: "Third-Person Shooter",
 	    	name: "Third-Person Shooter".localize("game topic"),
-	    	genreWeightings: [0.8, 1, 0.6, 1, 1, 0.8],
-			audienceWeightings: [0.8, 1, 0.8],
+	    	genreWeightings: [0.9, 1, 0.6, 1, 1, 0.8],
+			audienceWeightings: [0.8, 1, 0.9],
 		}, {
 			id: "Japanese RPG",
 	    	name: "Japanese RPG".localize("game topic"),
