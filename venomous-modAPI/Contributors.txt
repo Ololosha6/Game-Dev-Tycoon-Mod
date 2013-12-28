@@ -4,4 +4,4 @@ Gamingthrou-Texture Maker and Finder
 DzjengisKhan-Code Design and Original Coder for Special Event Code
 Zayo-Bug and Code Fixing Helper
 SirEverard-Gave Permission to Use the Game Extensions Code
-LineLiar-Inspiration for Update Checker Code
+LineLiar and kristof1104-Inspiration for Update Checker Code
