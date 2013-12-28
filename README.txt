@@ -8,7 +8,7 @@ Texture Maker and Finder: Gamingthrou
 Code Design and Special Event Code: DzjengisKhan
 Bug and Code Fixing Helper: Zayo
 Gave Permission to Use the Game Extensions Code: SirEverard
-Inspiration for Update Checker Code: LineLiar
+Inspiration for Update Checker Code: LineLiar and kristof1104
 
 To get the full effect of the mod, you have to start a new save game in Game Dev Tycoon.
 
