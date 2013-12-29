@@ -470,6 +470,11 @@ December 27, 2013:
 1.7.2:
 1. Improved Action Genre Weightings for First-Person Shooter Topic and Third-Person Shooter Topic
 
+December 29, 2013:
+
+1.7.3:
+1. Fixed Bug with Update Checker
+
 How to install the mod:
 
 1. Extract the .zip file you downloaded from the Releases tab
